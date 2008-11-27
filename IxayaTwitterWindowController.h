@@ -6,6 +6,8 @@
 //  Copyright 2008 Ixaya. All rights reserved.
 //
 
+//http://tototl.googlecode.com/files/Tototl.xml
+
 #import <Cocoa/Cocoa.h>
 #import "IXSheetWindowController.h"
 #import "MGTwitterEngine.h"
@@ -18,7 +20,7 @@
 	IBOutlet NSWindow *twitWindow;
 	IBOutlet NSObjectController *credentials;
 	IBOutlet NSArrayController *twittsArrayController;
-	NSMutableArray *twitts;
+	NSArray *twitts;
 	MGTwitterEngine *twitterEngine;
 	NSNumber *connected;
 	IBOutlet NSTextField *newTweetMessage;
@@ -26,7 +28,7 @@
 	BOOL launching;
 	NSStatusItem *statusItem;
 }
-@property (copy, readwrite) NSMutableArray *twitts;
+@property (copy, readwrite) NSArray *twitts;
 @property (copy, readwrite) 	NSNumber *connected;
 @property (retain, readwrite) 	NSStatusItem *statusItem;
 -(IBAction)connect:(id)sender;

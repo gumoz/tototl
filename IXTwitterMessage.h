@@ -14,11 +14,14 @@
 	NSData *picture_data;
 	NSString *name;
 	NSString *message;
+	NSString *twitterId;
 }
+
 @property (copy, readwrite) NSImage *picture;
 @property (copy, readwrite)	NSData *picture_data;
 @property (copy, readwrite) NSString *name;
 @property (copy, readwrite) NSString *message;
+@property (copy, readwrite) NSString *twitterId;
 
 -(void)setPictureUsingUrl:(NSString *)url;
 

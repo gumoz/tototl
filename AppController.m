@@ -9,6 +9,14 @@
 #import "AppController.h"
 
 @implementation AppController
+- (id) init
+{
+	self = [super init];
+	if (self != nil) {
+		shown = NO;
+	}
+	return self;
+}
 
 -(void)awakeFromNib{
 	ixayaTwitterController = [[IxayaTwitterWindowController alloc] init];
@@ -22,9 +30,41 @@
 	[self show:self];
 	[ixayaTwitterController performSelector:@selector(connect:) withObject:self];
 	
+	[statusItem setAction:@selector(statusClicked)];
+	
+}
+-(void)statusClicked{
+
+	NSLog(@"clicked %d", shown);
+	if(shown)
+	{
+		[self hide:self];
+		shown = NO;
+	}
+	else
+	{
+		[self show:self];
+		shown = YES;		
+	}
+}
+-(IBAction)showOrHide:(id)sender{
+
+	NSWindow *window = [ixayaTwitterController window];
+	if([window isKeyWindow])
+	{
+		[window orderOut:self];	
+	}
+	else{
+		[window makeKeyAndOrderFront:self];
+		[window orderFrontRegardless];
+
+	}
+	
+//	[self statusClicked];
 }
 -(IBAction)show:(id)sender{
 	[[ixayaTwitterController window] makeKeyAndOrderFront:self];
+	[[ixayaTwitterController window] orderFrontRegardless];
 }
 -(IBAction)hide:(id)sender{
 	NSWindow *window = [ixayaTwitterController window];

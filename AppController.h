@@ -14,9 +14,11 @@
 	NSStatusItem *statusItem;
 	IBOutlet NSMenu *barMenu; 
 	int tag;
+	BOOL shown;
 }
 - (int)tag;
-
+-(void)statusClicked;
+-(IBAction)showOrHide:(id)sender;
 -(IBAction)show:(id)sender;
 -(IBAction)hide:(id)sender;
 -(IBAction)close:(id)sender;
