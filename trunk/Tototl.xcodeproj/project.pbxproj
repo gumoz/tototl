@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		2253243E0EDEA0AF000F4C4A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2253243D0EDEA0AF000F4C4A /* Sparkle.framework */; };
+		2253243E0EDEA0AF000F4C4A /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2253243D0EDEA0AF000F4C4A /* Sparkle.framework */; };
 		225325D00EDEA85A000F4C4A /* Kiwi.icns in Resources */ = {isa = PBXBuildFile; fileRef = 225325CF0EDEA85A000F4C4A /* Kiwi.icns */; };
 		22AEC33E0EDB7052000D0605 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC30D0EDB7051000D0605 /* AppController.m */; };
 		22AEC33F0EDB7052000D0605 /* IXTwitterCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC3100EDB7051000D0605 /* IXTwitterCredentials.m */; };
@@ -48,6 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2253243E0EDEA0AF000F4C4A /* Sparkle.framework in Copy Frameworks */,
 				22AEC3B10EDB7422000D0605 /* Growl.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -127,7 +128,6 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				22AEC3550EDB70F9000D0605 /* libxml2.dylib in Frameworks */,
 				22AEC3A70EDB7413000D0605 /* Growl.framework in Frameworks */,
-				2253243E0EDEA0AF000F4C4A /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
