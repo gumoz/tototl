@@ -11,11 +11,15 @@
 
 @implementation IXTwitterMessage
 
-@synthesize picture, picture_data, name, message;
+@synthesize picture, picture_data, name, message, twitterId;
 -(void)setPictureUsingUrl:(NSString *)url{
 	NSImage *profile_image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
 	[self setPicture:profile_image];
 	[self setPicture_data:[profile_image TIFFRepresentation]];
-	NSLog(@"profile_image %@", profile_image);
+}
+-(NSString *)description{
+
+	NSString *desc = [NSString stringWithFormat:@"Id: %@, by: %@, Message %@", twitterId, name, message];
+	return desc;
 }
 @end

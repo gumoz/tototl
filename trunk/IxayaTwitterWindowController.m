@@ -20,7 +20,7 @@
 	self = [super init];
 	if (self != nil) {
 		[self initWithWindowNibName:@"IxayaTwitterWindow"];
-		twitts = [[NSMutableArray alloc] init];
+		twitts = [[NSArray alloc] init];
 		connected = [NSNumber numberWithBool:NO];
 		growlController = [[GrowlController alloc] init];
 		launching = YES;
@@ -46,6 +46,7 @@
     
     // Get updates from people the authenticated user follows.
     [twitterEngine getFollowedTimelineFor:[someCredentials username] since:nil startingAtPage:0];
+	
 	[NSTimer scheduledTimerWithTimeInterval:10
 									 target:self 
 								   selector:@selector(update)
@@ -99,6 +100,9 @@
 
 - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
 {
+	if([error code] == 401 && [[error domain] isEqualToString:@"HTTP"])
+		[self setConnected:[NSNumber numberWithBool:NO]];
+	
     NSLog(@"Twitter request failed! (%@) Error: %@ (%@)", 
           requestIdentifier, 
           [error localizedDescription], 
@@ -108,36 +112,39 @@
 
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier
 {
-    NSLog(@"Got statuses:\r%@", statuses);
-	NSMutableArray *newTweets = [[NSMutableArray alloc] init];
-	for(id status in statuses)
-	{	
-		NSString *name = [status valueForKeyPath:@"user.name"];
-		NSString *text = [status valueForKeyPath:@"text"];
-		NSString *profile_image_url = [status valueForKeyPath:@"user.profile_image_url"];
+	if([statuses count] > 0)
+	{
+		NSLog(@"Got statuses:\r%@", statuses);
+		NSMutableArray *newTweets = [[NSMutableArray alloc] init];
+		for(id status in statuses)
+		{	
+			NSString *name = [status valueForKeyPath:@"user.name"];
+			NSString *text = [status valueForKeyPath:@"text"];
+			NSString *profile_image_url = [status valueForKeyPath:@"user.profile_image_url"];
+			NSString *twitter_id = [status valueForKeyPath:@"id"];
+			
+			
+			IXTwitterMessage *message = [[IXTwitterMessage alloc] init];
+			[message setName:name];
+			[message setMessage:text];
+			[message setPictureUsingUrl:profile_image_url];
+			[message setTwitterId:twitter_id];
+			[newTweets addObject:[message retain]];
+			
+			if(!launching)
+				[growlController growl:text withTitle:name andIcon:[message picture_data]];
+			
+		}
 		
+		if(launching)
+			launching = NO;
 		
-		IXTwitterMessage *message = [[IXTwitterMessage alloc] init];
-		[message setName:name];
-		[message setMessage:text];
-		[message setPictureUsingUrl:profile_image_url];
-		[newTweets addObject:[message retain]];
-		
-		if(!launching)
-			[growlController growl:text withTitle:name andIcon:[message picture_data]];
-		
-		NSLog(@"user: %@ message %@", message.name, message.message);
-		//		NSLog(@"status user.name: %@", name);
-	}
-	//	[twittsArrayController removeObjects:[twittsArrayController arrangedObjects]];
-	
-	if(launching)
-		launching = NO;
+		NSMutableArray *tmpArray = [NSMutableArray arrayWithArray:newTweets];
+		[tmpArray addObjectsFromArray:[self twitts]];
 
-	[twittsArrayController insertObjects:[NSArray arrayWithArray:newTweets] atArrangedObjectIndexes:[[NSIndexSet alloc] initWithIndex:0]];
-	[twittsArrayController addObjects:[NSArray arrayWithArray:newTweets]];
-	//	[twitts addObjectsFromArray:statuses];
-	NSLog(@"twitts %@", twitts);
+		[self setTwitts:[NSArray arrayWithArray:tmpArray]];
+		NSLog(@"twitts %@", twitts);
+	}
 }
 
 
@@ -167,6 +174,16 @@
     [[image TIFFRepresentation] writeToFile:path atomically:NO];
 }
 -(void)update{
-	[twitterEngine getFollowedTimelineFor:[[credentials content] username] since:nil startingAtPage:0];
+	NSString *username = [[credentials content] username];
+	NSLog(@"last twitt %@", [twitts objectAtIndex:0]);
+	
+//	[twitts 
+	
+	int updateid = [[[twitts objectAtIndex:0] twitterId] intValue];
+//	[twitterEngine getFollowedTimelineFor:[[credentials content] username] since:nil startingAtPage:0];
+	[twitterEngine getFollowedTimelineFor:username sinceID:updateid startingAtPage:0 count:10];
+	
+//	- (NSString *)getFollowedTimelineFor:(NSString *)username sinceID:(int)updateID startingAtPage:(int)pageNum count:(int)count;		// max 200
+
 }
 @end
