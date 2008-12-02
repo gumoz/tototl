@@ -11,7 +11,8 @@
 
 @implementation IXTwitterMessage
 
-@synthesize picture, picture_data, name, message, twitterId;
+@synthesize picture, picture_data, name, message, twitterId, date;
+
 -(void)setPictureUsingUrl:(NSString *)url{
 	NSImage *profile_image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
 	[self setPicture:profile_image];

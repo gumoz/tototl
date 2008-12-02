@@ -13,7 +13,7 @@
 
 @implementation IxayaTwitterWindowController
 
-@synthesize twitts, connected, statusItem;
+@synthesize twitts, connected, statusItem, twitterEngine;
 
 - (id) init
 {
@@ -29,19 +29,29 @@
 }
 
 -(void)awakeFromNib{
-	IXTwitterCredentials *cred = [IXTwitterCredentials new];
 
+	
+	[[[configurationButton menu] menuRepresentation] setHorizontalEdgePadding:0.0];
+	
+	
+	IXTwitterCredentials *cred = [IXTwitterCredentials new];
 	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
 	[cred setValue:[defaults valueForKey:@"username"] forKey:@"username"];
 	[cred setValue:[defaults valueForKey:@"password"] forKey:@"password"];
 	[credentials addObject:cred];
 }
+-(IBAction)configuration:(id)sender{
+	[[NSApp delegate] performSelector:@selector(checkForUpdates:) withObject:self];
+
+	//	[[configurationButton menu] menuWillOpen:[configurationButton menu]];
+}
+-(IBAction)close:(id)sender{
+	[[NSApp delegate] performSelector:@selector(close:) withObject:self];
+}
 -(IBAction)connect:(id)sender{
 	
-	// Create a TwitterEngine and set our login details.
-    twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
-	id someCredentials = [credentials content];
-	
+	// set credentials on engine
+	id someCredentials = [credentials content];	
     [twitterEngine setUsername:[someCredentials username] password:[someCredentials password]];
     
     // Get updates from people the authenticated user follows.
@@ -100,7 +110,7 @@
 
 - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
 {
-	if([error code] == 401 && [[error domain] isEqualToString:@"HTTP"])
+	if(([error code] == 401 || [error code] == 400) && [[error domain] isEqualToString:@"HTTP"])
 		[self setConnected:[NSNumber numberWithBool:NO]];
 	
     NSLog(@"Twitter request failed! (%@) Error: %@ (%@)", 
@@ -118,17 +128,20 @@
 		NSMutableArray *newTweets = [[NSMutableArray alloc] init];
 		for(id status in statuses)
 		{	
+			NSLog(@"date %@",[NSDate date]);
 			NSString *name = [status valueForKeyPath:@"user.name"];
 			NSString *text = [status valueForKeyPath:@"text"];
 			NSString *profile_image_url = [status valueForKeyPath:@"user.profile_image_url"];
 			NSString *twitter_id = [status valueForKeyPath:@"id"];
-			
-			
+			NSDate *created = [status valueForKeyPath:@"created_at"];
+//			NSDate *created = [[NSDate alloc] initWithString:created_at_text];
+
 			IXTwitterMessage *message = [[IXTwitterMessage alloc] init];
 			[message setName:name];
 			[message setMessage:text];
 			[message setPictureUsingUrl:profile_image_url];
 			[message setTwitterId:twitter_id];
+			[message setDate:created];
 			[newTweets addObject:[message retain]];
 			
 			if(!launching)
