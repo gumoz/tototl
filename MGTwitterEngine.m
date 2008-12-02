@@ -31,9 +31,9 @@
 #define MAX_LOCATION_LENGTH		31
 
 #define DEFAULT_CLIENT_NAME     @"Tototl"
-#define DEFAULT_CLIENT_VERSION  @"1.0"
-#define DEFAULT_CLIENT_URL      @"http://ixaya.com/ixayatwitter"
-#define DEFAULT_CLIENT_TOKEN	@"ixayatwitter"
+#define DEFAULT_CLIENT_VERSION  @"1.1"
+#define DEFAULT_CLIENT_URL      @"http://tototl.googlecode.com/"
+#define DEFAULT_CLIENT_TOKEN	@"tototl"
 
 #define URL_REQUEST_TIMEOUT     25.0 // Twitter usually fails quickly if it's going to fail at all.
 #define DEFAULT_TWEET_COUNT		20

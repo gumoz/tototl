@@ -15,6 +15,7 @@
 	NSString *name;
 	NSString *message;
 	NSString *twitterId;
+	NSDate *date;
 }
 
 @property (copy, readwrite) NSImage *picture;
@@ -22,6 +23,7 @@
 @property (copy, readwrite) NSString *name;
 @property (copy, readwrite) NSString *message;
 @property (copy, readwrite) NSString *twitterId;
+@property (copy, readwrite) NSDate *date;
 
 -(void)setPictureUsingUrl:(NSString *)url;
 
