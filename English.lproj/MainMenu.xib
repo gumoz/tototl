@@ -8,7 +8,6 @@
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="452"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1113,7 +1112,6 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="NSMenuItem" id="712151841">
 						<reference key="NSMenu" ref="116443499"/>
-						<bool key="NSIsAlternate">YES</bool>
 						<string key="NSTitle">Show / Hide</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
@@ -1134,11 +1132,11 @@
 					<object class="NSMenuItem" id="569360815">
 						<reference key="NSMenu" ref="116443499"/>
 						<string key="NSTitle">Check for Updates</string>
-						<string key="NSKeyEquiv">U</string>
-						<int key="NSKeyEquivModMask">1048576</int>
+						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
 						<reference key="NSMixedImage" ref="502551668"/>
+						<int key="NSTag">1</int>
 					</object>
 					<object class="NSMenuItem" id="101956552">
 						<reference key="NSMenu" ref="116443499"/>
@@ -1725,22 +1723,6 @@
 						<reference key="destination" ref="712151841"/>
 					</object>
 					<int key="connectionID">467</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="573769888"/>
-						<reference key="destination" ref="307161991"/>
-					</object>
-					<int key="connectionID">468</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">sparkleUpdater</string>
-						<reference key="source" ref="307161991"/>
-						<reference key="destination" ref="573769888"/>
-					</object>
-					<int key="connectionID">469</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3082,7 +3064,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{437, 712}, {217, 73}}</string>
+					<string>{{333, 772}, {180, 73}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3147,7 +3129,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">469</int>
+			<int key="maxID">467</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3159,10 +3141,8 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSMutableArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>checkForUpdates:</string>
 							<string>close:</string>
 							<string>hide:</string>
-							<string>newPost:</string>
 							<string>show:</string>
 							<string>showOrHide:</string>
 						</object>
@@ -3172,22 +3152,11 @@
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
-							<string>id</string>
-							<string>id</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSMutableArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>barMenu</string>
-							<string>sparkleUpdater</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>NSMenu</string>
-							<string>SUUpdater</string>
-						</object>
+						<string key="NS.key.0">barMenu</string>
+						<string key="NS.object.0">NSMenu</string>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>

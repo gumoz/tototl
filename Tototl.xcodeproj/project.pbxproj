@@ -8,15 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		224FC9730EE4BAB00058F13F /* TototlStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FC9720EE4BAB00058F13F /* TototlStatusItemView.m */; };
-		224FCA0A0EE4C1ED0058F13F /* TototlStatusItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FCA090EE4C1ED0058F13F /* TototlStatusItemViewController.m */; };
-		224FCA0C0EE4C2360058F13F /* TototlStatusItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224FCA0B0EE4C2360058F13F /* TototlStatusItemView.xib */; };
-		224FCB600EE4D3580058F13F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224FCB5F0EE4D3580058F13F /* Sparkle.framework */; };
-		224FCB630EE4D35C0058F13F /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 224FCB5F0EE4D3580058F13F /* Sparkle.framework */; };
+		2253243E0EDEA0AF000F4C4A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2253243D0EDEA0AF000F4C4A /* Sparkle.framework */; };
 		225325D00EDEA85A000F4C4A /* Kiwi.icns in Resources */ = {isa = PBXBuildFile; fileRef = 225325CF0EDEA85A000F4C4A /* Kiwi.icns */; };
-		229BB8930EE0C37C00CE8C25 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 229BB8920EE0C37C00CE8C25 /* MAAttachedWindow.m */; };
-		229BB8AD0EE0C43B00CE8C25 /* NewTwitterPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229BB8AA0EE0C43B00CE8C25 /* NewTwitterPostView.xib */; };
-		229BB8AE0EE0C43B00CE8C25 /* NewTwitterPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229BB8AB0EE0C43B00CE8C25 /* NewTwitterPostViewController.m */; };
 		22AEC33E0EDB7052000D0605 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC30D0EDB7051000D0605 /* AppController.m */; };
 		22AEC33F0EDB7052000D0605 /* IXTwitterCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC3100EDB7051000D0605 /* IXTwitterCredentials.m */; };
 		22AEC3400EDB7052000D0605 /* IXTwitterMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC3120EDB7051000D0605 /* IXTwitterMessage.m */; };
@@ -55,7 +48,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				224FCB630EE4D35C0058F13F /* Sparkle.framework in Copy Frameworks */,
 				22AEC3B10EDB7422000D0605 /* Growl.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -68,18 +60,8 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		224FC9710EE4BAB00058F13F /* TototlStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TototlStatusItemView.h; sourceTree = "<group>"; };
-		224FC9720EE4BAB00058F13F /* TototlStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TototlStatusItemView.m; sourceTree = "<group>"; };
-		224FCA080EE4C1ED0058F13F /* TototlStatusItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TototlStatusItemViewController.h; sourceTree = "<group>"; };
-		224FCA090EE4C1ED0058F13F /* TototlStatusItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TototlStatusItemViewController.m; sourceTree = "<group>"; };
-		224FCA0B0EE4C2360058F13F /* TototlStatusItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TototlStatusItemView.xib; sourceTree = "<group>"; };
-		224FCB5F0EE4D3580058F13F /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		2253243D0EDEA0AF000F4C4A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		225325CF0EDEA85A000F4C4A /* Kiwi.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Kiwi.icns; sourceTree = "<group>"; };
-		229BB8910EE0C37C00CE8C25 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
-		229BB8920EE0C37C00CE8C25 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
-		229BB8AA0EE0C43B00CE8C25 /* NewTwitterPostView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTwitterPostView.xib; sourceTree = "<group>"; };
-		229BB8AB0EE0C43B00CE8C25 /* NewTwitterPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTwitterPostViewController.m; sourceTree = "<group>"; };
-		229BB8AC0EE0C43B00CE8C25 /* NewTwitterPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTwitterPostViewController.h; sourceTree = "<group>"; };
 		22AEC30C0EDB7051000D0605 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		22AEC30D0EDB7051000D0605 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		22AEC30F0EDB7051000D0605 /* IXTwitterCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTwitterCredentials.h; sourceTree = "<group>"; };
@@ -145,7 +127,7 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				22AEC3550EDB70F9000D0605 /* libxml2.dylib in Frameworks */,
 				22AEC3A70EDB7413000D0605 /* Growl.framework in Frameworks */,
-				224FCB600EE4D3580058F13F /* Sparkle.framework in Frameworks */,
+				2253243E0EDEA0AF000F4C4A /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +137,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				224FCA040EE4C0B30058F13F /* StatusItem */,
-				229BB8010EE0BEDF00CE8C25 /* NewTwitterPost */,
 				225325260EDEA283000F4C4A /* Application */,
 				22AEC3C10EDB745F000D0605 /* Growl */,
 				22AEC33A0EDB7052000D0605 /* IxayaTwitterWindow */,
@@ -178,7 +158,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				224FCB5F0EE4D3580058F13F /* Sparkle.framework */,
+				2253243D0EDEA0AF000F4C4A /* Sparkle.framework */,
 				22AEC3A60EDB7413000D0605 /* Growl.framework */,
 				22AEC3540EDB70F9000D0605 /* libxml2.dylib */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
@@ -196,38 +176,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		224FCA040EE4C0B30058F13F /* StatusItem */ = {
-			isa = PBXGroup;
-			children = (
-				224FC9710EE4BAB00058F13F /* TototlStatusItemView.h */,
-				224FC9720EE4BAB00058F13F /* TototlStatusItemView.m */,
-				224FCA080EE4C1ED0058F13F /* TototlStatusItemViewController.h */,
-				224FCA090EE4C1ED0058F13F /* TototlStatusItemViewController.m */,
-				224FCA0B0EE4C2360058F13F /* TototlStatusItemView.xib */,
-			);
-			name = StatusItem;
-			sourceTree = "<group>";
-		};
 		225325260EDEA283000F4C4A /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 				22AEC30C0EDB7051000D0605 /* AppController.h */,
 				22AEC30D0EDB7051000D0605 /* AppController.m */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
 			name = Application;
-			sourceTree = "<group>";
-		};
-		229BB8010EE0BEDF00CE8C25 /* NewTwitterPost */ = {
-			isa = PBXGroup;
-			children = (
-				229BB8910EE0C37C00CE8C25 /* MAAttachedWindow.h */,
-				229BB8920EE0C37C00CE8C25 /* MAAttachedWindow.m */,
-				229BB8AA0EE0C43B00CE8C25 /* NewTwitterPostView.xib */,
-				229BB8AC0EE0C43B00CE8C25 /* NewTwitterPostViewController.h */,
-				229BB8AB0EE0C43B00CE8C25 /* NewTwitterPostViewController.m */,
-			);
-			name = NewTwitterPost;
 			sourceTree = "<group>";
 		};
 		22AEC30E0EDB7051000D0605 /* IxayaTwitterClasses */ = {
@@ -424,8 +380,6 @@
 				22AEC3580EDB7109000D0605 /* available.png in Resources */,
 				22AEC3590EDB7109000D0605 /* away.png in Resources */,
 				225325D00EDEA85A000F4C4A /* Kiwi.icns in Resources */,
-				229BB8AD0EE0C43B00CE8C25 /* NewTwitterPostView.xib in Resources */,
-				224FCA0C0EE4C2360058F13F /* TototlStatusItemView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,10 +411,6 @@
 				22AEC34F0EDB7052000D0605 /* MGTwitterHTTPURLConnection.m in Sources */,
 				22AEC3500EDB7052000D0605 /* IxayaTwitterWindowController.m in Sources */,
 				22AEC3BD0EDB743F000D0605 /* GrowlController.m in Sources */,
-				229BB8930EE0C37C00CE8C25 /* MAAttachedWindow.m in Sources */,
-				229BB8AE0EE0C43B00CE8C25 /* NewTwitterPostViewController.m in Sources */,
-				224FC9730EE4BAB00058F13F /* TototlStatusItemView.m in Sources */,
-				224FCA0A0EE4C1ED0058F13F /* TototlStatusItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +484,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				LIBRARY_SEARCH_PATHS = /Library/Frameworks;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
@@ -549,7 +498,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				LIBRARY_SEARCH_PATHS = /Library/Frameworks;
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
 			};

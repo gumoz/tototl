@@ -24,18 +24,14 @@
 	MGTwitterEngine *twitterEngine;
 	NSNumber *connected;
 	IBOutlet NSTextField *newTweetMessage;
-	IBOutlet NSButton *configurationButton;
 	GrowlController *growlController;
 	BOOL launching;
 	NSStatusItem *statusItem;
 }
-@property (retain, readwrite) MGTwitterEngine *twitterEngine;
 @property (copy, readwrite) NSArray *twitts;
 @property (copy, readwrite) 	NSNumber *connected;
 @property (retain, readwrite) 	NSStatusItem *statusItem;
--(IBAction)configuration:(id)sender;
 -(IBAction)connect:(id)sender;
 -(IBAction)postTweet:(id)sender;
 -(void)update;
--(IBAction)close:(id)sender;
 @end
