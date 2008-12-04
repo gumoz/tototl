@@ -1,0 +1,21 @@
+#summary New features wishlist, put here all your wishes for christmas
+#labels Featured
+
+= Introduction =
+
+Here is the list of every wish surrounding the application
+
+
+= Details =
+
+  * Post status to Facebook
+  * Change status in Adium / iChat
+  * Click on URL to open it on web browser
+  * Display in other color the direct messages
+  * Keyboard & Mouse Shortcut for sending direct messages
+  * Change your picture in twitter from Tototl
+  * Save my password in Keychain
+  * Use CoreData for saving a cache of messages
+  * History / History Search
+  * Search Twitter Messages
+  * New Icon for Application
