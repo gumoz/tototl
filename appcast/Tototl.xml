@@ -2,14 +2,20 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <title>Tototl</title>
-    <link>http://code.google.com/p/tototl/</link>
-    <description>Tototl Twitter Client</description>
+    <link>http://code.google.com/p/tototl</link>
+    <description>A Lightweight Twitter Client for Mac OSX in Cocoa.</description>
     <generator>Feeder 1.5.7(628) http://reinventedsoftware.com/feeder/</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
-    <pubDate>Wed, 03 Dec 2008 19:11:03 -0600</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2008 19:11:03 -0600</lastBuildDate>
-    <atom:link href="http://tototl.googlecode.com/files/Tototl.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 04 Dec 2008 02:48:19 -0600</pubDate>
+    <lastBuildDate>Thu, 04 Dec 2008 02:48:19 -0600</lastBuildDate>
+    <item>
+      <title>Tototl_1.2.1</title>
+      <description><![CDATA[Fixed a deprecated by google appcast feed]]></description>
+      <pubDate>Thu, 04 Dec 2008 02:48:19 -0600</pubDate>
+      <enclosure url="http://code.google.com/p/tototl/Tototl_1.2.1.zip" length="614634" type="application/zip" sparkle:version="1.2.1" sparkle:dsaSignature="MCwCFCbCbUNVx4LoGYKOyvUwrcXkZW0CAhQm6gFlaHE11FXdKfFMXzupL/+mZA=="/>
+      <guid isPermaLink="false">tototl121</guid>
+    </item>
     <item>
       <title>Tototl_1.2</title>
       <description><![CDATA[Fixed a bug in the location service that set the location as "tototl"]]></description>
