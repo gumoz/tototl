@@ -19,7 +19,7 @@
 	<key>CFBundleSignature</key>
 	<string>IXAY</string>
 	<key>CFBundleVersion</key>
-	<string>1.2</string>
+	<string>1.2.1</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
@@ -27,6 +27,6 @@
 	<key>LSUIElement</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://tototl.googlecode.com/files/Tototl.xml</string>
+	<string>http://tototl.googlecode.com/svn/appcast/Tototl.xml</string>
 </dict>
 </plist>
