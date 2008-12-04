@@ -68,7 +68,7 @@
 	[defaults setValue:[someCredentials password] forKey:@"password"];
 	[defaults synchronize];
 
-	[twitterEngine setLocation:@"Tototl"];
+//	[twitterEngine setLocation:@"Tototl"];
 	
 	[self endSheet:sender];
 }
