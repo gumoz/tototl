@@ -12,6 +12,7 @@ Here is the list of every wish surrounding the application
   * Change status in Adium / iChat
   * Click on URL to open it on web browser
   * Display in other color the direct messages
+  * Display in other color the Replies
   * Keyboard & Mouse Shortcut for sending direct messages
   * Change your picture in twitter from Tototl
   * Save my password in Keychain
