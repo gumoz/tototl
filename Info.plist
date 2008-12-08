@@ -28,5 +28,9 @@
 	<true/>
 	<key>SUFeedURL</key>
 	<string>http://tototl.googlecode.com/svn/appcast/Tototl.xml</string>
+	<key>SUExpectsDSASignature</key>
+	<true/>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 </dict>
 </plist>

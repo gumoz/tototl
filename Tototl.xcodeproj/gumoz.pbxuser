@@ -2,7 +2,7 @@
 {
 	089C165DFE840E0CC02AAC07 /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {934, 684}}";
+			sepNavIntBoundsRect = "{{0, 0}, {934, 661}}";
 			sepNavSelRange = "{45, 0}";
 			sepNavVisRange = "{0, 45}";
 		};
@@ -642,7 +642,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {934, 2898}}";
 			sepNavSelRange = "{2134, 0}";
-			sepNavVisRange = "{0, 1353}";
+			sepNavVisRange = "{4661, 1493}";
 		};
 	};
 	22AEC3800EDB73F1000D0605 /* PBXTextBookmark */ = {
@@ -1045,7 +1045,7 @@
 		fRef = 22AEC33C0EDB7052000D0605 /* IxayaTwitterWindowController.m */;
 		name = "IxayaTwitterWindowController.m: 67";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 2343;
 		rType = 0;
 		vrLen = 649;
 		vrLoc = 1787;
@@ -1056,16 +1056,16 @@
 	};
 	22F26CEF0EEDBD3400B9B890 /* PreferencesWindowController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {934, 684}}";
-			sepNavSelRange = "{387, 0}";
-			sepNavVisRange = "{0, 524}";
+			sepNavIntBoundsRect = "{{0, 0}, {934, 661}}";
+			sepNavSelRange = "{554, 0}";
+			sepNavVisRange = "{0, 560}";
 		};
 	};
 	22F26CF00EEDBD3400B9B890 /* PreferencesWindowController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {934, 1134}}";
-			sepNavSelRange = "{2298, 0}";
-			sepNavVisRange = "{874, 1441}";
+			sepNavSelRange = "{2301, 0}";
+			sepNavVisRange = "{938, 1380}";
 		};
 	};
 	22FA51310EDEB8D40086FE77 /* PBXTextBookmark */ = {
