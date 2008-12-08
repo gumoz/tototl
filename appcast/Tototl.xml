@@ -8,7 +8,20 @@
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
     <pubDate>Fri, 05 Dec 2008 21:23:34 -0600</pubDate>
-    <lastBuildDate>Fri, 05 Dec 2008 21:23:34 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 05 Dec 2008 21:25:14 -0600</lastBuildDate>
+    <item>
+      <title>Tototl 1.2.2</title>
+      <description><![CDATA[<h2>Tototl 1.2.2</h2>
+
+<h3> New in this version </h3>
+<ul>
+<li>Update Frequency is now configurable (default 120 seconds)</li>
+<li>New Application Icon</li>
+</ul>]]></description>
+      <pubDate>Mon, 08 Dec 2008 15:41:50 -0600</pubDate>
+      <enclosure url="http://code.google.com/p/tototl/Tototl_1.2.2.zip" length="704522" type="application/zip" sparkle:version="1.2.2" sparkle:dsaSignature="MCwCFDo+DjnrXsNIx27DpsSRorNrUd2xAhQBrtvTzaF6/n2ZtzKn7519ICYGZA=="/>
+      <guid isPermaLink="false">tototl-122</guid>
+    </item>
     <item>
       <title>Tototl 1.2.1</title>
       <description><![CDATA[Fixed a deprecated by google appcast feed]]></description>
