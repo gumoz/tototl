@@ -7,8 +7,9 @@
     <generator>Feeder 1.5.7(628) http://reinventedsoftware.com/feeder/</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
-    <pubDate>Fri, 05 Dec 2008 21:23:34 -0600</pubDate>
+    <pubDate>Mon, 08 Dec 2008 15:46:10 -0600</pubDate>
     <lastBuildDate>Fri, 05 Dec 2008 21:25:14 -0600</lastBuildDate>
+    <atom:link href="http://code.google.com/p/tototl/source/browse/appcast/Tototl.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Tototl 1.2.2</title>
       <description><![CDATA[<h2>Tototl 1.2.2</h2>
@@ -18,7 +19,7 @@
 <li>Update Frequency is now configurable (default 120 seconds)</li>
 <li>New Application Icon</li>
 </ul>]]></description>
-      <pubDate>Mon, 08 Dec 2008 15:41:50 -0600</pubDate>
+      <pubDate>Mon, 08 Dec 2008 15:46:10 -0600</pubDate>
       <enclosure url="http://code.google.com/p/tototl/Tototl_1.2.2.zip" length="704522" type="application/zip" sparkle:version="1.2.2" sparkle:dsaSignature="MCwCFDo+DjnrXsNIx27DpsSRorNrUd2xAhQBrtvTzaF6/n2ZtzKn7519ICYGZA=="/>
       <guid isPermaLink="false">tototl-122</guid>
     </item>
