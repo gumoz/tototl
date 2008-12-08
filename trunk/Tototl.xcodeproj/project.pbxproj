@@ -50,6 +50,7 @@
 		22F26D290EEDC20200B9B890 /* ixayaazul.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F26D270EEDC20200B9B890 /* ixayaazul.png */; };
 		22F26D2A0EEDC20200B9B890 /* ixaya.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F26D280EEDC20200B9B890 /* ixaya.png */; };
 		22F26D3F0EEDCA3200B9B890 /* iusethis12.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F26D3E0EEDCA3200B9B890 /* iusethis12.png */; };
+		22F26D450EEDD6DD00B9B890 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 22F26D440EEDD6DD00B9B890 /* dsa_pub.pem */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -144,6 +145,7 @@
 		22F26D270EEDC20200B9B890 /* ixayaazul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ixayaazul.png; sourceTree = "<group>"; };
 		22F26D280EEDC20200B9B890 /* ixaya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ixaya.png; sourceTree = "<group>"; };
 		22F26D3E0EEDCA3200B9B890 /* iusethis12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iusethis12.png; sourceTree = "<group>"; };
+		22F26D440EEDD6DD00B9B890 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -382,6 +384,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				22F26D440EEDD6DD00B9B890 /* dsa_pub.pem */,
 				22F26D3E0EEDCA3200B9B890 /* iusethis12.png */,
 				22F26D250EEDC1E900B9B890 /* about.pdf */,
 				22F26D270EEDC20200B9B890 /* ixayaazul.png */,
@@ -463,6 +466,7 @@
 				22F26D290EEDC20200B9B890 /* ixayaazul.png in Resources */,
 				22F26D2A0EEDC20200B9B890 /* ixaya.png in Resources */,
 				22F26D3F0EEDCA3200B9B890 /* iusethis12.png in Resources */,
+				22F26D450EEDD6DD00B9B890 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
