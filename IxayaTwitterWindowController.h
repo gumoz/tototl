@@ -12,6 +12,7 @@
 #import "IXSheetWindowController.h"
 #import "MGTwitterEngine.h"
 #import "GrowlController.h"
+#import "PreferencesWindowController.h"
 //http://apiwiki.twitter.com/REST+API+Documentation
 	
 @interface IxayaTwitterWindowController : IXSheetWindowController <MGTwitterEngineDelegate> {

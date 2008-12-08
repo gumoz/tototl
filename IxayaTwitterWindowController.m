@@ -41,8 +41,10 @@
 	[credentials addObject:cred];
 }
 -(IBAction)configuration:(id)sender{
-	[[NSApp delegate] performSelector:@selector(checkForUpdates:) withObject:self];
+//	[[NSApp delegate] performSelector:@selector(checkForUpdates:) withObject:self];
 
+	PreferencesWindowController *pref = [[PreferencesWindowController alloc] init];
+	[pref showWindow:self];
 	//	[[configurationButton menu] menuWillOpen:[configurationButton menu]];
 }
 -(IBAction)close:(id)sender{
@@ -57,13 +59,22 @@
     // Get updates from people the authenticated user follows.
     [twitterEngine getFollowedTimelineFor:[someCredentials username] since:nil startingAtPage:0];
 	
-	[NSTimer scheduledTimerWithTimeInterval:10
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+	NSNumber *updateInterval = [defaults objectForKey:@"updateSeconds"];
+
+	if(updateInterval == nil)
+	{	
+		updateInterval = [NSNumber numberWithInt:120];
+		[defaults setValue:updateInterval forKey:@"updateSeconds"];
+		[defaults synchronize];
+	}
+	
+	[NSTimer scheduledTimerWithTimeInterval:[updateInterval intValue]
 									 target:self 
 								   selector:@selector(update)
 								   userInfo:nil
 									repeats:YES];
 	
-	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
 	[defaults setValue:[someCredentials username] forKey:@"username"];
 	[defaults setValue:[someCredentials password] forKey:@"password"];
 	[defaults synchronize];
