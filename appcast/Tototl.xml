@@ -7,7 +7,7 @@
     <generator>Feeder 1.5.7(628) http://reinventedsoftware.com/feeder/</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
-    <pubDate>Mon, 08 Dec 2008 16:14:05 -0600</pubDate>
+    <pubDate>Mon, 08 Dec 2008 16:20:10 -0600</pubDate>
     <lastBuildDate>Mon, 08 Dec 2008 16:07:30 -0600</lastBuildDate>
     <image>
       <url>http://tototl.googlecode.com/files/t144.jpg</url>
@@ -28,8 +28,8 @@
 
 <li>New Application Icon</li>
 </ul>]]></description>
-      <pubDate>Mon, 08 Dec 2008 16:14:05 -0600</pubDate>
-      <enclosure url="http://tototl.googlecode.com/files/Tototl_1.2.2.zip" length="704522" type="application/zip" sparkle:version="1.2.2" sparkle:dsaSignature="MCwCFHM6sC+M3LGzFesIDWB2ROEC1++sAhQ8jEQZSJS5NFkbgB0xXVOcHMDhEQ=="/>
+      <pubDate>Mon, 08 Dec 2008 16:20:10 -0600</pubDate>
+      <enclosure url="http://tototl.googlecode.com/files/Tototl_1.2.2.zip" length="704522" type="application/zip" sparkle:version="1.2.2" sparkle:dsaSignature="MCwCFHM6sC+M3LGzFesIDWB2ROEC1++sAhQ8jEQZSJS5NFkbgB0xXVOcHMDhEQ==" sparkle:md5Sum="dd5dc33b4589a7d5bc445d072eb91cdb"/>
       <guid isPermaLink="false">tototl122</guid>
     </item>
     <item>
