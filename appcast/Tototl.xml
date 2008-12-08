@@ -1,58 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
-    <title>Tototl</title>
+    <title>tototl</title>
     <link>http://tototl.googlecode.com/files/</link>
     <description>A Lightweight Twitter Client for Mac OSX in Cocoa.</description>
     <generator>Feeder 1.5.7(628) http://reinventedsoftware.com/feeder/</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
-    <pubDate>Mon, 08 Dec 2008 15:50:30 -0600</pubDate>
-    <lastBuildDate>Fri, 05 Dec 2008 21:25:14 -0600</lastBuildDate>
-    <atom:link href="http://code.google.com/p/tototl/source/browse/appcast/Tototl.xml" rel="self" type="application/rss+xml"/>
-    <item>
-      <title>Tototl 1.2.2</title>
-      <description><![CDATA[<h2>Tototl 1.2.2</h2>
-
-<h3> New in this version </h3>
-<ul>
-<li>Update Frequency is now configurable (default 120 seconds)</li>
-<li>New Application Icon</li>
-</ul>]]></description>
-      <pubDate>Mon, 08 Dec 2008 15:49:16 -0600</pubDate>
-      <enclosure url="http://code.google.com/p/tototl/Tototl_1.2.2.zip" length="704522" type="application/zip" sparkle:version="1.2.2" sparkle:dsaSignature="MCwCFDo+DjnrXsNIx27DpsSRorNrUd2xAhQBrtvTzaF6/n2ZtzKn7519ICYGZA=="/>
-      <guid isPermaLink="false">tototl-122</guid>
-    </item>
-    <item>
-      <title>Tototl 1.2.1</title>
-      <description><![CDATA[Fixed a deprecated by google appcast feed]]></description>
-      <pubDate>Fri, 05 Dec 2008 21:23:34 -0600</pubDate>
-      <enclosure url="http://code.google.com/p/tototl/Tototl_1.2.1.zip" length="614634" type="application/zip" sparkle:version="1.2.1" sparkle:dsaSignature="MCwCFCbCbUNVx4LoGYKOyvUwrcXkZW0CAhQm6gFlaHE11FXdKfFMXzupL/+mZA=="/>
-      <guid isPermaLink="false">tototl121</guid>
-    </item>
-    <item>
-      <title>Tototl 1.2</title>
-      <description><![CDATA[Fixed a bug in the location service that set the location as "tototl"]]></description>
-      <pubDate>Fri, 05 Dec 2008 21:23:31 -0600</pubDate>
-      <enclosure url="http://code.google.com/p/tototl/Tototl_1.2.zip" length="614626" type="application/zip" sparkle:version="1.2" sparkle:dsaSignature="MCwCFAOx8U113uw+wFKnP9O/e3hmfUDrAhQ3EhEfUePj63L1MIVMvFVLFNBHzQ=="/>
-      <guid isPermaLink="false">tototl12</guid>
-    </item>
-    <item>
-      <title>Tototl 1.1</title>
-      <description><![CDATA[<ul>
-<li>Added Attached Menu for speedy posts</li>
-<li>Fixed Broken Sparkle Framework</li>
-</ul>]]></description>
-      <pubDate>Mon, 01 Dec 2008 21:56:06 -0600</pubDate>
-      <enclosure url="http://code.google.com/p/tototl/Tototl_1.1.zip" length="614650" type="application/zip" sparkle:version="1.1" sparkle:dsaSignature="MCwCFEJ6PLTrQJr5JC/VVIb/YNbYozDBAhRZEdUSvhQ97Ps30C/UrED5kLKUYw=="/>
-      <guid isPermaLink="false">tototl-11</guid>
-    </item>
-    <item>
-      <title>Tototl 1.0</title>
-      <description><![CDATA[Tototl 1.0 Initial Release]]></description>
-      <pubDate>Fri, 05 Dec 2008 21:23:25 -0600</pubDate>
-      <enclosure url="http://code.google.com/p/tototl/Tototl_1.0.zip" length="586864" type="application/zip" sparkle:version="1.0" sparkle:dsaSignature="MCwCFD2yPYHkDEsNgZAcYlEIFIZAB6IKAhQ4M5JWeV6jZocuqdcNXfWQQMskyQ=="/>
-      <guid isPermaLink="false">tototl10</guid>
-    </item>
+    <pubDate>Mon, 08 Dec 2008 16:06:31 -0600</pubDate>
+    <lastBuildDate>Mon, 08 Dec 2008 16:06:31 -0600</lastBuildDate>
   </channel>
 </rss>
