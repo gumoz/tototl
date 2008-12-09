@@ -19,11 +19,8 @@ Here is the list of every wish surrounding the application
   * Use CoreData for saving a cache of messages
   * History / History Search
   * ~~Search Twitter Messages~~
-  * New Icon for Application
-  * Search bar, to look for something in a message.
-  * Open the user twitter page http://twitter.com/user when you click on his messages in the tototl window or in the growl alert.
-  * Display in the top of the list the people that tweet at my twitter @user.
-  * Put an icon of a padlock in the right corner if you are using SSL and click it to show the actual certificate.
+  * ~~New Icon for Application~~
+ 
 
 Mektor's Whishlist
  * ~~Search bar, to look for something in a message.~~
