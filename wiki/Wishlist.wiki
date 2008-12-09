@@ -10,7 +10,7 @@ Here is the list of every wish surrounding the application
 
   * Post status to Facebook
   * Change status in Adium / iChat
-  * Click on URL to open it on web browser
+  * ~~Click on URL to open it on web browser~~
   * Display in other color the direct messages
   * Display in other color the Replies
   * Keyboard & Mouse Shortcut for sending direct messages
@@ -30,6 +30,6 @@ Mektor's Whishlist
 
 MacBuddysupport's Whishlist
 
- * Character counting (140).
+ * ~~Character counting (140).~~
  * TwitPic
  * TinyURL Support
