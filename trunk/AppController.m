@@ -11,12 +11,15 @@
 #import "TototlStatusItemView.h"
 
 @implementation AppController
+
+@synthesize growlController;
 - (id) init
 {
 	self = [super init];
 	if (self != nil) {
 		shown = NO;
 		// Create a TwitterEngine
+		growlController = [[GrowlController alloc] init];
 	}
 	return self;
 }
@@ -25,6 +28,7 @@
 	ixayaTwitterController = [[IxayaTwitterWindowController alloc] init];
 	twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:ixayaTwitterController];
 	[ixayaTwitterController setTwitterEngine:twitterEngine];
+	[ixayaTwitterController setGrowlController:growlController];
 
 	// Create an NSStatusItem.
 	// Create an NSStatusItem.

@@ -14,16 +14,28 @@
 
 @implementation IxayaTwitterWindowController
 
-@synthesize twitts, connected, statusItem, twitterEngine;
+enum 
+{
+	twitterMessage = 0,
+	twitterDirectMessage = 1
+};
+
+@synthesize twitts, connected, statusItem, twitterEngine, growlController;
 
 - (id) init
 {
 	self = [super init];
 	if (self != nil) {
-		[self initWithWindowNibName:@"IxayaTwitterWindow"];
+
+		growlController = [[NSApp delegate] performSelector:@selector(growlController)];
+		defaults = [[NSUserDefaults alloc] init];
+		BOOL old =  [defaults boolForKey:@"oldInterface"];
+		if(old)
+			[self initWithWindowNibName:@"IxayaTwitterWindowOld"];
+		else
+			[self initWithWindowNibName:@"IxayaTwitterWindow"];
 		twitts = [[NSArray alloc] init];
 		connected = [NSNumber numberWithBool:NO];
-		growlController = [[GrowlController alloc] init];
 		launching = YES;
 	}
 	return self;
@@ -36,7 +48,7 @@
 	
 	
 	IXTwitterCredentials *cred = [IXTwitterCredentials new];
-	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+	defaults = [[NSUserDefaults alloc] init];
 	[cred setValue:[defaults valueForKey:@"username"] forKey:@"username"];
 	[cred setValue:[defaults valueForKey:@"password"] forKey:@"password"];
 	[credentials addObject:cred];
@@ -59,9 +71,13 @@
     
     // Get updates from people the authenticated user follows.
     [twitterEngine getFollowedTimelineFor:[someCredentials username] since:nil startingAtPage:0];
+//	[twitterEngine getDirectMessagesSince:[NSDate dateWithTimeIntervalSinceReferenceDate:1200] startingAtPage:0];
 	
-	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
 	NSNumber *updateInterval = [defaults objectForKey:@"updateSeconds"];
+	NSString *location = [defaults objectForKey:@"location"];
+	if(location)
+		[twitterEngine setLocation:location];
+	
 
 	if(updateInterval == nil)
 	{	
@@ -85,9 +101,19 @@
 	[self endSheet:sender];
 }
 -(IBAction)postTweet:(id)sender{
-	[twitterEngine sendUpdate:[newTweetMessage stringValue]];
-	[newTweetMessage setStringValue:@""];
-	[self endSheet:sender];
+	NSString *message = [newTweetMessage stringValue];
+	NSLog(@"message %@", message);
+	if([message length] > 140)
+	{
+		NSLog(@"longer");
+		NSImage *t = [NSImage imageNamed:@"t"];
+		[growlController growl:@"Unable to post to twitter, message is longer than 140 Chars" withTitle:@"Post Error" andIcon:[t TIFFRepresentation]];
+	} else {
+		NSLog(@"shorter");
+		[twitterEngine sendUpdate:message];	
+		[newTweetMessage setStringValue:@""];
+		[self endSheet:sender];
+	}
 }
 #pragma mark IXSheetWindowController implementation
 -(NSWindow *)windowForTag:(int)tag{
@@ -146,9 +172,9 @@
 			NSString *profile_image_url = [status valueForKeyPath:@"user.profile_image_url"];
 			NSString *twitter_id = [status valueForKeyPath:@"id"];
 			NSDate *created = [status valueForKeyPath:@"created_at"];
-//			NSDate *created = [[NSDate alloc] initWithString:created_at_text];
 
 			IXTwitterMessage *message = [[IXTwitterMessage alloc] init];
+			[message setKind:twitterMessage];
 			[message setName:name];
 			[message setMessage:text];
 			[message setPictureUsingUrl:profile_image_url];
@@ -175,7 +201,40 @@
 
 - (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier
 {
-    NSLog(@"Got direct messages:\r%@", messages);
+	if([messages count] > 0)
+	{
+		NSLog(@"Got direct messages:\r%@", messages);
+		
+		NSMutableArray *newTweets = [[NSMutableArray alloc] init];
+		for(id status in messages)
+		{	
+			NSLog(@"date %@",[NSDate date]);
+			NSString *name = [status valueForKeyPath:@"user.name"];
+			NSString *text = [status valueForKeyPath:@"text"];
+			NSString *profile_image_url = [status valueForKeyPath:@"user.profile_image_url"];
+			NSString *twitter_id = [status valueForKeyPath:@"id"];
+			NSDate *created = [status valueForKeyPath:@"created_at"];
+			
+			IXTwitterMessage *message = [[IXTwitterMessage alloc] init];
+			[message setKind:twitterDirectMessage];
+			[message setName:name];
+			[message setMessage:text];
+			[message setPictureUsingUrl:profile_image_url];
+			[message setTwitterId:twitter_id];
+			[message setDate:created];
+			[newTweets addObject:[message retain]];
+			
+			
+//			if(!launching)
+			[growlController growl:text withTitle:name andIcon:[message picture_data] isSticky:YES];
+			
+		}
+		NSMutableArray *tmpArray = [NSMutableArray arrayWithArray:newTweets];
+		[tmpArray addObjectsFromArray:[self twitts]];
+		
+		[self setTwitts:[NSArray arrayWithArray:tmpArray]];
+		NSLog(@"twitts %@", twitts);
+	}
 }
 
 - (void)userInfoReceived:(NSArray *)userInfo forRequest:(NSString *)identifier
@@ -195,8 +254,8 @@
     NSLog(@"Got an image: %@", image);
     
     // Save image to the Desktop.
-    NSString *path = [[NSString stringWithFormat:@"~/Desktop/%@.tiff", identifier] stringByExpandingTildeInPath];
-    [[image TIFFRepresentation] writeToFile:path atomically:NO];
+//    NSString *path = [[NSString stringWithFormat:@"~/Desktop/%@.tiff", identifier] stringByExpandingTildeInPath];
+//    [[image TIFFRepresentation] writeToFile:path atomically:NO];
 }
 -(void)update{
 	NSString *username = [[credentials content] username];
@@ -207,6 +266,7 @@
 	int updateid = [[[twitts objectAtIndex:0] twitterId] intValue];
 //	[twitterEngine getFollowedTimelineFor:[[credentials content] username] since:nil startingAtPage:0];
 	[twitterEngine getFollowedTimelineFor:username sinceID:updateid startingAtPage:0 count:10];
+	[twitterEngine getDirectMessagesSinceID:updateid startingAtPage:0];
 	
 //	- (NSString *)getFollowedTimelineFor:(NSString *)username sinceID:(int)updateID startingAtPage:(int)pageNum count:(int)count;		// max 200
 

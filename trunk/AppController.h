@@ -10,6 +10,7 @@
 #import "IxayaTwitterWindowController.h"
 #import "MAAttachedWindow.h"
 #import "TototlStatusItemViewController.h"
+#import <Growl/Growl.h>
 #import <Sparkle/Sparkle.h>
 
 @class MAAttachedWindow;
@@ -19,12 +20,15 @@
 	MGTwitterEngine *twitterEngine;
 	IxayaTwitterWindowController *ixayaTwitterController;
 //	TototlStatusItemViewController *statusItemController;
+	
+	GrowlController *growlController;
 	IBOutlet SUUpdater *sparkleUpdater;
 	NSStatusItem *statusItem;
 	IBOutlet NSMenu *barMenu; 
 	int tag;
 	BOOL shown;
 }
+@property (retain, readwrite) GrowlController *growlController;
 - (NSMenu *)barMenu;
 
 -(int)tag;

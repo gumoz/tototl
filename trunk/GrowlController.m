@@ -137,6 +137,17 @@
 								   isSticky:NO
 							   clickContext:title];
 }
+- (void)growl:(NSString *)message withTitle:(NSString *)aTitle isSticky:(BOOL)sticky
+{
+	[GrowlApplicationBridge notifyWithTitle:title
+								description:message
+						   notificationName:QKPNotification
+								   iconData: nil
+								   priority:0
+								   isSticky:sticky
+							   clickContext:title];
+	
+}
 - (void)growl:(NSString *)message withTitle:(NSString *)aTitle andIcon:(NSData *)aIcon
 {
 	[GrowlApplicationBridge notifyWithTitle:title
@@ -145,6 +156,17 @@
 								   iconData: aIcon
 								   priority:0
 								   isSticky:NO
+							   clickContext:title];
+	
+}
+- (void)growl:(NSString *)message withTitle:(NSString *)aTitle andIcon:(NSData *)aIcon isSticky:(BOOL)sticky
+{
+	[GrowlApplicationBridge notifyWithTitle:title
+								description:message
+						   notificationName:QKPNotification
+								   iconData: aIcon
+								   priority:0
+								   isSticky:sticky
 							   clickContext:title];
 	
 }

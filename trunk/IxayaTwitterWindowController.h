@@ -13,6 +13,7 @@
 #import "MGTwitterEngine.h"
 #import "GrowlController.h"
 #import "PreferencesWindowController.h"
+#import <RBSplitView/RBSplitView.h>
 //http://apiwiki.twitter.com/REST+API+Documentation
 	
 @interface IxayaTwitterWindowController : IXSheetWindowController <MGTwitterEngineDelegate> {
@@ -22,6 +23,7 @@
 	IBOutlet NSObjectController *credentials;
 	IBOutlet NSArrayController *twittsArrayController;
 	NSArray *twitts;
+	NSUserDefaults *defaults;
 	MGTwitterEngine *twitterEngine;
 	NSNumber *connected;
 	IBOutlet NSTextField *newTweetMessage;
@@ -30,6 +32,7 @@
 	BOOL launching;
 	NSStatusItem *statusItem;
 }
+@property (retain, readwrite) GrowlController *growlController;
 @property (retain, readwrite) MGTwitterEngine *twitterEngine;
 @property (copy, readwrite) NSArray *twitts;
 @property (copy, readwrite) 	NSNumber *connected;

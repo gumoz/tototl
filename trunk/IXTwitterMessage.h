@@ -10,6 +10,8 @@
 
 
 @interface IXTwitterMessage : NSObject {
+	
+	int kind;
 	NSImage *picture;
 	NSData *picture_data;
 	NSString *name;
@@ -18,7 +20,7 @@
 	NSString *twitterId;
 	NSDate *date;
 }
-
+@property int kind;
 @property (copy, readwrite) NSImage *picture;
 @property (copy, readwrite)	NSData *picture_data;
 @property (copy, readwrite) NSString *name;

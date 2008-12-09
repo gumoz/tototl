@@ -7,11 +7,18 @@
 //
 
 #import "IXTwitterMessage.h"
-#import "AutoHyperlinks.h"
+#import <AutoHyperlinks/AutoHyperlinks.h>
 
 @implementation IXTwitterMessage
 
+@synthesize kind;
 @synthesize picture, picture_data, name, message, attributedMessage, twitterId, date;
+
+enum 
+{
+	twitterMessage = 0,
+	twitterDirectMessage = 1
+};
 
 -(void)setPictureUsingUrl:(NSString *)url{
 	NSImage *profile_image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:url]];

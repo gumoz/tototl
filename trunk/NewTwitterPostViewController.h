@@ -8,13 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MGTwitterEngine.h"
+#import "GrowlController.h"
 
 @interface NewTwitterPostViewController : NSViewController {
 
 	id delegate;
 	IBOutlet NSTextField *message;
 	MGTwitterEngine *twitterEngine;
+	GrowlController *growlController;
 }
+@property (retain, readwrite) GrowlController *growlController;
 @property (retain, readwrite) id delegate;
 @property (retain, readwrite) MGTwitterEngine *twitterEngine;
 		   
