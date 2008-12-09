@@ -27,3 +27,9 @@ Mektor's Whishlist
  * Open the user twitter page http://twitter.com/user when you click on his messages in the tototl window or in the growl alert.
  * Display in the top of the list the people that tweet at my twitter @user.
  * ~~Put an icon of a padlock in the right corner~~ if you are using SSL and click it to show the actual certificate.
+
+MacBuddysupport's Whishlist
+
+ * Character counting (140).
+ * TwitPic
+ * TinyURL Support
