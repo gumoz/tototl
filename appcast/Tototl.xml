@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
    <channel>
-      <title>Your Great App's Changelog</title>
-      <link>http://you.com/app/appcast.xml</link>
-      <description>Most recent changes with links to updates.</description>
+      <title>Tototl</title>
+      <link>http://tototl.googlecode.com/</link>
+      <description>A Lightweight Twitter Client for Mac OSX in Cocoa.</description>
       <language>en</language>
 	<item>
 	    <title>Tototl 1.2</title>
@@ -22,10 +22,6 @@
 	               sparkle:dsaSignature="MC0CFQCKrhAhwXqU14arVJmsZiO2s54T8QIUPx8bh2K+Kx3C1dDHFzlYmUBBANY="
 	               length="705669"
 	               type="application/zip" />
-	</item
-
-
+	</item>
    </channel>
 </rss>
-
-705669
