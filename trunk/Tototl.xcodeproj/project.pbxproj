@@ -42,6 +42,8 @@
 		22AEC3A70EDB7413000D0605 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AEC3A60EDB7413000D0605 /* Growl.framework */; };
 		22AEC3B10EDB7422000D0605 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 22AEC3A60EDB7413000D0605 /* Growl.framework */; };
 		22AEC3BD0EDB743F000D0605 /* GrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC3BC0EDB743F000D0605 /* GrowlController.m */; };
+		22E5E1A10EEEE7B90087FD22 /* AutoHyperlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */; };
+		22E5E1A90EEEE7BC0087FD22 /* AutoHyperlinks.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */; };
 		22F26D050EEDBD3500B9B890 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F26CF00EEDBD3400B9B890 /* PreferencesWindowController.m */; };
 		22F26D060EEDBD3500B9B890 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F26CF10EEDBD3500B9B890 /* PreferencesWindow.xib */; };
 		22F26D210EEDBF8D00B9B890 /* t.icns in Resources */ = {isa = PBXBuildFile; fileRef = 22F26D200EEDBF8D00B9B890 /* t.icns */; };
@@ -64,6 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				22E5E1A90EEEE7BC0087FD22 /* AutoHyperlinks.framework in Copy Frameworks */,
 				224FCB630EE4D35C0058F13F /* Sparkle.framework in Copy Frameworks */,
 				22AEC3B10EDB7422000D0605 /* Growl.framework in Copy Frameworks */,
 			);
@@ -137,6 +140,7 @@
 		22AEC3A60EDB7413000D0605 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		22AEC3BB0EDB743F000D0605 /* GrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlController.h; sourceTree = "<group>"; };
 		22AEC3BC0EDB743F000D0605 /* GrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlController.m; sourceTree = "<group>"; };
+		22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
 		22F26CEF0EEDBD3400B9B890 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
 		22F26CF00EEDBD3400B9B890 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
 		22F26CF10EEDBD3500B9B890 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 				22AEC3550EDB70F9000D0605 /* libxml2.dylib in Frameworks */,
 				22AEC3A70EDB7413000D0605 /* Growl.framework in Frameworks */,
 				224FCB600EE4D3580058F13F /* Sparkle.framework in Frameworks */,
+				22E5E1A10EEEE7B90087FD22 /* AutoHyperlinks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +203,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */,
 				224FCB5F0EE4D3580058F13F /* Sparkle.framework */,
 				22AEC3A60EDB7413000D0605 /* Growl.framework */,
 				22AEC3540EDB70F9000D0605 /* libxml2.dylib */,

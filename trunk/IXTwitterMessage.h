@@ -14,6 +14,7 @@
 	NSData *picture_data;
 	NSString *name;
 	NSString *message;
+	NSAttributedString *attributedMessage;
 	NSString *twitterId;
 	NSDate *date;
 }
@@ -22,6 +23,7 @@
 @property (copy, readwrite)	NSData *picture_data;
 @property (copy, readwrite) NSString *name;
 @property (copy, readwrite) NSString *message;
+@property (copy, readwrite) NSAttributedString *attributedMessage;
 @property (copy, readwrite) NSString *twitterId;
 @property (copy, readwrite) NSDate *date;
 

@@ -7,11 +7,11 @@
 //
 
 #import "IXTwitterMessage.h"
-
+#import "AutoHyperlinks.h"
 
 @implementation IXTwitterMessage
 
-@synthesize picture, picture_data, name, message, twitterId, date;
+@synthesize picture, picture_data, name, message, attributedMessage, twitterId, date;
 
 -(void)setPictureUsingUrl:(NSString *)url{
 	NSImage *profile_image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
@@ -23,4 +23,18 @@
 	NSString *desc = [NSString stringWithFormat:@"Id: %@, by: %@, Message %@", twitterId, name, message];
 	return desc;
 }
+- (void)setMessage:(NSString *)value {
+    if (message != value) {
+        [message release];
+        message = [value copy];
+
+		AHHyperlinkScanner *hlscan = [AHHyperlinkScanner hyperlinkScannerWithString:value];
+		
+		NSAttributedString *newText = [hlscan linkifiedString];
+		[self setAttributedMessage:newText];
+
+    }
+}
+
+
 @end

@@ -8,6 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="50"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -46,6 +47,7 @@
 					<string>name</string>
 					<string>picture_data</string>
 					<string>date</string>
+					<string>attributedMessage</string>
 				</object>
 				<string key="NSObjectClassName">IXTwitterMessage</string>
 				<bool key="NSEditable">YES</bool>
@@ -66,7 +68,7 @@
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="658265023">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -293,6 +295,7 @@
 									</object>
 									<string key="NSFrame">{{1, 17}, {655, 370}}</string>
 									<reference key="NSSuperview" ref="880954751"/>
+									<reference key="NSNextKeyView" ref="1039193928"/>
 									<reference key="NSDocView" ref="1039193928"/>
 									<reference key="NSBGColor" ref="821213844"/>
 									<int key="NScvFlags">4</int>
@@ -326,6 +329,7 @@
 									</object>
 									<string key="NSFrame">{{1, 0}, {655, 17}}</string>
 									<reference key="NSSuperview" ref="880954751"/>
+									<reference key="NSNextKeyView" ref="692097775"/>
 									<reference key="NSDocView" ref="692097775"/>
 									<reference key="NSBGColor" ref="821213844"/>
 									<int key="NScvFlags">4</int>
@@ -334,6 +338,7 @@
 							</object>
 							<string key="NSFrame">{{-1, -1}, {657, 388}}</string>
 							<reference key="NSSuperview" ref="658265023"/>
+							<reference key="NSNextKeyView" ref="723226062"/>
 							<int key="NSsFlags">562</int>
 							<reference key="NSVScroller" ref="491659838"/>
 							<reference key="NSHScroller" ref="88895647"/>
@@ -534,6 +539,7 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{655, 417}</string>
+					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -1079,26 +1085,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: arrangedObjects.message</string>
-						<reference key="source" ref="783899032"/>
-						<reference key="destination" ref="876505654"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="783899032"/>
-							<reference key="NSDestination" ref="876505654"/>
-							<string key="NSLabel">value: arrangedObjects.message</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">arrangedObjects.message</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSConditionallySetsEditable</string>
-								<integer value="0" key="NS.object.0" id="6"/>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">162</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: arrangedObjects.date</string>
 						<reference key="source" ref="224674837"/>
 						<reference key="destination" ref="876505654"/>
@@ -1110,7 +1096,7 @@
 							<string key="NSKeyPath">arrangedObjects.date</string>
 							<object class="NSDictionary" key="NSOptions">
 								<string key="NS.key.0">NSConditionallySetsEditable</string>
-								<reference key="NS.object.0" ref="6"/>
+								<reference key="NS.object.0" ref="8"/>
 							</object>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
@@ -1130,12 +1116,28 @@
 							<string key="NSKeyPath">arrangedObjects.name</string>
 							<object class="NSDictionary" key="NSOptions">
 								<string key="NS.key.0">NSConditionallySetsEditable</string>
-								<reference key="NS.object.0" ref="6"/>
+								<reference key="NS.object.0" ref="8"/>
 							</object>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
 					<int key="connectionID">164</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: arrangedObjects.attributedMessage</string>
+						<reference key="source" ref="783899032"/>
+						<reference key="destination" ref="876505654"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="783899032"/>
+							<reference key="NSDestination" ref="876505654"/>
+							<string key="NSLabel">value: arrangedObjects.attributedMessage</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">arrangedObjects.attributedMessage</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">165</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1749,7 +1751,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">164</int>
+			<int key="maxID">165</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

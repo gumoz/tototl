@@ -146,6 +146,7 @@
 								   priority:0
 								   isSticky:NO
 							   clickContext:title];
+	
 }
 - (IBAction) growlIt:(id)sender {
 	[self growl];

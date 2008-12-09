@@ -9,6 +9,7 @@
 #import "IxayaTwitterWindowController.h"
 #import "IXTwitterCredentials.h"
 #import "IXTwitterMessage.h"
+#import <AutoHyperlinks/AutoHyperlinks.h>
 
 
 @implementation IxayaTwitterWindowController
