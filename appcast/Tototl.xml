@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
-   <channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>Tototl</title>
+    <link>http://tototl.googlecode.com/files/</link>
+    <description>A Lightweight Twitter Client for Mac OSX in Cocoa.</description>
+    <generator>Feeder 1.5.7(628) http://reinventedsoftware.com/feeder/</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <language>en</language>
+    <pubDate>Mon, 08 Dec 2008 18:19:30 -0600</pubDate>
+    <lastBuildDate>Mon, 08 Dec 2008 16:07:30 -0600</lastBuildDate>
+    <image>
+      <url>http://tototl.googlecode.com/files/t144.jpg</url>
       <title>Tototl</title>
-      <link>http://tototl.googlecode.com/</link>
-      <description>A Lightweight Twitter Client for Mac OSX in Cocoa.</description>
-      <language>en</language>
-	<item>
-	    <title>Tototl 1.2</title>
-		      <description><![CDATA[<h2>Tototl 1.2.2</h2>
+      <link>http://tototl.googlecode.com/files/</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    <atom:link href="http://code.google.com/p/tototl/source/browse/appcast/Tototl.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Tototl 1.2.2</title>
+      <description><![CDATA[<h2>Tototl 1.2.2</h2>
 
-		<h3> New in this version </h3>
+<h3> New in this version </h3>
 
-		<ul>
-		<li>Update Frequency is now configurable (default 120 seconds)</li>
+<ul>
+<li>Update Frequency is now configurable (default 120 seconds)</li>
 
-		<li>New Application Icon</li>
-		</ul>]]></description>
-	    <pubDate>Mon, 08 Jan 2008 17:57:11 +0000</pubDate>
-	    <enclosure url="http://tototl.googlecode.com/files/Tototl_1.2.2.zip"
-	               sparkle:version="1.2.2"
-	               sparkle:dsaSignature="MC0CFQCKrhAhwXqU14arVJmsZiO2s54T8QIUPx8bh2K+Kx3C1dDHFzlYmUBBANY="
-	               length="705669"
-	               type="application/zip" />
-	</item>
-   </channel>
+<li>New Application Icon</li>
+</ul>]]></description>
+      <pubDate>Mon, 08 Dec 2008 18:19:30 -0600</pubDate>
+      <enclosure url="http://tototl.googlecode.com/files/Tototl_1.2.2.zip" length="705656" type="application/zip" sparkle:version="1.2.2" sparkle:dsaSignature="MCwCFAEh7irZEquNITZf0hHdQbx5VMdMAhQcDoRwNkrJt9UuQC7tFIELGQ39eg==" sparkle:md5Sum="3cf35127c14c7f37095d2b84429e03bc"/>
+      <guid isPermaLink="false">tototl-122</guid>
+    </item>
+  </channel>
 </rss>
