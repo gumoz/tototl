@@ -18,7 +18,7 @@ Here is the list of every wish surrounding the application
   * Save my password in Keychain
   * Use CoreData for saving a cache of messages
   * History / History Search
-  * Search Twitter Messages
+  * ~~Search Twitter Messages~~
   * New Icon for Application
   * Search bar, to look for something in a message.
   * Open the user twitter page http://twitter.com/user when you click on his messages in the tototl window or in the growl alert.
