@@ -30,7 +30,7 @@ Mektor's Whishlist
 
 MacBuddysupport's Whishlist
 
-  * ~~ HUD ~~ (Fixed in SVN)
+ * ~~ HUD ~~ (Fixed in SVN)
  * ~~Character counting (140).~~ (Fixed in SVN)
  * TwitPic
  * TinyURL Support
