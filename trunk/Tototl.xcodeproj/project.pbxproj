@@ -13,6 +13,13 @@
 		224FCA0C0EE4C2360058F13F /* TototlStatusItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224FCA0B0EE4C2360058F13F /* TototlStatusItemView.xib */; };
 		224FCB600EE4D3580058F13F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224FCB5F0EE4D3580058F13F /* Sparkle.framework */; };
 		224FCB630EE4D35C0058F13F /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 224FCB5F0EE4D3580058F13F /* Sparkle.framework */; };
+		2295ECFC0EEF8772001E0403 /* SoftwareUpdate.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2295ECFA0EEF8772001E0403 /* SoftwareUpdate.icns */; };
+		2295ECFD0EEF8772001E0403 /* Update.png in Resources */ = {isa = PBXBuildFile; fileRef = 2295ECFB0EEF8772001E0403 /* Update.png */; };
+		2295ED480EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2295ED470EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib */; };
+		2295EDBA0EF06B45001E0403 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */; };
+		2295EDD80EF06B4B001E0403 /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */; };
+		2295EDEF0EF06E74001E0403 /* blkContextButtonSelected.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2295EDED0EF06E74001E0403 /* blkContextButtonSelected.tiff */; };
+		2295EDF00EF06E74001E0403 /* blkContextButton.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2295EDEE0EF06E74001E0403 /* blkContextButton.tiff */; };
 		229BB8930EE0C37C00CE8C25 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 229BB8920EE0C37C00CE8C25 /* MAAttachedWindow.m */; };
 		229BB8AD0EE0C43B00CE8C25 /* NewTwitterPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229BB8AA0EE0C43B00CE8C25 /* NewTwitterPostView.xib */; };
 		229BB8AE0EE0C43B00CE8C25 /* NewTwitterPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229BB8AB0EE0C43B00CE8C25 /* NewTwitterPostViewController.m */; };
@@ -44,6 +51,9 @@
 		22AEC3BD0EDB743F000D0605 /* GrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC3BC0EDB743F000D0605 /* GrowlController.m */; };
 		22E5E1A10EEEE7B90087FD22 /* AutoHyperlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */; };
 		22E5E1A90EEEE7BC0087FD22 /* AutoHyperlinks.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */; };
+		22E5E25E0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E5E25D0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib */; };
+		22E5E27E0EEF0DA10087FD22 /* RBSplitView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E27D0EEF0DA10087FD22 /* RBSplitView.framework */; };
+		22E5E2840EEF0DA50087FD22 /* RBSplitView.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E27D0EEF0DA10087FD22 /* RBSplitView.framework */; };
 		22F26D050EEDBD3500B9B890 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F26CF00EEDBD3400B9B890 /* PreferencesWindowController.m */; };
 		22F26D060EEDBD3500B9B890 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F26CF10EEDBD3500B9B890 /* PreferencesWindow.xib */; };
 		22F26D210EEDBF8D00B9B890 /* t.icns in Resources */ = {isa = PBXBuildFile; fileRef = 22F26D200EEDBF8D00B9B890 /* t.icns */; };
@@ -66,6 +76,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2295EDD80EF06B4B001E0403 /* BGHUDAppKit.framework in Copy Frameworks */,
+				22E5E2840EEF0DA50087FD22 /* RBSplitView.framework in Copy Frameworks */,
 				22E5E1A90EEEE7BC0087FD22 /* AutoHyperlinks.framework in Copy Frameworks */,
 				224FCB630EE4D35C0058F13F /* Sparkle.framework in Copy Frameworks */,
 				22AEC3B10EDB7422000D0605 /* Growl.framework in Copy Frameworks */,
@@ -86,6 +98,12 @@
 		224FCA090EE4C1ED0058F13F /* TototlStatusItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TototlStatusItemViewController.m; sourceTree = "<group>"; };
 		224FCA0B0EE4C2360058F13F /* TototlStatusItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TototlStatusItemView.xib; sourceTree = "<group>"; };
 		224FCB5F0EE4D3580058F13F /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		2295ECFA0EEF8772001E0403 /* SoftwareUpdate.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SoftwareUpdate.icns; sourceTree = "<group>"; };
+		2295ECFB0EEF8772001E0403 /* Update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Update.png; sourceTree = "<group>"; };
+		2295ED470EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindowTiny.xib; sourceTree = "<group>"; };
+		2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
+		2295EDED0EF06E74001E0403 /* blkContextButtonSelected.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = blkContextButtonSelected.tiff; sourceTree = "<group>"; };
+		2295EDEE0EF06E74001E0403 /* blkContextButton.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = blkContextButton.tiff; sourceTree = "<group>"; };
 		229BB8910EE0C37C00CE8C25 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		229BB8920EE0C37C00CE8C25 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
 		229BB8AA0EE0C43B00CE8C25 /* NewTwitterPostView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTwitterPostView.xib; sourceTree = "<group>"; };
@@ -141,6 +159,8 @@
 		22AEC3BB0EDB743F000D0605 /* GrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlController.h; sourceTree = "<group>"; };
 		22AEC3BC0EDB743F000D0605 /* GrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlController.m; sourceTree = "<group>"; };
 		22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
+		22E5E25D0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindowOld.xib; sourceTree = "<group>"; };
+		22E5E27D0EEF0DA10087FD22 /* RBSplitView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RBSplitView.framework; sourceTree = "<group>"; };
 		22F26CEF0EEDBD3400B9B890 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
 		22F26CF00EEDBD3400B9B890 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
 		22F26CF10EEDBD3500B9B890 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
@@ -170,6 +190,8 @@
 				22AEC3A70EDB7413000D0605 /* Growl.framework in Frameworks */,
 				224FCB600EE4D3580058F13F /* Sparkle.framework in Frameworks */,
 				22E5E1A10EEEE7B90087FD22 /* AutoHyperlinks.framework in Frameworks */,
+				22E5E27E0EEF0DA10087FD22 /* RBSplitView.framework in Frameworks */,
+				2295EDBA0EF06B45001E0403 /* BGHUDAppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +225,8 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */,
+				22E5E27D0EEF0DA10087FD22 /* RBSplitView.framework */,
 				22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */,
 				224FCB5F0EE4D3580058F13F /* Sparkle.framework */,
 				22AEC3A60EDB7413000D0605 /* Growl.framework */,
@@ -342,9 +366,11 @@
 		22AEC33A0EDB7052000D0605 /* IxayaTwitterWindow */ = {
 			isa = PBXGroup;
 			children = (
+				2295ED470EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib */,
+				22AEC33D0EDB7052000D0605 /* IxayaTwitterWindow.xib */,
+				22E5E25D0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib */,
 				22AEC33B0EDB7052000D0605 /* IxayaTwitterWindowController.h */,
 				22AEC33C0EDB7052000D0605 /* IxayaTwitterWindowController.m */,
-				22AEC33D0EDB7052000D0605 /* IxayaTwitterWindow.xib */,
 			);
 			name = IxayaTwitterWindow;
 			sourceTree = "<group>";
@@ -392,6 +418,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2295EDED0EF06E74001E0403 /* blkContextButtonSelected.tiff */,
+				2295EDEE0EF06E74001E0403 /* blkContextButton.tiff */,
+				2295ECFA0EEF8772001E0403 /* SoftwareUpdate.icns */,
+				2295ECFB0EEF8772001E0403 /* Update.png */,
 				22F26DC20EEDF66500B9B890 /* TinyLock.tiff */,
 				22F26D440EEDD6DD00B9B890 /* dsa_pub.pem */,
 				22F26D3E0EEDCA3200B9B890 /* iusethis12.png */,
@@ -477,6 +507,12 @@
 				22F26D3F0EEDCA3200B9B890 /* iusethis12.png in Resources */,
 				22F26D450EEDD6DD00B9B890 /* dsa_pub.pem in Resources */,
 				22F26DC30EEDF66500B9B890 /* TinyLock.tiff in Resources */,
+				22E5E25E0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib in Resources */,
+				2295ECFC0EEF8772001E0403 /* SoftwareUpdate.icns in Resources */,
+				2295ECFD0EEF8772001E0403 /* Update.png in Resources */,
+				2295ED480EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib in Resources */,
+				2295EDEF0EF06E74001E0403 /* blkContextButtonSelected.tiff in Resources */,
+				2295EDF00EF06E74001E0403 /* blkContextButton.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,11 +29,19 @@ enum
 
 		growlController = [[NSApp delegate] performSelector:@selector(growlController)];
 		defaults = [[NSUserDefaults alloc] init];
+		
 		BOOL old =  [defaults boolForKey:@"oldInterface"];
+		BOOL tiny =  [defaults boolForKey:@"tinyInterface"];
 		if(old)
 			[self initWithWindowNibName:@"IxayaTwitterWindowOld"];
 		else
-			[self initWithWindowNibName:@"IxayaTwitterWindow"];
+		{
+			if(tiny)
+				[self initWithWindowNibName:@"IxayaTwitterWindowTiny"];
+			else
+				[self initWithWindowNibName:@"IxayaTwitterWindow"];
+		}
+			
 		twitts = [[NSArray alloc] init];
 		connected = [NSNumber numberWithBool:NO];
 		launching = YES;
@@ -198,7 +206,7 @@ enum
 	}
 }
 
-
+// need to be fixed
 - (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier
 {
 	if([messages count] > 0)

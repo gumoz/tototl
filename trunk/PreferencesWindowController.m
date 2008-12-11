@@ -10,14 +10,16 @@
 
 @implementation PreferencesWindowController
 
+@synthesize twitterEngine;
+
 -(id)init {
     self = [super initWithWindowNibName:@"PreferencesWindow"];
     return self;
 }
 
 - (void)awakeFromNib{
-    [[self window] setContentSize:[twitterView frame].size];
-    [[[self window] contentView] addSubview:twitterView];
+    [[self window] setContentSize:[profileView frame].size];
+    [[[self window] contentView] addSubview:profileView];
     [[[self window] contentView] setWantsLayer:YES];
 }
 -(NSRect)newFrameForNewContentView:(NSView *)view {
@@ -36,9 +38,11 @@
 -(NSView *)viewForTag:(int)tag {
     NSView *view = nil;
     switch(tag) {
-		case 0: view = twitterView; break;
-		case 1: default: view = tototlView; break;
-		case 2: view = aboutView; break;
+		case 0: view = profileView; break;
+		case 1: default: view = twitterView; break;
+		case 2: view = tototlView; break;
+		case 3: view = updatesView; break;
+		case 4: view = aboutView; break;			
     }
     return view;
 }
@@ -70,11 +74,25 @@
 	[[NSApp delegate] performSelector:@selector(checkForUpdates:) withObject:self];
 }
 -(IBAction)openIUseThis:(id)sender{
-	
 	NSWorkspace * ws = [NSWorkspace sharedWorkspace];
 	[ws openURL: [NSURL URLWithString: @"http://osx.iusethis.com/app/tototl/"]];
-	
- 
 
+}
+-(IBAction)openDonate:(id)sender{
+	NSWorkspace * ws = [NSWorkspace sharedWorkspace];
+	[ws openURL: [NSURL URLWithString: @"http://www.dreamhost.com/donate.cgi?id=10693"]];
+}
+-(IBAction)setProfile:(id)sender{
+
+//	[[segmentedControl selectedSegment] tag];
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+	NSString *location = [defaults objectForKey:@"location"];
+	NSString *method = [defaults objectForKey:@"deliveryMethod"];
+	if(location)
+		[twitterEngine setLocation:location];
+	
+	NSLog(@"method %@", method);
+	if(method)
+		[twitterEngine setNotificationsDeliveryMethod:method];
 }
 @end
