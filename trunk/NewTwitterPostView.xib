@@ -60,7 +60,7 @@
 					<object class="NSButton" id="845476232">
 						<reference key="NSNextResponder" ref="902954372"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{418, 6}, {84, 19}}</string>
+						<string key="NSFrame">{{418, 5}, {84, 19}}</string>
 						<reference key="NSSuperview" ref="902954372"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="BGHUDButtonCell" key="NSCell" id="148700486">
@@ -147,6 +147,22 @@
 						<reference key="destination" ref="168587685"/>
 					</object>
 					<int key="connectionID">54</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">enabled: connected</string>
+						<reference key="source" ref="845476232"/>
+						<reference key="destination" ref="1001"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="845476232"/>
+							<reference key="NSDestination" ref="1001"/>
+							<string key="NSLabel">enabled: connected</string>
+							<string key="NSBinding">enabled</string>
+							<string key="NSKeyPath">connected</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">55</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -286,7 +302,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">54</int>
+			<int key="maxID">55</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

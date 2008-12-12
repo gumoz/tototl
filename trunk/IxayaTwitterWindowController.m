@@ -109,18 +109,30 @@ enum
 	[self endSheet:sender];
 }
 -(IBAction)postTweet:(id)sender{
-	NSString *message = [newTweetMessage stringValue];
-	NSLog(@"message %@", message);
-	if([message length] > 140)
+	if([connected boolValue]) 
 	{
-		NSLog(@"longer");
-		NSImage *t = [NSImage imageNamed:@"t"];
-		[growlController growl:@"Unable to post to twitter, message is longer than 140 Chars" withTitle:@"Post Error" andIcon:[t TIFFRepresentation]];
+		NSString *message = [newTweetMessage stringValue];
+		NSLog(@"message %@", message);
+		if([message length] > 140)
+		{
+			NSLog(@"longer");
+			NSImage *t = [NSImage imageNamed:@"t"];
+			[growlController growl:@"Unable to post to twitter, message is longer than 140 Chars" withTitle:@"Post Error" andIcon:[t TIFFRepresentation]];
+		} else {
+			NSLog(@"shorter");
+			[twitterEngine sendUpdate:message];	
+			[newTweetMessage setStringValue:@""];
+			[self endSheet:sender];
+
+			BOOL soundEnabled = [defaults boolForKey:@"sentMessageSound"];
+			if(soundEnabled)
+			{
+				NSSound *sound = [NSSound soundNamed:@"SentMessage"];
+				[sound play];
+			}
+		}
 	} else {
-		NSLog(@"shorter");
-		[twitterEngine sendUpdate:message];	
-		[newTweetMessage setStringValue:@""];
-		[self endSheet:sender];
+		[growlController growl:@"try connecting before posting" withTitle:@"Not Connected to Twitter"];
 	}
 }
 #pragma mark IXSheetWindowController implementation
@@ -148,7 +160,9 @@ enum
     NSLog(@"Request succeeded (%@)", requestIdentifier);
 	if([connected boolValue] == NO)
 	{
-		[self setConnected:[NSNumber numberWithBool:YES]];
+		NSNumber *connectedNumber = [NSNumber numberWithBool:YES];
+		[self setConnected:connectedNumber];
+		[[NSApp delegate] setConnected:connectedNumber];
 		[statusItem setImage:[NSImage imageNamed:@"available.png"]];
 	}
 }
@@ -190,9 +204,19 @@ enum
 			[message setDate:created];
 			[newTweets addObject:[message retain]];
 			
+			// we check if the software is not fetching messages because is launching, if not then we post notifications to Growl and send a custom sound
 			if(!launching)
+			{
 				[growlController growl:text withTitle:name andIcon:[message picture_data]];
-			
+
+				BOOL soundEnabled = [defaults boolForKey:@"receivedMessageSound"];
+				if(soundEnabled)
+				{
+					NSSound *sound = [NSSound soundNamed:@"ReceivedMessage"];
+					[sound play];
+				}
+					
+			}
 		}
 		
 		if(launching)
@@ -233,8 +257,20 @@ enum
 			[newTweets addObject:[message retain]];
 			
 			
-//			if(!launching)
-			[growlController growl:text withTitle:name andIcon:[message picture_data] isSticky:YES];
+			// we check if the software is not fetching messages because is launching, if not then we post notifications to Growl and send a custom sound
+			if(!launching)
+			{
+				[growlController growl:text withTitle:name andIcon:[message picture_data] isSticky:YES];
+				
+				BOOL soundEnabled = [defaults boolForKey:@"receivedDirectMessageSound"];
+				if(soundEnabled)
+				{
+					NSSound *sound = [NSSound soundNamed:@"ReceivedDirectMessage"];
+					[sound play];
+				}
+				
+			}
+			
 			
 		}
 		NSMutableArray *tmpArray = [NSMutableArray arrayWithArray:newTweets];
@@ -262,8 +298,8 @@ enum
     NSLog(@"Got an image: %@", image);
     
     // Save image to the Desktop.
-//    NSString *path = [[NSString stringWithFormat:@"~/Desktop/%@.tiff", identifier] stringByExpandingTildeInPath];
-//    [[image TIFFRepresentation] writeToFile:path atomically:NO];
+	//    NSString *path = [[NSString stringWithFormat:@"~/Desktop/%@.tiff", identifier] stringByExpandingTildeInPath];
+	//    [[image TIFFRepresentation] writeToFile:path atomically:NO];
 }
 -(void)update{
 	NSString *username = [[credentials content] username];

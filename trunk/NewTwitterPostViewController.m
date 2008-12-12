@@ -11,7 +11,7 @@
 
 @implementation NewTwitterPostViewController
 
-@synthesize delegate, twitterEngine, growlController;
+@synthesize delegate, twitterEngine, growlController, connected;
 
 - (id) init
 {
@@ -37,7 +37,14 @@
 		NSImage *t = [NSImage imageNamed:@"t"];
 		[growlController growl:@"Unable to post to twitter, message is longer than 140 Chars" withTitle:@"Post Error" andIcon:[t TIFFRepresentation]];
 	} else {
-		[twitterEngine sendUpdate:msj];	
+		[twitterEngine sendUpdate:msj];
+		
+		BOOL soundEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:@"sentMessageSound"];
+		if(soundEnabled)
+		{
+			NSSound *sound = [NSSound soundNamed:@"SentMessage"];
+			[sound play];
+		}
 		[delegate performSelector:@selector(dettachTwitterPost)];	
 	}
 }

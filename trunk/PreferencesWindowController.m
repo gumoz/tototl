@@ -14,6 +14,7 @@
 
 -(id)init {
     self = [super initWithWindowNibName:@"PreferencesWindow"];
+	deliveryMethods = [NSArray arrayWithObjects:@"none", @"im", @"sms", nil];
     return self;
 }
 
@@ -41,8 +42,9 @@
 		case 0: view = profileView; break;
 		case 1: default: view = twitterView; break;
 		case 2: view = tototlView; break;
-		case 3: view = updatesView; break;
-		case 4: view = aboutView; break;			
+		case 3: view = interfaceView; break;
+		case 4: view = updatesView; break;
+		case 5: view = aboutView; break;			
     }
     return view;
 }

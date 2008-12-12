@@ -12,7 +12,7 @@
 
 @implementation AppController
 
-@synthesize growlController;
+@synthesize growlController, connected;
 - (id) init
 {
 	self = [super init];
@@ -20,6 +20,7 @@
 		shown = NO;
 		// Create a TwitterEngine
 		growlController = [[GrowlController alloc] init];
+		connected = [NSNumber numberWithBool:NO];
 	}
 	return self;
 }
@@ -30,7 +31,6 @@
 	[ixayaTwitterController setTwitterEngine:twitterEngine];
 	[ixayaTwitterController setGrowlController:growlController];
 
-	// Create an NSStatusItem.
 	// Create an NSStatusItem.
     float width = 30.0;
     float height = [[NSStatusBar systemStatusBar] thickness];
@@ -112,13 +112,14 @@
 }
 - (void)toggleNewTwitterPost:(NSPoint)point{
 
+
 	
 	// Attach/detach window.
 	if (!newTwitterPostWindow) {
-		
 		NewTwitterPostViewController *newView = [[NewTwitterPostViewController alloc] init];
 		[newView setTwitterEngine:twitterEngine];
 		[newView setDelegate:self];
+		[newView setConnected:connected];
 		
 		newTwitterPostWindow = [[MAAttachedWindow alloc] initWithView:[newView view] 
 												attachedToPoint:point 
@@ -126,8 +127,7 @@
 														 onSide:MAPositionBottom 
 													 atDistance:5.0];
 		
-//		[textField setTextColor:[newTwitterPostWindow borderColor]];
-//		[textField setStringValue:@"Your text goes here..."];
+		[newTwitterPostWindow setBackgroundColor:[NSColor purpleColor]];
 		[newTwitterPostWindow makeKeyAndOrderFront:self];
 		[newTwitterPostWindow orderFrontRegardless];
 	} else {
@@ -135,5 +135,6 @@
 		[newTwitterPostWindow release];
 		newTwitterPostWindow = nil;
 	}    
+
 }
 @end

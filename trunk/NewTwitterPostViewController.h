@@ -16,7 +16,9 @@
 	IBOutlet NSTextField *message;
 	MGTwitterEngine *twitterEngine;
 	GrowlController *growlController;
+	NSNumber *connected;
 }
+@property (copy, readwrite) NSNumber *connected;
 @property (retain, readwrite) GrowlController *growlController;
 @property (retain, readwrite) id delegate;
 @property (retain, readwrite) MGTwitterEngine *twitterEngine;

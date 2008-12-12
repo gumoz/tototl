@@ -14,11 +14,13 @@
 	IBOutlet id profileView;
 	IBOutlet id twitterView;
 	IBOutlet id tototlView;
+	IBOutlet id interfaceView;
 	IBOutlet id updatesView;
 	IBOutlet id aboutView;
     int currentViewTag;
 	MGTwitterEngine *twitterEngine;
 	IBOutlet id segmentedControl;
+	NSArray *deliveryMethods;
 }
 @property (retain, readwrite) MGTwitterEngine *twitterEngine;
 -(NSRect)newFrameForNewContentView:(NSView *)view;

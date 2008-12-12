@@ -27,7 +27,9 @@
 	IBOutlet NSMenu *barMenu; 
 	int tag;
 	BOOL shown;
+	NSNumber *connected;
 }
+@property (copy, readwrite) NSNumber *connected;
 @property (retain, readwrite) GrowlController *growlController;
 - (NSMenu *)barMenu;
 
