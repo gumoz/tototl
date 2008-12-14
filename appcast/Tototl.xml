@@ -7,7 +7,7 @@
     <generator>Feeder 1.5.7(628) http://reinventedsoftware.com/feeder/</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
-    <pubDate>Sun, 14 Dec 2008 02:13:09 -0600</pubDate>
+    <pubDate>Sun, 14 Dec 2008 02:22:21 -0600</pubDate>
     <lastBuildDate>Mon, 08 Dec 2008 16:07:30 -0600</lastBuildDate>
     <image>
       <url>http://tototl.googlecode.com/files/t144.jpg</url>
@@ -37,7 +37,8 @@
 <li>Configurable sounds</li>
 
 <li>New message color configuration</li>
-<li>Real-Time character counting</li>
+
+<li>Real-Time character counting (MacBuddysupport Request)</li>
 
 <p><b>Preferences</b></p>
 
@@ -45,7 +46,7 @@
 
 <li>Highly configurable update preferences</li>
 </ul>]]></description>
-      <pubDate>Sun, 14 Dec 2008 02:13:09 -0600</pubDate>
+      <pubDate>Sun, 14 Dec 2008 02:22:21 -0600</pubDate>
       <enclosure url="http://tototl.googlecode.com/files/Tototl_1.4.zip" length="1359068" type="application/zip" sparkle:version="1.4" sparkle:dsaSignature="MCwCFHaBSby2lT8LRK/gFf3EXwaDSQZTAhRkPgb4sQlDYPW0Ns7uIMdhq+RIrA==" sparkle:md5Sum="6cc0f12d5996659c22e1e32c03e4e138"/>
       <guid isPermaLink="false">tototl-14</guid>
     </item>
