@@ -8,7 +8,6 @@
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="305"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -99,7 +98,7 @@
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<string key="NSWindowContentMinSize">{289, 136}</string>
 				<object class="NSView" key="NSWindowView" id="544050234">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -310,7 +309,7 @@
 									<reference key="NSBGColor" ref="542603311"/>
 									<int key="NScvFlags">2</int>
 								</object>
-								<object class="BGHUDScroller" id="399725766">
+								<object class="BGHUDScroller" id="472850197">
 									<reference key="NSNextResponder" ref="308043032"/>
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrameSize">{0, 0}</string>
@@ -319,7 +318,7 @@
 									<string key="NSAction">_doScroller:</string>
 									<string key="themeKey">gradientTheme</string>
 								</object>
-								<object class="BGHUDScroller" id="205249158">
+								<object class="BGHUDScroller" id="915709722">
 									<reference key="NSNextResponder" ref="308043032"/>
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrameSize">{0, 0}</string>
@@ -333,8 +332,8 @@
 							<reference key="NSSuperview" ref="544050234"/>
 							<reference key="NSNextKeyView" ref="1053801682"/>
 							<int key="NSsFlags">562</int>
-							<reference key="NSVScroller" ref="399725766"/>
-							<reference key="NSHScroller" ref="205249158"/>
+							<reference key="NSVScroller" ref="472850197"/>
+							<reference key="NSHScroller" ref="915709722"/>
 							<reference key="NSContentView" ref="1053801682"/>
 							<bytes key="NSScrollAmts">QSAAAEEgAABBmAAAQZgAAA</bytes>
 							<string key="themeKey">gradientTheme</string>
@@ -348,15 +347,19 @@
 							<object class="BGHUDButtonCell" key="NSCell" id="975192596">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">?</string>
+								<string key="NSContents"/>
 								<object class="NSFont" key="NSSupport" id="705297761">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">1.200000e+01</double>
 									<int key="NSfFlags">16</int>
 								</object>
 								<reference key="NSControlView" ref="751218184"/>
-								<int key="NSButtonFlags">-2038152961</int>
+								<int key="NSButtonFlags">-2033958657</int>
 								<int key="NSButtonFlags2">36</int>
+								<object class="NSCustomResource" key="NSNormalImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">action</string>
+								</object>
 								<string key="NSAlternateContents"/>
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">200</int>
@@ -412,7 +415,6 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{289, 136}</string>
-					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMinSize">{289, 155}</string>
@@ -890,8 +892,8 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="581796694"/>
-							<reference ref="399725766"/>
-							<reference ref="205249158"/>
+							<reference ref="472850197"/>
+							<reference ref="915709722"/>
 						</object>
 						<reference key="parent" ref="544050234"/>
 					</object>
@@ -1069,16 +1071,6 @@
 						<reference key="parent" ref="635243088"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">384</int>
-						<reference key="object" ref="399725766"/>
-						<reference key="parent" ref="308043032"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">385</int>
-						<reference key="object" ref="205249158"/>
-						<reference key="parent" ref="308043032"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">337</int>
 						<reference key="object" ref="751218184"/>
 						<object class="NSMutableArray" key="children">
@@ -1091,6 +1083,16 @@
 						<int key="objectID">338</int>
 						<reference key="object" ref="975192596"/>
 						<reference key="parent" ref="751218184"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">394</int>
+						<reference key="object" ref="472850197"/>
+						<reference key="parent" ref="308043032"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">395</int>
+						<reference key="object" ref="915709722"/>
+						<reference key="parent" ref="308043032"/>
 					</object>
 				</object>
 			</object>
@@ -1145,8 +1147,8 @@
 					<string>361.IBPluginDependency</string>
 					<string>370.IBPluginDependency</string>
 					<string>371.IBPluginDependency</string>
-					<string>384.IBShouldRemoveOnLegacySave</string>
-					<string>385.IBShouldRemoveOnLegacySave</string>
+					<string>394.IBShouldRemoveOnLegacySave</string>
+					<string>395.IBShouldRemoveOnLegacySave</string>
 					<string>47.IBPluginDependency</string>
 					<string>49.IBPluginDependency</string>
 				</object>
@@ -1225,7 +1227,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">391</int>
+			<int key="maxID">395</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1282,7 +1284,7 @@
 							<string>configurationButton</string>
 							<string>credentials</string>
 							<string>credentialsWindow</string>
-							<string>newTweetMessage</string>
+							<string>newTweetMessageField</string>
 							<string>twitWindow</string>
 							<string>twittsArrayController</string>
 						</object>

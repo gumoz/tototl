@@ -12,7 +12,7 @@
 @implementation IXTwitterMessage
 
 @synthesize kind;
-@synthesize picture, picture_data, name, message, attributedMessage, twitterId, date;
+@synthesize picture, picture_data, name, message, attributedMessage, twitterId, date, screenName;
 
 enum 
 {

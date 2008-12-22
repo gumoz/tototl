@@ -20,46 +20,67 @@ enum
 	twitterDirectMessage = 1
 };
 
-@synthesize twitts, connected, statusItem, twitterEngine, growlController;
+@synthesize twitts, connected, statusItem, twitterEngine, growlController, newTweetMessage;
 
 - (id) init
 {
 	self = [super init];
 	if (self != nil) {
 
-		growlController = [[NSApp delegate] performSelector:@selector(growlController)];
-		defaults = [[NSUserDefaults alloc] init];
-		
-		BOOL old =  [defaults boolForKey:@"oldInterface"];
-		BOOL tiny =  [defaults boolForKey:@"tinyInterface"];
-		if(old)
-			[self initWithWindowNibName:@"IxayaTwitterWindowOld"];
-		else
-		{
-			if(tiny)
-				[self initWithWindowNibName:@"IxayaTwitterWindowTiny"];
-			else
-				[self initWithWindowNibName:@"IxayaTwitterWindow"];
-		}
+		@try {
+			NSLog(@"IXTWC init");
+			growlController = [[NSApp delegate] performSelector:@selector(growlController)];
+			defaults = [[NSUserDefaults alloc] init];
 			
-		twitts = [[NSArray alloc] init];
-		connected = [NSNumber numberWithBool:NO];
-		launching = YES;
+			BOOL old =  [defaults boolForKey:@"oldInterface"];
+			BOOL tiny =  [defaults boolForKey:@"tinyInterface"];
+			NSLog(@"IXTWC defaults");
+			if(old)
+				[self initWithWindowNibName:@"IxayaTwitterWindowOld"];
+			else
+			{
+				if(tiny)
+					[self initWithWindowNibName:@"IxayaTwitterWindowTiny"];
+				else
+					[self initWithWindowNibName:@"IxayaTwitterWindow"];
+			}
+			NSLog(@"IXTWC twitts");
+			twitts = [[NSArray alloc] init];
+			NSLog(@"IXTWC Connected");
+			connected = [NSNumber numberWithBool:NO];
+			NSLog(@"IXTWC Launching");
+			launching = YES;
+		}
+		@catch (NSException * e) {
+			NSLog(@"initialization Exception %@", e);
+		}
+		@finally {
+			NSLog(@"end initialization");
+		}
+
 	}
 	return self;
 }
 
 -(void)awakeFromNib{
-
-	
-	[[[configurationButton menu] menuRepresentation] setHorizontalEdgePadding:0.0];
-	
-	
-	IXTwitterCredentials *cred = [IXTwitterCredentials new];
-	defaults = [[NSUserDefaults alloc] init];
-	[cred setValue:[defaults valueForKey:@"username"] forKey:@"username"];
-	[cred setValue:[defaults valueForKey:@"password"] forKey:@"password"];
-	[credentials addObject:cred];
+	@try {
+		NSLog(@"IXTWC awakening");
+		[[[configurationButton menu] menuRepresentation] setHorizontalEdgePadding:0.0];
+		NSLog(@"IXTWC DoneMenu, setting credentials");
+		IXTwitterCredentials *cred = [IXTwitterCredentials new];
+		NSLog(@"IXTWC DoneMenu, reading defaults");
+		[cred setValue:[defaults valueForKey:@"username"] forKey:@"username"];
+		[cred setValue:[defaults valueForKey:@"password"] forKey:@"password"];
+		NSLog(@"IXTWC DoneMenu, add credentials object to object controller");
+		[credentials addObject:cred];
+		
+	}
+	@catch (NSException * e) {
+		NSLog(@"awakeFromNib Exception %@", e);
+	}
+	@finally {
+		NSLog(@"end awakening");
+	}
 }
 -(IBAction)configuration:(id)sender{
 //	[[NSApp delegate] performSelector:@selector(checkForUpdates:) withObject:self];
@@ -72,7 +93,8 @@ enum
 	[[NSApp delegate] performSelector:@selector(close:) withObject:self];
 }
 -(IBAction)connect:(id)sender{
-	
+	@try {
+	NSLog(@"IXTWC connecting");
 	// set credentials on engine
 	id someCredentials = [credentials content];	
     [twitterEngine setUsername:[someCredentials username] password:[someCredentials password]];
@@ -106,12 +128,19 @@ enum
 
 //	[twitterEngine setLocation:@"Tototl"];
 	
-	[self endSheet:sender];
+	
+	}
+	@catch (NSException * e) {
+		NSLog(@"Exception %@", [e description]);
+	}
+	@finally {
+		[self endSheet:sender];
+	}
 }
 -(IBAction)postTweet:(id)sender{
 	if([connected boolValue]) 
 	{
-		NSString *message = [newTweetMessage stringValue];
+		NSString *message = [newTweetMessageField stringValue];
 		NSLog(@"message %@", message);
 		if([message length] > 140)
 		{
@@ -121,7 +150,7 @@ enum
 		} else {
 			NSLog(@"shorter");
 			[twitterEngine sendUpdate:message];	
-			[newTweetMessage setStringValue:@""];
+			[newTweetMessageField setStringValue:@""];
 			[self endSheet:sender];
 
 			BOOL soundEnabled = [defaults boolForKey:@"sentMessageSound"];
@@ -164,6 +193,7 @@ enum
 		[self setConnected:connectedNumber];
 		[[NSApp delegate] setConnected:connectedNumber];
 		[statusItem setImage:[NSImage imageNamed:@"available.png"]];
+		[[self window] makeFirstResponder:newTweetMessageField];
 	}
 }
 
@@ -194,7 +224,7 @@ enum
 			NSString *profile_image_url = [status valueForKeyPath:@"user.profile_image_url"];
 			NSString *twitter_id = [status valueForKeyPath:@"id"];
 			NSDate *created = [status valueForKeyPath:@"created_at"];
-
+			NSString *screen_name = [status valueForKeyPath:@"user.screen_name"];
 			IXTwitterMessage *message = [[IXTwitterMessage alloc] init];
 			[message setKind:twitterMessage];
 			[message setName:name];
@@ -202,7 +232,10 @@ enum
 			[message setPictureUsingUrl:profile_image_url];
 			[message setTwitterId:twitter_id];
 			[message setDate:created];
+			[message setScreenName:screen_name];
 			[newTweets addObject:[message retain]];
+
+
 			
 			// we check if the software is not fetching messages because is launching, if not then we post notifications to Growl and send a custom sound
 			if(!launching)
@@ -226,7 +259,8 @@ enum
 		[tmpArray addObjectsFromArray:[self twitts]];
 
 		[self setTwitts:[NSArray arrayWithArray:tmpArray]];
-		NSLog(@"twitts %@", twitts);
+		[twittsArrayController setSelectionIndex:0];
+//		NSLog(@"twitts %@", twitts);
 	}
 }
 
@@ -246,6 +280,7 @@ enum
 			NSString *profile_image_url = [status valueForKeyPath:@"user.profile_image_url"];
 			NSString *twitter_id = [status valueForKeyPath:@"id"];
 			NSDate *created = [status valueForKeyPath:@"created_at"];
+			NSString *screen_name = [status valueForKeyPath:@"user.screen_name"];
 			
 			IXTwitterMessage *message = [[IXTwitterMessage alloc] init];
 			[message setKind:twitterDirectMessage];
@@ -254,6 +289,7 @@ enum
 			[message setPictureUsingUrl:profile_image_url];
 			[message setTwitterId:twitter_id];
 			[message setDate:created];
+			[message setScreenName:screen_name];
 			[newTweets addObject:[message retain]];
 			
 			
@@ -314,5 +350,69 @@ enum
 	
 //	- (NSString *)getFollowedTimelineFor:(NSString *)username sinceID:(int)updateID startingAtPage:(int)pageNum count:(int)count;		// max 200
 
+}
+
+
+#pragma mark character counting
+
+-(void)countMessageLenght{
+	int length = [[newTweetMessageField stringValue] length];
+	if(length > 140)
+		messageCountFontColor = [NSColor redColor];
+	else
+		messageCountFontColor = [NSColor blackColor];
+	
+	
+	[messageCountField setIntValue:length];
+	[messageCountField setTextColor:messageCountFontColor];
+}
+-(void)didChangeValueForKey:(NSString *)key{
+	if([key isEqualToString:@"newTweetMessage"])
+		[self countMessageLenght];
+	
+	[super didChangeValueForKey:key];
+}
+-(IBAction)setResponseUsingButton:(id)sender{
+
+
+	int tag = [sender tag];
+	NSLog(@"sender %@, tag %d", sender, tag);
+	
+	// we check if the tag is equal to a magic number tag (yeah, very obscure technique) 
+	if(tag == 1985)
+	{
+
+
+		NSString *screenName = [sender alternateTitle];
+		
+//		NSLog(@"screenName: %@", screenName);
+		NSString *atName = [NSString stringWithFormat:@"@%@ ", screenName];
+		int atNameLength = [atName length];
+		int newTweetMessageLength = [newTweetMessage length];
+		// we check where to put the message
+		if(newTweetMessageLength > 0)
+		{
+			// we check if we have not put the screenname before
+			if(newTweetMessageLength >= atNameLength)
+			{
+				NSString *ntmss = [newTweetMessage substringWithRange:NSMakeRange(0, atNameLength)];
+				if([ntmss isEqualToString:atName])
+				   return; // we return because we already have the screenName
+			}
+			
+			[self setNewTweetMessage:[NSString stringWithFormat:@"%@%@", atName, newTweetMessage]];
+		}
+		else
+			[self setNewTweetMessage:atName]; // the field is empty, so we fill it with the Name
+
+
+//		[[newTweetMessageField selectedCell] setSelectedRange:NSMakeRange(0, 0)];
+
+		
+		//this are the correct methods but are not correctly implemented fixme
+		//		id tv = [[self window] fieldEditor:NO forObject:newTweetMessageField];
+//		[tv setSelectedRange:setSelectedRange:NSMakeRange(0, 0)];
+		[[self window] makeFirstResponder:newTweetMessageField];
+	}
 }
 @end

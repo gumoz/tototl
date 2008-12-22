@@ -26,12 +26,16 @@
 	NSUserDefaults *defaults;
 	MGTwitterEngine *twitterEngine;
 	NSNumber *connected;
-	IBOutlet NSTextField *newTweetMessage;
+	IBOutlet NSTextField *newTweetMessageField;
+	IBOutlet NSTextField *messageCountField;
+	NSString *newTweetMessage;
+	NSColor *messageCountFontColor;
 	IBOutlet NSButton *configurationButton;
 	GrowlController *growlController;
 	BOOL launching;
 	NSStatusItem *statusItem;
 }
+@property (copy, readwrite) NSString *newTweetMessage;
 @property (retain, readwrite) GrowlController *growlController;
 @property (retain, readwrite) MGTwitterEngine *twitterEngine;
 @property (copy, readwrite) NSArray *twitts;
@@ -42,4 +46,5 @@
 -(IBAction)postTweet:(id)sender;
 -(void)update;
 -(IBAction)close:(id)sender;
+-(IBAction)setResponseUsingButton:(id)sender;
 @end

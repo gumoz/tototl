@@ -10,7 +10,7 @@
 #import "MGTwitterEngine.h"
 
 @interface PreferencesWindowController : NSWindowController {
-	IBOutlet id preferences;
+	IBOutlet NSUserDefaultsController *preferences;
 	IBOutlet id profileView;
 	IBOutlet id twitterView;
 	IBOutlet id tototlView;
@@ -21,6 +21,7 @@
 	MGTwitterEngine *twitterEngine;
 	IBOutlet id segmentedControl;
 	NSArray *deliveryMethods;
+	NSString *deliveryMethod;
 }
 @property (retain, readwrite) MGTwitterEngine *twitterEngine;
 -(NSRect)newFrameForNewContentView:(NSView *)view;
@@ -30,4 +31,5 @@
 -(IBAction)openIUseThis:(id)sender;
 -(IBAction)openDonate:(id)sender;
 -(IBAction)setProfile:(id)sender;
+-(IBAction)resetDefaults:(id)sender;
 @end

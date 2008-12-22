@@ -9,6 +9,7 @@
 #import "AppController.h"
 #import "NewTwitterPostViewController.h"
 #import "TototlStatusItemView.h"
+#import <HDCrashReporter/crashReporter.h>
 
 @implementation AppController
 
@@ -17,6 +18,12 @@
 {
 	self = [super init];
 	if (self != nil) {
+		
+		//submit crash report
+		if ([HDCrashReporter newCrashLogExists])
+			[HDCrashReporter doCrashSubmitting];
+		
+//		self release
 		shown = NO;
 		// Create a TwitterEngine
 		growlController = [[GrowlController alloc] init];
@@ -111,10 +118,8 @@
 	}
 }
 - (void)toggleNewTwitterPost:(NSPoint)point{
-
-
 	
-	// Attach/detach window.
+	// Attach/detach window
 	if (!newTwitterPostWindow) {
 		NewTwitterPostViewController *newView = [[NewTwitterPostViewController alloc] init];
 		[newView setTwitterEngine:twitterEngine];
@@ -127,7 +132,26 @@
 														 onSide:MAPositionBottom 
 													 atDistance:5.0];
 		
-		[newTwitterPostWindow setBackgroundColor:[NSColor purpleColor]];
+		NSData *borderColorData = [[NSUserDefaults standardUserDefaults] objectForKey:@"borderColor"];
+		NSData *backgroundColorData = [[NSUserDefaults standardUserDefaults] objectForKey:@"backgroundColor"];
+		
+		if(borderColorData)
+		{
+			NSKeyedUnarchiver *borderColorUnarchiver = [[NSUnarchiver alloc] initForReadingWithData:borderColorData];	
+			NSColor *borderColor = [borderColorUnarchiver decodeObject];
+			[newTwitterPostWindow setBorderColor:borderColor];		
+			[borderColorUnarchiver release];
+		}
+		
+		if(backgroundColorData)
+		{
+			NSKeyedUnarchiver *backgroundColorUnarchiver = [[NSUnarchiver alloc] initForReadingWithData:backgroundColorData];	
+			NSColor *backgroundColor = [backgroundColorUnarchiver decodeObject];
+			[newTwitterPostWindow setBackgroundColor:backgroundColor];	
+			[backgroundColorUnarchiver release];
+
+		}
+		
 		[newTwitterPostWindow makeKeyAndOrderFront:self];
 		[newTwitterPostWindow orderFrontRegardless];
 	} else {

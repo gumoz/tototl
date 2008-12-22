@@ -15,6 +15,11 @@
 -(id)init {
     self = [super initWithWindowNibName:@"PreferencesWindow"];
 	deliveryMethods = [NSArray arrayWithObjects:@"none", @"im", @"sms", nil];
+	
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+	deliveryMethod = [defaults objectForKey:@"deliveryMethod"];
+	if(deliveryMethod == nil)
+			deliveryMethod = @"none";
     return self;
 }
 
@@ -89,12 +94,22 @@
 //	[[segmentedControl selectedSegment] tag];
 	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
 	NSString *location = [defaults objectForKey:@"location"];
-	NSString *method = [defaults objectForKey:@"deliveryMethod"];
 	if(location)
 		[twitterEngine setLocation:location];
 	
-	NSLog(@"method %@", method);
-	if(method)
-		[twitterEngine setNotificationsDeliveryMethod:method];
+	NSLog(@"method %@", deliveryMethod);
+	if(deliveryMethod)
+		[twitterEngine setNotificationsDeliveryMethod:deliveryMethod];
+	
+	[defaults setObject:deliveryMethod forKey:@"deliveryMethod"];
+	[defaults synchronize];
+}
+-(IBAction)resetDefaults:(id)sender{
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setObject:nil forKey:@"backgroundColor"];
+	[defaults setObject:nil forKey:@"borderColor"];
+	[defaults setObject:nil forKey:@"fontColor"];
+	[defaults synchronize];
 }
 @end

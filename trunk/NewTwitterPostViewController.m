@@ -11,7 +11,7 @@
 
 @implementation NewTwitterPostViewController
 
-@synthesize delegate, twitterEngine, growlController, connected;
+@synthesize delegate, twitterEngine, growlController, connected, message, messageCount;
 
 - (id) init
 {
@@ -19,6 +19,9 @@
 	if (self != nil) {
 		[self initWithNibName:@"NewTwitterPostView" bundle:nil];
 		growlController = [[NSApp delegate] performSelector:@selector(growlController)];
+		message = @"";
+		messageCount = [NSNumber numberWithInt:0];
+		messageCountFontColor = [NSColor whiteColor];
 	}
 	return self;
 }
@@ -31,7 +34,7 @@
 	//	[self close];
 }
 -(IBAction)post:(id)sender{
-	NSString *msj = [message stringValue];
+	NSString *msj = [messageField stringValue];
 	if([msj length] > 140)
 	{
 		NSImage *t = [NSImage imageNamed:@"t"];
@@ -48,5 +51,28 @@
 		[delegate performSelector:@selector(dettachTwitterPost)];	
 	}
 }
+-(IBAction)messageCount:(id)sender{
+	[self countMessageLenght];
+}
+-(void)didChangeValueForKey:(NSString *)key{
+	if([key isEqualToString:@"message"])
+		[self countMessageLenght];
 
+	[super didChangeValueForKey:key];
+}
+-(void)countMessageLenght{
+	int length = [[messageField stringValue] length];
+	if(length > 140)
+		messageCountFontColor = [NSColor redColor];
+	else
+		messageCountFontColor = [NSColor whiteColor];
+
+	[self setValue:[NSNumber numberWithInt:length] forKey:@"messageCount"];
+
+	// fixme binding
+	[messageCountField setTextColor:messageCountFontColor];
+
+	
+	
+}
 @end
