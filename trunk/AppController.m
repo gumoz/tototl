@@ -9,8 +9,8 @@
 #import "AppController.h"
 #import "NewTwitterPostViewController.h"
 #import "TototlStatusItemView.h"
-#import <HDCrashReporter/crashReporter.h>
-
+#import "SmartCrashReportsAPI.h"
+//#import "SmartCrashReportsInstall.h"
 @implementation AppController
 
 @synthesize growlController, connected;
@@ -19,9 +19,10 @@
 	self = [super init];
 	if (self != nil) {
 		
-		//submit crash report
-		if ([HDCrashReporter newCrashLogExists])
-			[HDCrashReporter doCrashSubmitting];
+		//submit crash report		
+//		Boolean authenticationWillBeRequired = FALSE;
+//		if (UnsanitySCR_CanInstall(&authenticationWillBeRequired))
+//			UnsanitySCR_Install(authenticationWillBeRequired ? kUnsanitySCR_GlobalInstall : 0);
 		
 //		self release
 		shown = NO;
@@ -52,9 +53,15 @@
 	
 
 	[self show:self];
-
 	[ixayaTwitterController performSelector:@selector(connect:) withObject:self];
-
+//	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+//	NSString *username = [defaults valueForKey:@"username"];
+//	NSString *password = [defaults valueForKey:@"password"];
+//	if(![username isEqualToString:@""] && ![password isEqualToString:@""] && username && password)
+//	{
+//		NSLog(@"username and password");
+//		[ixayaTwitterController performSelector:@selector(connect:) withObject:self];
+//	}
 }
 -(void)singleClick{
 	// not executed if menu

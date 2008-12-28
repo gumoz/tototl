@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>tototl.icns</string>
+	<string>tototl</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.ixaya.${PRODUCT_NAME:identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -19,20 +19,22 @@
 	<key>CFBundleSignature</key>
 	<string>IXAY</string>
 	<key>CFBundleVersion</key>
-	<string>1.4.1</string>
+	<string>1.5</string>
+	<key>LSUIElement</key>
+	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>LSUIElement</key>
-	<true/>
 	<key>SUFeedURL</key>
 	<string>http://tototl.googlecode.com/svn/appcast/Tototl.xml</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
-	<key>crashReporterEmail</key>
-	<string>support@ixaya.com</string>
-	<key>crashReporterCompanyName</key>
-	<string>Tototl/Ixaya Foundation</string>
+	<key>SmartCrashReports_CompanyName</key>
+	<string>Ixaya</string>
+	<key>SmartCrashReports_EmailTicket</key>
+	<string>SCR-17A9FA8403</string>
+	<key>SmartCrashReports_CommentsTemplate</key>
+	<string>Please describe what you were doing when the problem happened, leave your E-mail here if you wish to be contacted in regard to this crash</string>
 </dict>
 </plist>

@@ -64,13 +64,12 @@ enum
 
 -(void)awakeFromNib{
 	@try {
-		NSLog(@"IXTWC awakening");
+		NSLog(@"IXTWC awakening (AFN)");
 		[[[configurationButton menu] menuRepresentation] setHorizontalEdgePadding:0.0];
-		NSLog(@"IXTWC DoneMenu, setting credentials");
+		NSLog(@"IXTWC AFN setting credentials");
 		IXTwitterCredentials *cred = [IXTwitterCredentials new];
-		NSLog(@"IXTWC DoneMenu, reading defaults");
-		[cred setValue:[defaults valueForKey:@"username"] forKey:@"username"];
-		[cred setValue:[defaults valueForKey:@"password"] forKey:@"password"];
+		[cred read];
+				
 		NSLog(@"IXTWC DoneMenu, add credentials object to object controller");
 		[credentials addObject:cred];
 		
@@ -94,41 +93,43 @@ enum
 }
 -(IBAction)connect:(id)sender{
 	@try {
-	NSLog(@"IXTWC connecting");
-	// set credentials on engine
-	id someCredentials = [credentials content];	
-    [twitterEngine setUsername:[someCredentials username] password:[someCredentials password]];
-    
-    // Get updates from people the authenticated user follows.
-    [twitterEngine getFollowedTimelineFor:[someCredentials username] since:nil startingAtPage:0];
-//	[twitterEngine getDirectMessagesSince:[NSDate dateWithTimeIntervalSinceReferenceDate:1200] startingAtPage:0];
-	
-	NSNumber *updateInterval = [defaults objectForKey:@"updateSeconds"];
-	NSString *location = [defaults objectForKey:@"location"];
-	if(location)
-		[twitterEngine setLocation:location];
-	
+		NSLog(@"IXTWC connecting");
+		// set credentials on engine
+		IXTwitterCredentials *someCredentials = [credentials content];	
+		id username = [someCredentials valueForKey:@"username"];
+		NSLog(@"username %@", username);			
+		id password = [someCredentials valueForKey:@"password"];
+		NSLog(@"password %@", password);			
+			if(username && password)
+			{
+				[twitterEngine setUsername:username password:password];		
+			
+				// Get updates from people the authenticated user follows.
+				[twitterEngine getFollowedTimelineFor:username since:nil startingAtPage:0];
+			//	[twitterEngine getDirectMessagesSince:[NSDate dateWithTimeIntervalSinceReferenceDate:1200] startingAtPage:0];
+			
+			NSNumber *updateInterval = [defaults objectForKey:@"updateSeconds"];
+			NSString *location = [defaults objectForKey:@"location"];
+			if(location)
+				[twitterEngine setLocation:location];
+			
 
-	if(updateInterval == nil)
-	{	
-		updateInterval = [NSNumber numberWithInt:120];
-		[defaults setValue:updateInterval forKey:@"updateSeconds"];
-		[defaults synchronize];
-	}
-	
-	[NSTimer scheduledTimerWithTimeInterval:[updateInterval intValue]
-									 target:self 
-								   selector:@selector(update)
-								   userInfo:nil
-									repeats:YES];
-	
-	[defaults setValue:[someCredentials username] forKey:@"username"];
-	[defaults setValue:[someCredentials password] forKey:@"password"];
-	[defaults synchronize];
-
-//	[twitterEngine setLocation:@"Tototl"];
-	
-	
+			if(updateInterval == nil)
+			{	
+				updateInterval = [NSNumber numberWithInt:120];
+				[defaults setValue:updateInterval forKey:@"updateSeconds"];
+				[defaults synchronize];
+			}
+			
+			[NSTimer scheduledTimerWithTimeInterval:[updateInterval intValue]
+											 target:self 
+										   selector:@selector(update)
+										   userInfo:nil
+											repeats:YES];
+			
+			NSLog(@"save username");
+			[someCredentials synchronize];
+		}
 	}
 	@catch (NSException * e) {
 		NSLog(@"Exception %@", [e description]);
@@ -136,6 +137,14 @@ enum
 	@finally {
 		[self endSheet:sender];
 	}
+	
+	// crash the application just for fun in fact we do this in order to test smart crash reports
+	//	NSLog("");
+	//	id wa = nil;
+	//	[self setValue:nil forKey:nil];
+	//	[[NSApp delegate] setValue:nil forKey:nil];
+	//	self = nil;
+	
 }
 -(IBAction)postTweet:(id)sender{
 	if([connected boolValue]) 
