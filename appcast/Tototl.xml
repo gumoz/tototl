@@ -7,7 +7,7 @@
     <generator>Feeder 1.5.7(628) http://reinventedsoftware.com/feeder/</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
-    <pubDate>Sun, 28 Dec 2008 00:54:20 -0600</pubDate>
+    <pubDate>Sun, 28 Dec 2008 16:30:26 -0600</pubDate>
     <lastBuildDate>Mon, 08 Dec 2008 16:07:30 -0600</lastBuildDate>
     <image>
       <url>http://tototl.googlecode.com/files/t144.jpg</url>
@@ -17,6 +17,25 @@
       <height>144</height>
     </image>
     <atom:link href="http://code.google.com/p/tototl/source/browse/appcast/Tototl.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Tototl 1.5.1</title>
+      <description><![CDATA[<h2>Tototl 1.5.1</h2>
+
+<h3> New in this version </h3>
+
+<ul>
+<li>Fixed a problem with 1.5 that prevented the New Twitter Post Window to Open</li>
+<p><b>Security</b></p>
+<li>Tototl now uses keychain</li>
+
+<p><b>Stability</b></p>
+
+<li>Fixed extrange bug when reading preferences</li>
+</ul>]]></description>
+      <pubDate>Sun, 28 Dec 2008 16:30:26 -0600</pubDate>
+      <enclosure url="http://tototl.googlecode.com/files/Tototl_1.5.1.zip" length="1591203" type="application/zip" sparkle:version="1.5.1" sparkle:dsaSignature="MCwCFElBPh/iJ41dX+LvEZlDfy2Iqb8TAhQm5lpgCAvRk5Jz3+Dr4+pzGpJiDA==" sparkle:md5Sum="4b7f2ac4af9a99c22d4e39243288b3e3"/>
+      <guid isPermaLink="false">tototl-151</guid>
+    </item>
     <item>
       <title>Tototl 1.5</title>
       <description><![CDATA[<h2>Tototl 1.5</h2>
