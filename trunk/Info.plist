@@ -19,7 +19,7 @@
 	<key>CFBundleSignature</key>
 	<string>IXAY</string>
 	<key>CFBundleVersion</key>
-	<string>1.5</string>
+	<string>1.5.1</string>
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSMainNibFile</key>
@@ -30,11 +30,11 @@
 	<string>http://tototl.googlecode.com/svn/appcast/Tototl.xml</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
+	<key>SmartCrashReports_CommentsTemplate</key>
+	<string>Please describe what you were doing when the problem happened, leave your E-mail here if you wish to be contacted in regard to this crash</string>
 	<key>SmartCrashReports_CompanyName</key>
 	<string>Ixaya</string>
 	<key>SmartCrashReports_EmailTicket</key>
 	<string>SCR-17A9FA8403</string>
-	<key>SmartCrashReports_CommentsTemplate</key>
-	<string>Please describe what you were doing when the problem happened, leave your E-mail here if you wish to be contacted in regard to this crash</string>
 </dict>
 </plist>

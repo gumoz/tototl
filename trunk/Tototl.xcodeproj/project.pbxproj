@@ -10,6 +10,7 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		220292EC0F00495E0087A14B /* tototl.icns in Resources */ = {isa = PBXBuildFile; fileRef = 220292EB0F00495E0087A14B /* tototl.icns */; };
 		220914310EFD84E00098EB7B /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */; };
+		220EF7ED0F0834D1008DE0B6 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */; };
 		224FC9730EE4BAB00058F13F /* TototlStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FC9720EE4BAB00058F13F /* TototlStatusItemView.m */; };
 		224FCA0A0EE4C1ED0058F13F /* TototlStatusItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FCA090EE4C1ED0058F13F /* TototlStatusItemViewController.m */; };
 		224FCA0C0EE4C2360058F13F /* TototlStatusItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224FCA0B0EE4C2360058F13F /* TototlStatusItemView.xib */; };
@@ -213,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220EF7ED0F0834D1008DE0B6 /* BGHUDAppKit.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				22AEC3550EDB70F9000D0605 /* libxml2.dylib in Frameworks */,
 				22AEC3A70EDB7413000D0605 /* Growl.framework in Frameworks */,
