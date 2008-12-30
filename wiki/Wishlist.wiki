@@ -34,3 +34,11 @@ MacBuddysupport's Whishlist
  * ~~Character counting (140).~~
  * TwitPic
  * TinyURL Support
+
+Richard Samul Whishlist
+
+* The input field should automatically select when you click on the menu item, instead of having to click on the menu item and then on the input field before typing
+* Font size selector for the various display styles
+* Change the big T to a TototlBird (maybe configurable ?)
+* Editable Growl preferences
+* Idle detection and notification through menu bar
