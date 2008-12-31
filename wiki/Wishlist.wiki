@@ -35,10 +35,21 @@ MacBuddysupport's Whishlist
  * TwitPic
  * TinyURL Support
 
-Richard Samul Whishlist
+Richard Samul's Whishlist
 
 * The input field should automatically select when you click on the menu item, instead of having to click on the menu item and then on the input field before typing
 * Font size selector for the various display styles
 * Change the big T to a TototlBird (maybe configurable ?)
 * Editable Growl preferences
 * Idle detection and notification through menu bar
+
+At Mac Journal's Whistlist
+* Automatic expanding of all shortened links and grabbing the page titles a la http://tweetree.com/
+* Nesting of replies a la http://tweetree.com/ as an option which could easily be toggled while reading - via toolbar?
+* Select foreground and background colours for old interface.
+* Automatic shortening of URLs entered with service of user's choice, offering as many choices as possible. is.gd is my preferred one but others prefer others.
+ * Configurable fonts
+
+Ricky Buchanan's Whislist
+
+* Post bar in old interface
