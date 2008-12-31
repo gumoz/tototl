@@ -7,7 +7,7 @@
     <generator>Feeder 1.5.7(628) http://reinventedsoftware.com/feeder/</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
-    <pubDate>Sun, 28 Dec 2008 16:30:26 -0600</pubDate>
+    <pubDate>Tue, 30 Dec 2008 19:46:26 -0600</pubDate>
     <lastBuildDate>Mon, 08 Dec 2008 16:07:30 -0600</lastBuildDate>
     <image>
       <url>http://tototl.googlecode.com/files/t144.jpg</url>
@@ -17,6 +17,20 @@
       <height>144</height>
     </image>
     <atom:link href="http://code.google.com/p/tototl/source/browse/appcast/Tototl.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Tototl 1.6</title>
+      <description><![CDATA[<h2>Tototl 1.6</h2>
+
+<h3> New in this version </h3>
+
+<ul>
+<li>New Milky Interface</li>
+<li>Stability and Security Improvements</li>
+</ul>]]></description>
+      <pubDate>Tue, 30 Dec 2008 19:46:26 -0600</pubDate>
+      <enclosure url="http://tototl.googlecode.com/files/Tototl_1.6.zip" length="1669524" type="application/zip" sparkle:version="1.6" sparkle:dsaSignature="MCwCFFrCcFuTv1ZA0iR5Zdb1lZtEbf5hAhR0o7pjJBlKwBC76sfxCOUxJwGMBA==" sparkle:md5Sum="cc0c3d7bcfebe0efab5a4f7c7d8e4f20"/>
+      <guid isPermaLink="false">tototl-16</guid>
+    </item>
     <item>
       <title>Tototl 1.5.1</title>
       <description><![CDATA[<h2>Tototl 1.5.1</h2>
