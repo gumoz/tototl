@@ -7,7 +7,7 @@
     <generator>Feeder 1.5.7(628) http://reinventedsoftware.com/feeder/</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
-    <pubDate>Tue, 30 Dec 2008 19:46:26 -0600</pubDate>
+    <pubDate>Wed, 31 Dec 2008 06:03:37 -0600</pubDate>
     <lastBuildDate>Mon, 08 Dec 2008 16:07:30 -0600</lastBuildDate>
     <image>
       <url>http://tototl.googlecode.com/files/t144.jpg</url>
@@ -17,6 +17,32 @@
       <height>144</height>
     </image>
     <atom:link href="http://code.google.com/p/tototl/source/browse/appcast/Tototl.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Tototl 1.6.1</title>
+      <description><![CDATA[<h2>Tototl 1.6</h2>
+
+<h3> New in this version </h3>
+
+<ul>
+<li>New Milky Interface</li>
+
+<li>New iChat Interface</li>
+
+<li>New Configurable Dock Icon</li>
+
+<li>Configurable Status Bar Single Click Action</li>
+
+<li>Configurable Font Size and Row Height in Old Interface</li>
+
+<li>Old Interface Now implements the new functions (Char counting, Post Bar, etc)</li>
+<li>Tiny (HUD) Interface Now implements the new functions (Char counting, Post Bar, etc)</li>
+
+<li>Clicking on Dock will open window</li>
+</ul>]]></description>
+      <pubDate>Wed, 31 Dec 2008 06:03:37 -0600</pubDate>
+      <enclosure url="http://tototl.googlecode.com/files/Tototl_1.6.1.zip" length="1715580" type="application/zip" sparkle:version="1.6.1" sparkle:dsaSignature="MCwCFAj+cdHEXJe/cR0nPHbmQJZufRaUAhRdAed99CYRK8mapesZFhFzCcAQzg==" sparkle:md5Sum="29a9c6e03b997413651fe28679801c49"/>
+      <guid isPermaLink="false">tototl-161</guid>
+    </item>
     <item>
       <title>Tototl 1.6</title>
       <description><![CDATA[<h2>Tototl 1.6</h2>
