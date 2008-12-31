@@ -49,6 +49,7 @@ At Mac Journal's Whistlist
  * Select foreground and background colours for old interface.
  * Automatic shortening of URLs entered with service of user's choice, offering as many choices as possible. is.gd is my preferred one but others prefer others.
  * ~~Configurable fonts~~
+ * ~~single-clicking the menu extra brings Tototl to the foreground.~~
 
 Ricky Buchanan's Whislist
 
