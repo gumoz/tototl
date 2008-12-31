@@ -54,3 +54,8 @@ At Mac Journal's Whistlist
 Ricky Buchanan's Whislist
 
  * ~~Post bar in old interface~~
+
+h.reininger's Whishlist
+
+* ~~ Bigger Cell~~
+* Cell Re-sizing
