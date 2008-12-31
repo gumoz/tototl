@@ -31,7 +31,7 @@
 #define MAX_LOCATION_LENGTH		31
 
 #define DEFAULT_CLIENT_NAME     @"Tototl"
-#define DEFAULT_CLIENT_VERSION  @"1.1"
+#define DEFAULT_CLIENT_VERSION  @"1.6"
 #define DEFAULT_CLIENT_URL      @"http://tototl.googlecode.com/"
 #define DEFAULT_CLIENT_TOKEN	@"tototl"
 

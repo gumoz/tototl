@@ -18,7 +18,6 @@
 {
 	self = [super init];
 	if (self != nil) {
-		
 		//submit crash report		
 //		Boolean authenticationWillBeRequired = FALSE;
 //		if (UnsanitySCR_CanInstall(&authenticationWillBeRequired))

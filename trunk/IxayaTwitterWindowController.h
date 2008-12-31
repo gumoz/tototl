@@ -47,4 +47,5 @@
 -(void)update;
 -(IBAction)close:(id)sender;
 -(IBAction)setResponseUsingButton:(id)sender;
+-(void)generateTwittFrom:(NSArray *)statuses ofKind:(int)kind;
 @end

@@ -14,6 +14,13 @@
 
 @implementation IxayaTwitterWindowController
 
+enum {
+	InterfaceOld = 1,
+	InterfaceTiny = 2,
+	InterfaceMilky = 3,
+	InterfaceiChat = 4,
+};
+
 enum 
 {
 	twitterMessage = 0,
@@ -28,27 +35,30 @@ enum
 	if (self != nil) {
 
 		@try {
-			NSLog(@"IXTWC init");
 			growlController = [[NSApp delegate] performSelector:@selector(growlController)];
 			defaults = [[NSUserDefaults alloc] init];
-			
-			BOOL old =  [defaults boolForKey:@"oldInterface"];
-			BOOL tiny =  [defaults boolForKey:@"tinyInterface"];
-			NSLog(@"IXTWC defaults");
-			if(old)
-				[self initWithWindowNibName:@"IxayaTwitterWindowOld"];
-			else
-			{
-				if(tiny)
+			int interfaceMode = [[defaults valueForKey:@"interfaceMode"] intValue];
+			switch (interfaceMode) {
+				case InterfaceOld:
+					[self initWithWindowNibName:@"IxayaTwitterWindowOld"];
+					break;
+				case InterfaceTiny:
 					[self initWithWindowNibName:@"IxayaTwitterWindowTiny"];
-				else
-					[self initWithWindowNibName:@"IxayaTwitterWindow"];
+					break;
+				case InterfaceMilky:
+					[self initWithWindowNibName:@"IxayaTwitterWindowMilky"];
+					break;
+				case InterfaceiChat:
+					[self initWithWindowNibName:@"IxayaTwitterWindowiChat"];					
+					break;
+				default:
+					[self initWithWindowNibName:@"IxayaTwitterWindowMilky"];
+					break;
 			}
-			NSLog(@"IXTWC twitts");
+			
+			
 			twitts = [[NSArray alloc] init];
-			NSLog(@"IXTWC Connected");
 			connected = [NSNumber numberWithBool:NO];
-			NSLog(@"IXTWC Launching");
 			launching = YES;
 		}
 		@catch (NSException * e) {
@@ -99,14 +109,16 @@ enum
 		id username = [someCredentials valueForKey:@"username"];
 		NSLog(@"username %@", username);			
 		id password = [someCredentials valueForKey:@"password"];
-		NSLog(@"password %@", password);			
 			if(username && password)
 			{
 				[twitterEngine setUsername:username password:password];		
 			
 				// Get updates from people the authenticated user follows.
 				[twitterEngine getFollowedTimelineFor:username since:nil startingAtPage:0];
-			//	[twitterEngine getDirectMessagesSince:[NSDate dateWithTimeIntervalSinceReferenceDate:1200] startingAtPage:0];
+//				[twitterEngine getDirectMessagesSince:[NSDate dateWithTimeIntervalSinceReferenceDate:1200] startingAtPage:0];
+				
+				int lastUpdateID = [defaults integerForKey:@"lastUpdateID"];
+				[twitterEngine getDirectMessagesSinceID:lastUpdateID startingAtPage:0];
 			
 			NSNumber *updateInterval = [defaults objectForKey:@"updateSeconds"];
 			NSString *location = [defaults objectForKey:@"location"];
@@ -160,8 +172,21 @@ enum
 			NSLog(@"shorter");
 			[twitterEngine sendUpdate:message];	
 			[newTweetMessageField setStringValue:@""];
+			[messageCountField setStringValue:@"0"];
 			[self endSheet:sender];
+			
+			//
 
+			
+//			NSAppleScript *ichat = [[NSAppleScript alloc] initWithSource:<#(NSString *)source#>];
+//			//[ichat 
+//			NSAppleEventDescriptor* paramList = [NSAppleEventDescriptor listDescriptor];
+//			[paramList set
+//			
+//			[ichat 
+//			NSScriptCommand *ichatCommand = [[NSScriptCommand alloc] initWithCommandDescription:<#(NSScriptCommandDescription *)commandDef#>
+//			//
+			
 			BOOL soundEnabled = [defaults boolForKey:@"sentMessageSound"];
 			if(soundEnabled)
 			{
@@ -243,54 +268,54 @@ enum
 			[message setDate:created];
 			[message setScreenName:screen_name];
 			[newTweets addObject:[message retain]];
-
-
+			
+			
 			
 			// we check if the software is not fetching messages because is launching, if not then we post notifications to Growl and send a custom sound
 			if(!launching)
 			{
 				[growlController growl:text withTitle:name andIcon:[message picture_data]];
-
+				
 				BOOL soundEnabled = [defaults boolForKey:@"receivedMessageSound"];
 				if(soundEnabled)
 				{
 					NSSound *sound = [NSSound soundNamed:@"ReceivedMessage"];
 					[sound play];
 				}
-					
+				
 			}
 		}
-		
 		if(launching)
 			launching = NO;
 		
 		NSMutableArray *tmpArray = [NSMutableArray arrayWithArray:newTweets];
 		[tmpArray addObjectsFromArray:[self twitts]];
-
+		
 		[self setTwitts:[NSArray arrayWithArray:tmpArray]];
 		[twittsArrayController setSelectionIndex:0];
-//		NSLog(@"twitts %@", twitts);
+		int lastUpdateID = [[[twitts objectAtIndex:0] twitterId] intValue];
+		[defaults setInteger:lastUpdateID forKey:@"lastUpdateID"];
+		[defaults synchronize];
 	}
 }
 
 // need to be fixed
 - (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier
 {
+	NSLog(@"Not got");
 	if([messages count] > 0)
 	{
 		NSLog(@"Got direct messages:\r%@", messages);
-		
 		NSMutableArray *newTweets = [[NSMutableArray alloc] init];
 		for(id status in messages)
 		{	
 			NSLog(@"date %@",[NSDate date]);
-			NSString *name = [status valueForKeyPath:@"user.name"];
+			NSString *name = [status valueForKeyPath:@"sender.name"];
 			NSString *text = [status valueForKeyPath:@"text"];
-			NSString *profile_image_url = [status valueForKeyPath:@"user.profile_image_url"];
+			NSString *profile_image_url = [status valueForKeyPath:@"sender.profile_image_url"];
 			NSString *twitter_id = [status valueForKeyPath:@"id"];
 			NSDate *created = [status valueForKeyPath:@"created_at"];
-			NSString *screen_name = [status valueForKeyPath:@"user.screen_name"];
-			
+			NSString *screen_name = [status valueForKeyPath:@"sender.screen_name"];
 			IXTwitterMessage *message = [[IXTwitterMessage alloc] init];
 			[message setKind:twitterDirectMessage];
 			[message setName:name];
@@ -302,27 +327,33 @@ enum
 			[newTweets addObject:[message retain]];
 			
 			
+			
 			// we check if the software is not fetching messages because is launching, if not then we post notifications to Growl and send a custom sound
 			if(!launching)
 			{
-				[growlController growl:text withTitle:name andIcon:[message picture_data] isSticky:YES];
+				[growlController growl:text withTitle:name andIcon:[message picture_data]];
 				
-				BOOL soundEnabled = [defaults boolForKey:@"receivedDirectMessageSound"];
+				BOOL soundEnabled = [defaults boolForKey:@"receivedMessageSound"];
 				if(soundEnabled)
 				{
-					NSSound *sound = [NSSound soundNamed:@"ReceivedDirectMessage"];
+					NSSound *sound = [NSSound soundNamed:@"ReceivedMessage"];
 					[sound play];
 				}
 				
 			}
-			
-			
 		}
+		
+		if(launching)
+			launching = NO;
+		
 		NSMutableArray *tmpArray = [NSMutableArray arrayWithArray:newTweets];
 		[tmpArray addObjectsFromArray:[self twitts]];
 		
 		[self setTwitts:[NSArray arrayWithArray:tmpArray]];
-		NSLog(@"twitts %@", twitts);
+		[twittsArrayController setSelectionIndex:0];
+		int lastUpdateID = [[[twitts objectAtIndex:0] twitterId] intValue];
+		[defaults setInteger:lastUpdateID forKey:@"lastUpdateID"];
+		[defaults synchronize];
 	}
 }
 
@@ -423,5 +454,7 @@ enum
 //		[tv setSelectedRange:setSelectedRange:NSMakeRange(0, 0)];
 		[[self window] makeFirstResponder:newTweetMessageField];
 	}
+}
+-(void)generateTwittFrom:(NSArray *)statuses ofKind:(int)kind{
 }
 @end

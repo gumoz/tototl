@@ -11,6 +11,16 @@
 		220292EC0F00495E0087A14B /* tototl.icns in Resources */ = {isa = PBXBuildFile; fileRef = 220292EB0F00495E0087A14B /* tototl.icns */; };
 		220914310EFD84E00098EB7B /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */; };
 		220EF7ED0F0834D1008DE0B6 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */; };
+		220EF7FB0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220EF7FA0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib */; };
+		220EF8390F08939E008DE0B6 /* twitt.tif in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8380F08939E008DE0B6 /* twitt.tif */; };
+		220EF83B0F089728008DE0B6 /* Reply_Normal.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 220EF83A0F089728008DE0B6 /* Reply_Normal.tiff */; };
+		220EF83E0F08972E008DE0B6 /* Reply_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 220EF83C0F08972E008DE0B6 /* Reply_Pressed.tiff */; };
+		220EF83F0F08972E008DE0B6 /* Reply_Rollover.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 220EF83D0F08972E008DE0B6 /* Reply_Rollover.tiff */; };
+		220EF8550F08985E008DE0B6 /* TB_Online.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8530F08985E008DE0B6 /* TB_Online.png */; };
+		220EF8560F08985E008DE0B6 /* TB_Offline.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8540F08985E008DE0B6 /* TB_Offline.png */; };
+		220EF8C80F08AF65008DE0B6 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8C70F08AF65008DE0B6 /* message.png */; };
+		220EF8D70F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8D60F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib */; };
+		220EF8F00F08B420008DE0B6 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8EF0F08B420008DE0B6 /* footer.png */; };
 		224FC9730EE4BAB00058F13F /* TototlStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FC9720EE4BAB00058F13F /* TototlStatusItemView.m */; };
 		224FCA0A0EE4C1ED0058F13F /* TototlStatusItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FCA090EE4C1ED0058F13F /* TototlStatusItemViewController.m */; };
 		224FCA0C0EE4C2360058F13F /* TototlStatusItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224FCA0B0EE4C2360058F13F /* TototlStatusItemView.xib */; };
@@ -105,6 +115,20 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		220292EB0F00495E0087A14B /* tototl.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = tototl.icns; sourceTree = "<group>"; };
+		220EF7FA0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindowMilky.xib; sourceTree = "<group>"; };
+		220EF7FF0F08658C008DE0B6 /* UpdateSkypeStatus.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = UpdateSkypeStatus.scpt; sourceTree = "<group>"; };
+		220EF8000F08658C008DE0B6 /* UpdateChatStatus.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = UpdateChatStatus.scpt; sourceTree = "<group>"; };
+		220EF8010F08658C008DE0B6 /* UpdateAdiumStatus.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = UpdateAdiumStatus.scpt; sourceTree = "<group>"; };
+		220EF8020F08658C008DE0B6 /* UpdateMessengerStatus.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = UpdateMessengerStatus.scpt; sourceTree = "<group>"; };
+		220EF8380F08939E008DE0B6 /* twitt.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = twitt.tif; sourceTree = "<group>"; };
+		220EF83A0F089728008DE0B6 /* Reply_Normal.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Reply_Normal.tiff; sourceTree = "<group>"; };
+		220EF83C0F08972E008DE0B6 /* Reply_Pressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Reply_Pressed.tiff; sourceTree = "<group>"; };
+		220EF83D0F08972E008DE0B6 /* Reply_Rollover.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Reply_Rollover.tiff; sourceTree = "<group>"; };
+		220EF8530F08985E008DE0B6 /* TB_Online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_Online.png; sourceTree = "<group>"; };
+		220EF8540F08985E008DE0B6 /* TB_Offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_Offline.png; sourceTree = "<group>"; };
+		220EF8C70F08AF65008DE0B6 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
+		220EF8D60F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindowiChat.xib; sourceTree = "<group>"; };
+		220EF8EF0F08B420008DE0B6 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 		224FC9710EE4BAB00058F13F /* TototlStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TototlStatusItemView.h; sourceTree = "<group>"; };
 		224FC9720EE4BAB00058F13F /* TototlStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TototlStatusItemView.m; sourceTree = "<group>"; };
 		224FCA080EE4C1ED0058F13F /* TototlStatusItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TototlStatusItemViewController.h; sourceTree = "<group>"; };
@@ -235,6 +259,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				220EF7FD0F086581008DE0B6 /* Scripts */,
 				225751170F07521300887E86 /* SmartCrashReports */,
 				22574FBE0F073CAC00887E86 /* Twitter */,
 				22574FBD0F073C8500887E86 /* Keychain */,
@@ -284,6 +309,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		220EF7FD0F086581008DE0B6 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				220EF7FF0F08658C008DE0B6 /* UpdateSkypeStatus.scpt */,
+				220EF8000F08658C008DE0B6 /* UpdateChatStatus.scpt */,
+				220EF8010F08658C008DE0B6 /* UpdateAdiumStatus.scpt */,
+				220EF8020F08658C008DE0B6 /* UpdateMessengerStatus.scpt */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
 		224FCA040EE4C0B30058F13F /* StatusItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,7 +356,7 @@
 		22574FBE0F073CAC00887E86 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
-				22AEC3160EDB7051000D0605 /* MATwitterEngine */,
+				22AEC3160EDB7051000D0605 /* MGTwitterEngine */,
 				22AEC3130EDB7051000D0605 /* IxayaCommons */,
 				22AEC30E0EDB7051000D0605 /* IxayaTwitterClasses */,
 			);
@@ -378,7 +414,7 @@
 			name = IxayaCommons;
 			sourceTree = "<group>";
 		};
-		22AEC3160EDB7051000D0605 /* MATwitterEngine */ = {
+		22AEC3160EDB7051000D0605 /* MGTwitterEngine */ = {
 			isa = PBXGroup;
 			children = (
 				22AEC3330EDB7052000D0605 /* MGTwitterEngineGlobalHeader.h */,
@@ -392,7 +428,7 @@
 				22AEC31C0EDB7052000D0605 /* Twitter NSXML Parsers */,
 				22AEC3170EDB7051000D0605 /* Categories */,
 			);
-			name = MATwitterEngine;
+			name = MGTwitterEngine;
 			sourceTree = "<group>";
 		};
 		22AEC3170EDB7051000D0605 /* Categories */ = {
@@ -444,6 +480,8 @@
 		22AEC33A0EDB7052000D0605 /* MainWindow */ = {
 			isa = PBXGroup;
 			children = (
+				220EF8D60F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib */,
+				220EF7FA0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib */,
 				2295ED470EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib */,
 				22AEC33D0EDB7052000D0605 /* IxayaTwitterWindow.xib */,
 				22E5E25D0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib */,
@@ -496,6 +534,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				220EF8EF0F08B420008DE0B6 /* footer.png */,
+				220EF8C70F08AF65008DE0B6 /* message.png */,
+				220EF8530F08985E008DE0B6 /* TB_Online.png */,
+				220EF8540F08985E008DE0B6 /* TB_Offline.png */,
+				220EF83C0F08972E008DE0B6 /* Reply_Pressed.tiff */,
+				220EF83D0F08972E008DE0B6 /* Reply_Rollover.tiff */,
+				220EF83A0F089728008DE0B6 /* Reply_Normal.tiff */,
+				220EF8380F08939E008DE0B6 /* twitt.tif */,
 				220292EB0F00495E0087A14B /* tototl.icns */,
 				22F742A90EF4DEC500B5CA1C /* action.tiff */,
 				2295EE320EF1B283001E0403 /* Sounds */,
@@ -601,6 +647,16 @@
 				2295EE390EF1CCC5001E0403 /* ReceivedDirectMessage.m4a in Resources */,
 				22F742AA0EF4DEC500B5CA1C /* action.tiff in Resources */,
 				220292EC0F00495E0087A14B /* tototl.icns in Resources */,
+				220EF7FB0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib in Resources */,
+				220EF8390F08939E008DE0B6 /* twitt.tif in Resources */,
+				220EF83B0F089728008DE0B6 /* Reply_Normal.tiff in Resources */,
+				220EF83E0F08972E008DE0B6 /* Reply_Pressed.tiff in Resources */,
+				220EF83F0F08972E008DE0B6 /* Reply_Rollover.tiff in Resources */,
+				220EF8550F08985E008DE0B6 /* TB_Online.png in Resources */,
+				220EF8560F08985E008DE0B6 /* TB_Offline.png in Resources */,
+				220EF8C80F08AF65008DE0B6 /* message.png in Resources */,
+				220EF8D70F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib in Resources */,
+				220EF8F00F08B420008DE0B6 /* footer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
