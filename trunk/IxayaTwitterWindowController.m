@@ -35,6 +35,7 @@ enum
 	if (self != nil) {
 
 		@try {
+			standardFontColor = [NSColor blackColor];
 			growlController = [[NSApp delegate] performSelector:@selector(growlController)];
 			defaults = [[NSUserDefaults alloc] init];
 			int interfaceMode = [[defaults valueForKey:@"interfaceMode"] intValue];
@@ -44,6 +45,7 @@ enum
 					break;
 				case InterfaceTiny:
 					[self initWithWindowNibName:@"IxayaTwitterWindowTiny"];
+					standardFontColor = [NSColor whiteColor];
 					break;
 				case InterfaceMilky:
 					[self initWithWindowNibName:@"IxayaTwitterWindowMilky"];
@@ -173,7 +175,7 @@ enum
 			[twitterEngine sendUpdate:message];	
 			[newTweetMessageField setStringValue:@""];
 			[messageCountField setStringValue:@"0"];
-			[self endSheet:sender];
+//			[self endSheet:sender];
 			
 			//
 
@@ -400,7 +402,7 @@ enum
 	if(length > 140)
 		messageCountFontColor = [NSColor redColor];
 	else
-		messageCountFontColor = [NSColor blackColor];
+		messageCountFontColor = standardFontColor;
 	
 	
 	[messageCountField setIntValue:length];

@@ -13,7 +13,7 @@
 
 @synthesize kind;
 @synthesize picture, picture_data, name, message, attributedMessage, twitterId, date, screenName;
-
+@synthesize tooltip;
 enum 
 {
 	twitterMessage = 0,
@@ -38,9 +38,22 @@ enum
 		AHHyperlinkScanner *hlscan = [AHHyperlinkScanner hyperlinkScannerWithString:value];
 		
 		NSAttributedString *newText = [hlscan linkifiedString];
+		AHMarkedHyperlink *hyperlink = [hlscan nextURI];
+		NSURL *url = [hyperlink URL];
+		
+//		IXWebService *getLocation = [[IXWebService alloc] init];
+//		[getLocation setURI:url];
+//		[getLocation setKind:@"GET"];
+//		[getLocation send:self];
 		[self setAttributedMessage:newText];
 
     }
+}
+- (void)response:(NSString *)response fromService:(id)service{
+//	NSDictionary *resp = [service dictionaryResponse]; 
+//	NSLog(@"resp: %@", resp);
+//	[self setTooltip:[resp valueForKey:@"Location"]];
+//	NSLog(tooltip);
 }
 
 

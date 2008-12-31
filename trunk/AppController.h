@@ -28,6 +28,7 @@
 	int tag;
 	BOOL shown;
 	NSNumber *connected;
+	NSUserDefaults *defaults;
 }
 @property (copy, readwrite) NSNumber *connected;
 @property (retain, readwrite) GrowlController *growlController;

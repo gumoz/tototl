@@ -110,6 +110,11 @@
 	[defaults setObject:nil forKey:@"backgroundColor"];
 	[defaults setObject:nil forKey:@"borderColor"];
 	[defaults setObject:nil forKey:@"fontColor"];
+	[defaults setObject:nil forKey:@"rowHeight"];
+	[defaults setObject:nil forKey:@"fontSize"];
+
+//	[defaults setObject:[NSNumber numberWithInt:37] forKey:@"rowHeight"];
+//	[defaults setObject:[NSNumber numberWithInt:12] forKey:@"fontSize"];
 	[defaults synchronize];
 }
 @end

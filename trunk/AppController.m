@@ -28,10 +28,36 @@
 		// Create a TwitterEngine
 		growlController = [[GrowlController alloc] init];
 		connected = [NSNumber numberWithBool:NO];
+		defaults = [NSUserDefaults standardUserDefaults];
+		
+		//load hot key bundle
+		[[NSBundle bundleWithPath:[[[NSBundle mainBundle] builtInPlugInsPath] stringByAppendingPathComponent:@"BSHotKey.bundle"]] load];
 	}
 	return self;
 }
+//- (void)finishLaunching
+//{
+//	NSMutableArray *BSHotKey_MyHotKey = [[NSMutableArray alloc] init];
+//	[BSHotKey_MyHotKey addObject:[NSNumber numberWithInt:768]];
+//	[BSHotKey_MyHotKey addObject:[NSNumber numberWithInt:17]];
+//	[BSHotKey_MyHotKey addObject:[NSNumber numberWithInt:116]];
+//	[defaults setObject:BSHotKey_MyHotKey forKey:@"BSHotKey_MyHotKey"];
+//	[defaults synchronize];
+//	
+//	[[BSHotKeyManager defaultManager] hotKeyNamed:@"MyHotKey" withAction:@selector(myHotKeyPressed:) target:self];
+//	[[BSHotKeyManager defaultManager] setReleaseAction:@selector(myHotKeyReleased:)];
+//	[super finishLaunching]; 
+//}
 
+- (void)myHotKeyPressed:(id)name
+{
+	[self show:self];
+//	[self log:@"hotkey %@ was pressed :-D",name];
+}
+- (void)myHotKeyReleased:(id)name
+{
+//	[self log:@"hotkey %@ was released :-D",name];
+}
 -(void)awakeFromNib{
 	ixayaTwitterController = [[IxayaTwitterWindowController alloc] init];
 	twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:ixayaTwitterController];
@@ -61,12 +87,33 @@
 //		NSLog(@"username and password");
 //		[ixayaTwitterController performSelector:@selector(connect:) withObject:self];
 //	}
+	
+	
+	
+	if ([defaults boolForKey:@"DockIcon"]) {
+		ProcessSerialNumber psn = { 0, kCurrentProcess };
+		// display dock icon
+		TransformProcessType(&psn, kProcessTransformToForegroundApplication);
+		// enable menu bar
+		SetSystemUIMode(kUIModeNormal, 0);
+		// switch to Dock.app
+		[[NSWorkspace sharedWorkspace] launchAppWithBundleIdentifier:@"com.apple.dock" options:NSWorkspaceLaunchDefault additionalEventParamDescriptor:nil launchIdentifier:nil];
+		// switch back
+		[[NSApplication sharedApplication] activateIgnoringOtherApps:TRUE];
+	}
+	
 }
 -(void)singleClick{
+
+	BOOL show = [defaults boolForKey:@"SingleClickOpenWindow"];
 	// not executed if menu
-	NSLog(@"single click");
-	
-	[self newPost:self];
+	NSLog(@"single click %d", show);
+	if (show)
+	{
+		[self showOrHide:self];
+	} else {
+		[self newPost:self];	
+	}
 }
 -(void)doubleClick{
 // not executed if menu
@@ -167,4 +214,15 @@
 	}    
 
 }
+- (void)applicationDidChangeScreenParameters:(NSNotification *)aNotification{
+	NSLog(@"aa");
+	[self show:self];
+}
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag{
+	NSLog(@"bb");
+	[self show:self];
+	return NO;
+}
+
+
 @end

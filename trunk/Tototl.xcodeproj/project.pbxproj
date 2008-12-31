@@ -21,6 +21,10 @@
 		220EF8C80F08AF65008DE0B6 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8C70F08AF65008DE0B6 /* message.png */; };
 		220EF8D70F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8D60F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib */; };
 		220EF8F00F08B420008DE0B6 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8EF0F08B420008DE0B6 /* footer.png */; };
+		223D956E0F0B6D1F00A8C647 /* IXWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 223D956A0F0B6D1F00A8C647 /* IXWebService.m */; };
+		223D956F0F0B6D1F00A8C647 /* IXWebServiceArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 223D956C0F0B6D1F00A8C647 /* IXWebServiceArgument.m */; };
+		223D962A0F0B87DC00A8C647 /* BSHotKey.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 223D96290F0B87DC00A8C647 /* BSHotKey.bundle */; };
+		224AED8B0F0B883300553A1D /* BSHotKey.bundle in Copy Plugins */ = {isa = PBXBuildFile; fileRef = 223D96290F0B87DC00A8C647 /* BSHotKey.bundle */; };
 		224FC9730EE4BAB00058F13F /* TototlStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FC9720EE4BAB00058F13F /* TototlStatusItemView.m */; };
 		224FCA0A0EE4C1ED0058F13F /* TototlStatusItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FCA090EE4C1ED0058F13F /* TototlStatusItemViewController.m */; };
 		224FCA0C0EE4C2360058F13F /* TototlStatusItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224FCA0B0EE4C2360058F13F /* TototlStatusItemView.xib */; };
@@ -92,6 +96,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		224AEDA30F0B883C00553A1D /* Copy Plugins */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				224AED8B0F0B883300553A1D /* BSHotKey.bundle in Copy Plugins */,
+			);
+			name = "Copy Plugins";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22AEC3BE0EDB743F000D0605 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,6 +144,12 @@
 		220EF8C70F08AF65008DE0B6 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
 		220EF8D60F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindowiChat.xib; sourceTree = "<group>"; };
 		220EF8EF0F08B420008DE0B6 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
+		223D95690F0B6D1F00A8C647 /* IXWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXWebService.h; sourceTree = "<group>"; };
+		223D956A0F0B6D1F00A8C647 /* IXWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXWebService.m; sourceTree = "<group>"; };
+		223D956B0F0B6D1F00A8C647 /* IXWebServiceArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXWebServiceArgument.h; sourceTree = "<group>"; };
+		223D956C0F0B6D1F00A8C647 /* IXWebServiceArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXWebServiceArgument.m; sourceTree = "<group>"; };
+		223D956D0F0B6D1F00A8C647 /* IXWSDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXWSDelegateProtocol.h; sourceTree = "<group>"; };
+		223D96290F0B87DC00A8C647 /* BSHotKey.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BSHotKey.bundle; sourceTree = "<group>"; };
 		224FC9710EE4BAB00058F13F /* TototlStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TototlStatusItemView.h; sourceTree = "<group>"; };
 		224FC9720EE4BAB00058F13F /* TototlStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TototlStatusItemView.m; sourceTree = "<group>"; };
 		224FCA080EE4C1ED0058F13F /* TototlStatusItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TototlStatusItemViewController.h; sourceTree = "<group>"; };
@@ -320,6 +341,18 @@
 			name = Scripts;
 			sourceTree = "<group>";
 		};
+		223D954D0F0B6D1200A8C647 /* IXWebServices */ = {
+			isa = PBXGroup;
+			children = (
+				223D95690F0B6D1F00A8C647 /* IXWebService.h */,
+				223D956A0F0B6D1F00A8C647 /* IXWebService.m */,
+				223D956B0F0B6D1F00A8C647 /* IXWebServiceArgument.h */,
+				223D956C0F0B6D1F00A8C647 /* IXWebServiceArgument.m */,
+				223D956D0F0B6D1F00A8C647 /* IXWSDelegateProtocol.h */,
+			);
+			name = IXWebServices;
+			sourceTree = "<group>";
+		};
 		224FCA040EE4C0B30058F13F /* StatusItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +441,7 @@
 		22AEC3130EDB7051000D0605 /* IxayaCommons */ = {
 			isa = PBXGroup;
 			children = (
+				223D954D0F0B6D1200A8C647 /* IXWebServices */,
 				22AEC3140EDB7051000D0605 /* IXSheetWindowController.h */,
 				22AEC3150EDB7051000D0605 /* IXSheetWindowController.m */,
 			);
@@ -525,6 +559,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				223D96290F0B87DC00A8C647 /* BSHotKey.bundle */,
 				32CA4F630368D1EE00C91783 /* Tototl_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -587,6 +622,7 @@
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				22AEC3BE0EDB743F000D0605 /* Copy Frameworks */,
+				224AEDA30F0B883C00553A1D /* Copy Plugins */,
 			);
 			buildRules = (
 			);
@@ -657,6 +693,7 @@
 				220EF8C80F08AF65008DE0B6 /* message.png in Resources */,
 				220EF8D70F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib in Resources */,
 				220EF8F00F08B420008DE0B6 /* footer.png in Resources */,
+				223D962A0F0B87DC00A8C647 /* BSHotKey.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +732,8 @@
 				22F26D050EEDBD3500B9B890 /* PreferencesWindowController.m in Sources */,
 				22574FBA0F073C5300887E86 /* EMKeychainProxy.m in Sources */,
 				22574FBB0F073C5300887E86 /* EMKeychainItem.m in Sources */,
+				223D956E0F0B6D1F00A8C647 /* IXWebService.m in Sources */,
+				223D956F0F0B6D1F00A8C647 /* IXWebServiceArgument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

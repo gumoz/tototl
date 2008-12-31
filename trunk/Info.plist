@@ -19,7 +19,7 @@
 	<key>CFBundleSignature</key>
 	<string>IXAY</string>
 	<key>CFBundleVersion</key>
-	<string>1.6</string>
+	<string>1.6.1</string>
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSMainNibFile</key>
@@ -31,7 +31,7 @@
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
 	<key>SmartCrashReports_CommentsTemplate</key>
-	<string>Please describe what you were doing when the problem happened, leave your E-mail here if you wish to be contacted in regard to this crash</string>
+	<string>Please describe what you were doing when the problem ocurred, leave your E-mail here if you wish to be contacted in regard to this crash</string>
 	<key>SmartCrashReports_CompanyName</key>
 	<string>Ixaya</string>
 	<key>SmartCrashReports_EmailTicket</key>

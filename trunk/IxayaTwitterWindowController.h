@@ -34,6 +34,7 @@
 	GrowlController *growlController;
 	BOOL launching;
 	NSStatusItem *statusItem;
+	NSColor *standardFontColor;
 }
 @property (copy, readwrite) NSString *newTweetMessage;
 @property (retain, readwrite) GrowlController *growlController;

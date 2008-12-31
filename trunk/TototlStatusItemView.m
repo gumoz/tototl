@@ -90,18 +90,27 @@
 }
 - (void) handleSingleClick:(NSEvent *) inEvent
 {
-	// do single click stuff
-	NSRect frame = [[self window] frame];
-	NSPoint point = NSMakePoint(NSMidX(frame), NSMinY(frame));
-	[controller toggleNewTwitterPost:point];
-	clicked = !clicked;
-	[self setNeedsDisplay:YES];		
+
+	BOOL show = [[NSUserDefaults standardUserDefaults] boolForKey:@"SingleClickOpenWindow"];
+	// not executed if menu
+	if (show)
+	{
+		[controller showOrHide:self];
+	} else {
+		// do single click stuff
+		NSRect frame = [[self window] frame];
+		NSPoint point = NSMakePoint(NSMidX(frame), NSMinY(frame));
+		[controller toggleNewTwitterPost:point];
+		clicked = !clicked;
+		[self setNeedsDisplay:YES];		
+	}
+	
 }
 
 - (void) handleDoubleClick:(NSEvent *) inEvent
 {	
 	// do double click stuff
-	[controller show:self];
+	[controller doubleClick];
 }
 
 @end
