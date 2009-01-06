@@ -57,5 +57,5 @@ Ricky Buchanan's Whislist
 
 h.reininger's Whishlist
 
-* ~~ Bigger Cell~~
-* Cell Re-sizing
+ * ~~ Bigger Cell~~
+ * Cell Re-sizing
