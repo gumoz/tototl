@@ -1,4 +1,4 @@
-#summary New features wishlist, put here all your wishes for christmas
+#summary New features wishlist, put here all your wishes
 #labels Featured,Phase-Requirements
 
 = Introduction =
