@@ -11,7 +11,6 @@
 		220292EC0F00495E0087A14B /* tototl.icns in Resources */ = {isa = PBXBuildFile; fileRef = 220292EB0F00495E0087A14B /* tototl.icns */; };
 		220914310EFD84E00098EB7B /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */; };
 		220EF7ED0F0834D1008DE0B6 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */; };
-		220EF7FB0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220EF7FA0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib */; };
 		220EF8390F08939E008DE0B6 /* twitt.tif in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8380F08939E008DE0B6 /* twitt.tif */; };
 		220EF83B0F089728008DE0B6 /* Reply_Normal.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 220EF83A0F089728008DE0B6 /* Reply_Normal.tiff */; };
 		220EF83E0F08972E008DE0B6 /* Reply_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 220EF83C0F08972E008DE0B6 /* Reply_Pressed.tiff */; };
@@ -19,7 +18,6 @@
 		220EF8550F08985E008DE0B6 /* TB_Online.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8530F08985E008DE0B6 /* TB_Online.png */; };
 		220EF8560F08985E008DE0B6 /* TB_Offline.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8540F08985E008DE0B6 /* TB_Offline.png */; };
 		220EF8C80F08AF65008DE0B6 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8C70F08AF65008DE0B6 /* message.png */; };
-		220EF8D70F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8D60F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib */; };
 		220EF8F00F08B420008DE0B6 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 220EF8EF0F08B420008DE0B6 /* footer.png */; };
 		223D956E0F0B6D1F00A8C647 /* IXWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 223D956A0F0B6D1F00A8C647 /* IXWebService.m */; };
 		223D956F0F0B6D1F00A8C647 /* IXWebServiceArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 223D956C0F0B6D1F00A8C647 /* IXWebServiceArgument.m */; };
@@ -37,9 +35,16 @@
 		225751120F0751F900887E86 /* SmartCrashReportsAPI.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 225751110F0751F900887E86 /* SmartCrashReportsAPI.o */; };
 		2257512C0F07534E00887E86 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2257512B0F07534E00887E86 /* CoreFoundation.framework */; };
 		225751300F07537A00887E86 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2257512F0F07537A00887E86 /* libz.1.2.3.dylib */; };
+		2262A7DE0F2ECD9E007EFC73 /* IxayaTwitterWindowOld.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2262A7DD0F2ECD9E007EFC73 /* IxayaTwitterWindowOld.xib */; };
+		2262A7E00F2ECDA8007EFC73 /* IxayaTwitterWindowTiny.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2262A7DF0F2ECDA8007EFC73 /* IxayaTwitterWindowTiny.xib */; };
+		2262A7E20F2ECDA8007EFC73 /* IxayaTwitterWindowMilky.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2262A7E10F2ECDA8007EFC73 /* IxayaTwitterWindowMilky.xib */; };
+		2262A7E40F2ECDB2007EFC73 /* IxayaTwitterWindowiChat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2262A7E30F2ECDB2007EFC73 /* IxayaTwitterWindowiChat.xib */; };
+		2262A7E60F2ECDBD007EFC73 /* IxayaTwitterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2262A7E50F2ECDBD007EFC73 /* IxayaTwitterWindow.xib */; };
+		2262A7F20F2ECE18007EFC73 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2262A7F10F2ECE18007EFC73 /* PreferencesWindow.xib */; };
+		2293F6E00F0C198400B125FD /* tools_dotmac-tell.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2293F6DE0F0C198400B125FD /* tools_dotmac-tell.tiff */; };
+		2293F6E10F0C198400B125FD /* search_all-left-N.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2293F6DF0F0C198400B125FD /* search_all-left-N.tiff */; };
 		2295ECFC0EEF8772001E0403 /* SoftwareUpdate.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2295ECFA0EEF8772001E0403 /* SoftwareUpdate.icns */; };
 		2295ECFD0EEF8772001E0403 /* Update.png in Resources */ = {isa = PBXBuildFile; fileRef = 2295ECFB0EEF8772001E0403 /* Update.png */; };
-		2295ED480EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2295ED470EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib */; };
 		2295EDEF0EF06E74001E0403 /* blkContextButtonSelected.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2295EDED0EF06E74001E0403 /* blkContextButtonSelected.tiff */; };
 		2295EDF00EF06E74001E0403 /* blkContextButton.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2295EDEE0EF06E74001E0403 /* blkContextButton.tiff */; };
 		2295EE370EF1CCC5001E0403 /* ReceivedMessage.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2295EE340EF1CCC5001E0403 /* ReceivedMessage.m4a */; };
@@ -67,7 +72,6 @@
 		22AEC34E0EDB7052000D0605 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC3350EDB7052000D0605 /* MGTwitterEngine.m */; };
 		22AEC34F0EDB7052000D0605 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC3380EDB7052000D0605 /* MGTwitterHTTPURLConnection.m */; };
 		22AEC3500EDB7052000D0605 /* IxayaTwitterWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC33C0EDB7052000D0605 /* IxayaTwitterWindowController.m */; };
-		22AEC3510EDB7052000D0605 /* IxayaTwitterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22AEC33D0EDB7052000D0605 /* IxayaTwitterWindow.xib */; };
 		22AEC3550EDB70F9000D0605 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AEC3540EDB70F9000D0605 /* libxml2.dylib */; };
 		22AEC3580EDB7109000D0605 /* available.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AEC3560EDB7109000D0605 /* available.png */; };
 		22AEC3590EDB7109000D0605 /* away.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AEC3570EDB7109000D0605 /* away.png */; };
@@ -76,11 +80,9 @@
 		22AEC3BD0EDB743F000D0605 /* GrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC3BC0EDB743F000D0605 /* GrowlController.m */; };
 		22E5E1A10EEEE7B90087FD22 /* AutoHyperlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */; };
 		22E5E1A90EEEE7BC0087FD22 /* AutoHyperlinks.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */; };
-		22E5E25E0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E5E25D0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib */; };
 		22E5E27E0EEF0DA10087FD22 /* RBSplitView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E27D0EEF0DA10087FD22 /* RBSplitView.framework */; };
 		22E5E2840EEF0DA50087FD22 /* RBSplitView.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E27D0EEF0DA10087FD22 /* RBSplitView.framework */; };
 		22F26D050EEDBD3500B9B890 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F26CF00EEDBD3400B9B890 /* PreferencesWindowController.m */; };
-		22F26D060EEDBD3500B9B890 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F26CF10EEDBD3500B9B890 /* PreferencesWindow.xib */; };
 		22F26D210EEDBF8D00B9B890 /* t.icns in Resources */ = {isa = PBXBuildFile; fileRef = 22F26D200EEDBF8D00B9B890 /* t.icns */; };
 		22F26D240EEDC10D00B9B890 /* bird.icns in Resources */ = {isa = PBXBuildFile; fileRef = 22F26D230EEDC10D00B9B890 /* bird.icns */; };
 		22F26D260EEDC1E900B9B890 /* about.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22F26D250EEDC1E900B9B890 /* about.pdf */; };
@@ -130,7 +132,7 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		220292EB0F00495E0087A14B /* tototl.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = tototl.icns; sourceTree = "<group>"; };
-		220EF7FA0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindowMilky.xib; sourceTree = "<group>"; };
+		220EF7FA0F0863BA008DE0B6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/IxayaTwitterWindowMilky.xib; sourceTree = "<group>"; };
 		220EF7FF0F08658C008DE0B6 /* UpdateSkypeStatus.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = UpdateSkypeStatus.scpt; sourceTree = "<group>"; };
 		220EF8000F08658C008DE0B6 /* UpdateChatStatus.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = UpdateChatStatus.scpt; sourceTree = "<group>"; };
 		220EF8010F08658C008DE0B6 /* UpdateAdiumStatus.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = UpdateAdiumStatus.scpt; sourceTree = "<group>"; };
@@ -142,7 +144,7 @@
 		220EF8530F08985E008DE0B6 /* TB_Online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_Online.png; sourceTree = "<group>"; };
 		220EF8540F08985E008DE0B6 /* TB_Offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_Offline.png; sourceTree = "<group>"; };
 		220EF8C70F08AF65008DE0B6 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
-		220EF8D60F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindowiChat.xib; sourceTree = "<group>"; };
+		220EF8D60F08B15E008DE0B6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/IxayaTwitterWindowiChat.xib; sourceTree = "<group>"; };
 		220EF8EF0F08B420008DE0B6 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 		223D95690F0B6D1F00A8C647 /* IXWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXWebService.h; sourceTree = "<group>"; };
 		223D956A0F0B6D1F00A8C647 /* IXWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXWebService.m; sourceTree = "<group>"; };
@@ -168,9 +170,23 @@
 		225751160F07521000887E86 /* SmartCrashReportsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartCrashReportsAPI.h; sourceTree = "<group>"; };
 		2257512B0F07534E00887E86 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		2257512F0F07537A00887E86 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = /usr/lib/libz.1.2.3.dylib; sourceTree = "<absolute>"; };
+		2262A7E70F2ECDCB007EFC73 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/IxayaTwitterWindowOld.xib; sourceTree = "<group>"; };
+		2262A7E80F2ECDE6007EFC73 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/IxayaTwitterWindowOld.xib; sourceTree = "<group>"; };
+		2262A7E90F2ECDEC007EFC73 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/IxayaTwitterWindowTiny.xib; sourceTree = "<group>"; };
+		2262A7EA0F2ECDF0007EFC73 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/IxayaTwitterWindowTiny.xib; sourceTree = "<group>"; };
+		2262A7EB0F2ECDFA007EFC73 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/IxayaTwitterWindowMilky.xib; sourceTree = "<group>"; };
+		2262A7EC0F2ECDFD007EFC73 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/IxayaTwitterWindowMilky.xib; sourceTree = "<group>"; };
+		2262A7ED0F2ECE03007EFC73 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/IxayaTwitterWindowiChat.xib; sourceTree = "<group>"; };
+		2262A7EE0F2ECE06007EFC73 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/IxayaTwitterWindowiChat.xib; sourceTree = "<group>"; };
+		2262A7EF0F2ECE0F007EFC73 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/IxayaTwitterWindow.xib; sourceTree = "<group>"; };
+		2262A7F00F2ECE11007EFC73 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/IxayaTwitterWindow.xib; sourceTree = "<group>"; };
+		2262A7F30F2ECE1F007EFC73 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		2262A7F40F2ECE21007EFC73 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		2293F6DE0F0C198400B125FD /* tools_dotmac-tell.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "tools_dotmac-tell.tiff"; sourceTree = "<group>"; };
+		2293F6DF0F0C198400B125FD /* search_all-left-N.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "search_all-left-N.tiff"; sourceTree = "<group>"; };
 		2295ECFA0EEF8772001E0403 /* SoftwareUpdate.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SoftwareUpdate.icns; sourceTree = "<group>"; };
 		2295ECFB0EEF8772001E0403 /* Update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Update.png; sourceTree = "<group>"; };
-		2295ED470EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindowTiny.xib; sourceTree = "<group>"; };
+		2295ED470EF04D7D001E0403 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/IxayaTwitterWindowTiny.xib; sourceTree = "<group>"; };
 		2295EDB90EF06B45001E0403 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
 		2295EDED0EF06E74001E0403 /* blkContextButtonSelected.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = blkContextButtonSelected.tiff; sourceTree = "<group>"; };
 		2295EDEE0EF06E74001E0403 /* blkContextButton.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = blkContextButton.tiff; sourceTree = "<group>"; };
@@ -224,7 +240,7 @@
 		22AEC3390EDB7052000D0605 /* MGTwitterRequestTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterRequestTypes.h; sourceTree = "<group>"; };
 		22AEC33B0EDB7052000D0605 /* IxayaTwitterWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IxayaTwitterWindowController.h; sourceTree = "<group>"; };
 		22AEC33C0EDB7052000D0605 /* IxayaTwitterWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IxayaTwitterWindowController.m; sourceTree = "<group>"; };
-		22AEC33D0EDB7052000D0605 /* IxayaTwitterWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindow.xib; sourceTree = "<group>"; };
+		22AEC33D0EDB7052000D0605 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/IxayaTwitterWindow.xib; sourceTree = "<group>"; };
 		22AEC3540EDB70F9000D0605 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		22AEC3560EDB7109000D0605 /* available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = available.png; sourceTree = "<group>"; };
 		22AEC3570EDB7109000D0605 /* away.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = away.png; sourceTree = "<group>"; };
@@ -232,11 +248,11 @@
 		22AEC3BB0EDB743F000D0605 /* GrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlController.h; sourceTree = "<group>"; };
 		22AEC3BC0EDB743F000D0605 /* GrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlController.m; sourceTree = "<group>"; };
 		22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
-		22E5E25D0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxayaTwitterWindowOld.xib; sourceTree = "<group>"; };
+		22E5E25D0EEF07F20087FD22 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/IxayaTwitterWindowOld.xib; sourceTree = "<group>"; };
 		22E5E27D0EEF0DA10087FD22 /* RBSplitView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RBSplitView.framework; sourceTree = "<group>"; };
 		22F26CEF0EEDBD3400B9B890 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
 		22F26CF00EEDBD3400B9B890 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
-		22F26CF10EEDBD3500B9B890 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		22F26CF10EEDBD3500B9B890 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
 		22F26D200EEDBF8D00B9B890 /* t.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = t.icns; sourceTree = "<group>"; };
 		22F26D230EEDC10D00B9B890 /* bird.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = bird.icns; sourceTree = "<group>"; };
 		22F26D250EEDC1E900B9B890 /* about.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = about.pdf; sourceTree = "<group>"; };
@@ -514,11 +530,11 @@
 		22AEC33A0EDB7052000D0605 /* MainWindow */ = {
 			isa = PBXGroup;
 			children = (
-				220EF8D60F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib */,
-				220EF7FA0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib */,
-				2295ED470EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib */,
-				22AEC33D0EDB7052000D0605 /* IxayaTwitterWindow.xib */,
-				22E5E25D0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib */,
+				2262A7DD0F2ECD9E007EFC73 /* IxayaTwitterWindowOld.xib */,
+				2262A7DF0F2ECDA8007EFC73 /* IxayaTwitterWindowTiny.xib */,
+				2262A7E10F2ECDA8007EFC73 /* IxayaTwitterWindowMilky.xib */,
+				2262A7E30F2ECDB2007EFC73 /* IxayaTwitterWindowiChat.xib */,
+				2262A7E50F2ECDBD007EFC73 /* IxayaTwitterWindow.xib */,
 				22AEC33B0EDB7052000D0605 /* IxayaTwitterWindowController.h */,
 				22AEC33C0EDB7052000D0605 /* IxayaTwitterWindowController.m */,
 			);
@@ -537,7 +553,7 @@
 		22F26CEC0EEDBD3400B9B890 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
-				22F26CF10EEDBD3500B9B890 /* PreferencesWindow.xib */,
+				2262A7F10F2ECE18007EFC73 /* PreferencesWindow.xib */,
 				22F26CEF0EEDBD3400B9B890 /* PreferencesWindowController.h */,
 				22F26CF00EEDBD3400B9B890 /* PreferencesWindowController.m */,
 			);
@@ -569,6 +585,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2293F6DE0F0C198400B125FD /* tools_dotmac-tell.tiff */,
+				2293F6DF0F0C198400B125FD /* search_all-left-N.tiff */,
 				220EF8EF0F08B420008DE0B6 /* footer.png */,
 				220EF8C70F08AF65008DE0B6 /* message.png */,
 				220EF8530F08985E008DE0B6 /* TB_Online.png */,
@@ -642,6 +660,13 @@
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Tototl" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Spanish,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Tototl */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -658,12 +683,12 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				22AEC3510EDB7052000D0605 /* IxayaTwitterWindow.xib in Resources */,
+				2262A7E60F2ECDBD007EFC73 /* IxayaTwitterWindow.xib in Resources */,
 				22AEC3580EDB7109000D0605 /* available.png in Resources */,
 				22AEC3590EDB7109000D0605 /* away.png in Resources */,
 				229BB8AD0EE0C43B00CE8C25 /* NewTwitterPostView.xib in Resources */,
 				224FCA0C0EE4C2360058F13F /* TototlStatusItemView.xib in Resources */,
-				22F26D060EEDBD3500B9B890 /* PreferencesWindow.xib in Resources */,
+				2262A7F20F2ECE18007EFC73 /* PreferencesWindow.xib in Resources */,
 				22F26D210EEDBF8D00B9B890 /* t.icns in Resources */,
 				22F26D240EEDC10D00B9B890 /* bird.icns in Resources */,
 				22F26D260EEDC1E900B9B890 /* about.pdf in Resources */,
@@ -672,10 +697,10 @@
 				22F26D3F0EEDCA3200B9B890 /* iusethis12.png in Resources */,
 				22F26D450EEDD6DD00B9B890 /* dsa_pub.pem in Resources */,
 				22F26DC30EEDF66500B9B890 /* TinyLock.tiff in Resources */,
-				22E5E25E0EEF07F20087FD22 /* IxayaTwitterWindowOld.xib in Resources */,
+				2262A7DE0F2ECD9E007EFC73 /* IxayaTwitterWindowOld.xib in Resources */,
 				2295ECFC0EEF8772001E0403 /* SoftwareUpdate.icns in Resources */,
 				2295ECFD0EEF8772001E0403 /* Update.png in Resources */,
-				2295ED480EF04D7D001E0403 /* IxayaTwitterWindowTiny.xib in Resources */,
+				2262A7E00F2ECDA8007EFC73 /* IxayaTwitterWindowTiny.xib in Resources */,
 				2295EDEF0EF06E74001E0403 /* blkContextButtonSelected.tiff in Resources */,
 				2295EDF00EF06E74001E0403 /* blkContextButton.tiff in Resources */,
 				2295EE370EF1CCC5001E0403 /* ReceivedMessage.m4a in Resources */,
@@ -683,7 +708,7 @@
 				2295EE390EF1CCC5001E0403 /* ReceivedDirectMessage.m4a in Resources */,
 				22F742AA0EF4DEC500B5CA1C /* action.tiff in Resources */,
 				220292EC0F00495E0087A14B /* tototl.icns in Resources */,
-				220EF7FB0F0863BA008DE0B6 /* IxayaTwitterWindowMilky.xib in Resources */,
+				2262A7E20F2ECDA8007EFC73 /* IxayaTwitterWindowMilky.xib in Resources */,
 				220EF8390F08939E008DE0B6 /* twitt.tif in Resources */,
 				220EF83B0F089728008DE0B6 /* Reply_Normal.tiff in Resources */,
 				220EF83E0F08972E008DE0B6 /* Reply_Pressed.tiff in Resources */,
@@ -691,9 +716,11 @@
 				220EF8550F08985E008DE0B6 /* TB_Online.png in Resources */,
 				220EF8560F08985E008DE0B6 /* TB_Offline.png in Resources */,
 				220EF8C80F08AF65008DE0B6 /* message.png in Resources */,
-				220EF8D70F08B15E008DE0B6 /* IxayaTwitterWindowiChat.xib in Resources */,
+				2262A7E40F2ECDB2007EFC73 /* IxayaTwitterWindowiChat.xib in Resources */,
 				220EF8F00F08B420008DE0B6 /* footer.png in Resources */,
 				223D962A0F0B87DC00A8C647 /* BSHotKey.bundle in Resources */,
+				2293F6E00F0C198400B125FD /* tools_dotmac-tell.tiff in Resources */,
+				2293F6E10F0C198400B125FD /* search_all-left-N.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +781,66 @@
 				1DDD58150DA1D0A300B32029 /* English */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		2262A7DD0F2ECD9E007EFC73 /* IxayaTwitterWindowOld.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E5E25D0EEF07F20087FD22 /* English */,
+				2262A7E70F2ECDCB007EFC73 /* Spanish */,
+				2262A7E80F2ECDE6007EFC73 /* Japanese */,
+			);
+			name = IxayaTwitterWindowOld.xib;
+			sourceTree = "<group>";
+		};
+		2262A7DF0F2ECDA8007EFC73 /* IxayaTwitterWindowTiny.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2295ED470EF04D7D001E0403 /* English */,
+				2262A7E90F2ECDEC007EFC73 /* Spanish */,
+				2262A7EA0F2ECDF0007EFC73 /* Japanese */,
+			);
+			name = IxayaTwitterWindowTiny.xib;
+			sourceTree = "<group>";
+		};
+		2262A7E10F2ECDA8007EFC73 /* IxayaTwitterWindowMilky.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220EF7FA0F0863BA008DE0B6 /* English */,
+				2262A7EB0F2ECDFA007EFC73 /* Spanish */,
+				2262A7EC0F2ECDFD007EFC73 /* Japanese */,
+			);
+			name = IxayaTwitterWindowMilky.xib;
+			sourceTree = "<group>";
+		};
+		2262A7E30F2ECDB2007EFC73 /* IxayaTwitterWindowiChat.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220EF8D60F08B15E008DE0B6 /* English */,
+				2262A7ED0F2ECE03007EFC73 /* Spanish */,
+				2262A7EE0F2ECE06007EFC73 /* Japanese */,
+			);
+			name = IxayaTwitterWindowiChat.xib;
+			sourceTree = "<group>";
+		};
+		2262A7E50F2ECDBD007EFC73 /* IxayaTwitterWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22AEC33D0EDB7052000D0605 /* English */,
+				2262A7EF0F2ECE0F007EFC73 /* Spanish */,
+				2262A7F00F2ECE11007EFC73 /* Japanese */,
+			);
+			name = IxayaTwitterWindow.xib;
+			sourceTree = "<group>";
+		};
+		2262A7F10F2ECE18007EFC73 /* PreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22F26CF10EEDBD3500B9B890 /* English */,
+				2262A7F30F2ECE1F007EFC73 /* Spanish */,
+				2262A7F40F2ECE21007EFC73 /* Japanese */,
+			);
+			name = PreferencesWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

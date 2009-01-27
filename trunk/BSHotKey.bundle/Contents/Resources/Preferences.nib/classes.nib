@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {changeHotKey = id; }; 
+            CLASS = BSHotKeyManager; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {hotKeyString = NSTextField; prefsView = NSView; target = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
