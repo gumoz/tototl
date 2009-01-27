@@ -78,6 +78,7 @@
 		22AEC3A70EDB7413000D0605 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AEC3A60EDB7413000D0605 /* Growl.framework */; };
 		22AEC3B10EDB7422000D0605 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 22AEC3A60EDB7413000D0605 /* Growl.framework */; };
 		22AEC3BD0EDB743F000D0605 /* GrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC3BC0EDB743F000D0605 /* GrowlController.m */; };
+		22E20EEE0F2EDB5E00545A5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22E20EED0F2EDB5E00545A5F /* Localizable.strings */; };
 		22E5E1A10EEEE7B90087FD22 /* AutoHyperlinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */; };
 		22E5E1A90EEEE7BC0087FD22 /* AutoHyperlinks.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */; };
 		22E5E27E0EEF0DA10087FD22 /* RBSplitView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5E27D0EEF0DA10087FD22 /* RBSplitView.framework */; };
@@ -247,6 +248,11 @@
 		22AEC3A60EDB7413000D0605 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		22AEC3BB0EDB743F000D0605 /* GrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlController.h; sourceTree = "<group>"; };
 		22AEC3BC0EDB743F000D0605 /* GrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlController.m; sourceTree = "<group>"; };
+		22E20E4F0F2ED2CD00545A5F /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		22E20E500F2ED2D000545A5F /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		22E20E9B0F2ED68A00545A5F /* English */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; fileEncoding = 10; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22E20EEF0F2EDB6300545A5F /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22E20EF00F2EDB6600545A5F /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
 		22E5E1A00EEEE7B90087FD22 /* AutoHyperlinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoHyperlinks.framework; sourceTree = "<group>"; };
 		22E5E25D0EEF07F20087FD22 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/IxayaTwitterWindowOld.xib; sourceTree = "<group>"; };
 		22E5E27D0EEF0DA10087FD22 /* RBSplitView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RBSplitView.framework; sourceTree = "<group>"; };
@@ -550,6 +556,14 @@
 			name = Growl;
 			sourceTree = "<group>";
 		};
+		22E20E9D0F2ED69100545A5F /* Traslation */ = {
+			isa = PBXGroup;
+			children = (
+				22E20EED0F2EDB5E00545A5F /* Localizable.strings */,
+			);
+			name = Traslation;
+			sourceTree = "<group>";
+		};
 		22F26CEC0EEDBD3400B9B890 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +577,7 @@
 		29B97314FDCFA39411CA2CEA /* Tototl */ = {
 			isa = PBXGroup;
 			children = (
+				22E20E9D0F2ED69100545A5F /* Traslation */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -721,6 +736,7 @@
 				223D962A0F0B87DC00A8C647 /* BSHotKey.bundle in Resources */,
 				2293F6E00F0C198400B125FD /* tools_dotmac-tell.tiff in Resources */,
 				2293F6E10F0C198400B125FD /* search_all-left-N.tiff in Resources */,
+				22E20EEE0F2EDB5E00545A5F /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +795,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1DDD58150DA1D0A300B32029 /* English */,
+				22E20E4F0F2ED2CD00545A5F /* Spanish */,
+				22E20E500F2ED2D000545A5F /* Japanese */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -841,6 +859,16 @@
 				2262A7F40F2ECE21007EFC73 /* Japanese */,
 			);
 			name = PreferencesWindow.xib;
+			sourceTree = "<group>";
+		};
+		22E20EED0F2EDB5E00545A5F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E20E9B0F2ED68A00545A5F /* English */,
+				22E20EEF0F2EDB6300545A5F /* Spanish */,
+				22E20EF00F2EDB6600545A5F /* Japanese */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

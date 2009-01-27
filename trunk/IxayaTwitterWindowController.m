@@ -169,7 +169,9 @@ enum
 		{
 			NSLog(@"longer");
 			NSImage *t = [NSImage imageNamed:@"t"];
-			[growlController growl:@"Unable to post to twitter, message is longer than 140 Chars" withTitle:@"Post Error" andIcon:[t TIFFRepresentation]];
+			NSString *titleString = NSLocalizedString(@"Post Error", @"Title shown when an error ocurred while trying to post on twitter");
+			NSString *messageString = NSLocalizedString(@"Unable to post to twitter, message is longer than 140 Chars", @"Message shown when an error ocurred while trying to post on twitter");
+			[growlController growl:titleString withTitle:messageString andIcon:[t TIFFRepresentation]];
 		} else {
 			NSLog(@"shorter");
 			[twitterEngine sendUpdate:message];	
@@ -197,7 +199,9 @@ enum
 			}
 		}
 	} else {
-		[growlController growl:@"try connecting before posting" withTitle:@"Not Connected to Twitter"];
+		NSString *titleString = NSLocalizedString(@"No connection", @"Title shown when the user is not connected");
+		NSString *messageString = NSLocalizedString(@"try connecting before posting", @"Message shown when the user is not connected");
+		[growlController growl:titleString withTitle:messageString];
 	}
 }
 #pragma mark IXSheetWindowController implementation

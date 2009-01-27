@@ -38,7 +38,10 @@
 	if([msj length] > 140)
 	{
 		NSImage *t = [NSImage imageNamed:@"t"];
-		[growlController growl:@"Unable to post to twitter, message is longer than 140 Chars" withTitle:@"Post Error" andIcon:[t TIFFRepresentation]];
+		NSString *titleString = NSLocalizedString(@"Post Error", @"Title shown when an error ocurred while trying to post on twitter");
+		NSString *messageString = NSLocalizedString(@"Unable to post to twitter, message is longer than 140 Chars", @"Message shown when an error ocurred while trying to post on twitter");
+		
+		[growlController growl:titleString withTitle:messageString andIcon:[t TIFFRepresentation]];
 	} else {
 		[twitterEngine sendUpdate:msj];
 		
