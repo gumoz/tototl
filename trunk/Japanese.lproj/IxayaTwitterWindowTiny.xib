@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="305"/>
+			<integer value="304"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -319,7 +319,7 @@
 									<string key="NSAction">_doScroller:</string>
 									<string key="themeKey">gradientTheme</string>
 								</object>
-								<object class="BGHUDScroller" id="890924169">
+								<object class="BGHUDScroller" id="206818402">
 									<reference key="NSNextResponder" ref="308043032"/>
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrameSize">{0, 0}</string>
@@ -334,7 +334,7 @@
 							<reference key="NSNextKeyView" ref="1053801682"/>
 							<int key="NSsFlags">562</int>
 							<reference key="NSVScroller" ref="472850197"/>
-							<reference key="NSHScroller" ref="890924169"/>
+							<reference key="NSHScroller" ref="206818402"/>
 							<reference key="NSContentView" ref="1053801682"/>
 							<bytes key="NSScrollAmts">QSAAAEEgAABBmAAAQZgAAA</bytes>
 							<string key="themeKey">gradientTheme</string>
@@ -441,13 +441,13 @@
 						<object class="NSButton" id="528384573">
 							<reference key="NSNextResponder" ref="544050234"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{230.644, 1}, {56.6335, 32}}</string>
+							<string key="NSFrame">{{226.644, 1}, {66, 32}}</string>
 							<reference key="NSSuperview" ref="544050234"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="BGHUDButtonCell" key="NSCell" id="275213518">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Post</string>
+								<string type="base64-UTF8" key="NSContents">6L+U5L+hA</string>
 								<reference key="NSSupport" ref="235798356"/>
 								<reference key="NSControlView" ref="528384573"/>
 								<int key="NSButtonFlags">-2038284033</int>
@@ -475,7 +475,7 @@
 			<object class="NSWindowTemplate" id="805044393">
 				<int key="NSWindowStyleMask">8223</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 410}, {169, 100}}</string>
+				<string key="NSWindowRect">{{196, 410}, {190, 100}}</string>
 				<int key="NSWTFlags">603979776</int>
 				<string key="NSWindowTitle">Authentication</string>
 				<string key="NSWindowClass">NSPanel</string>
@@ -489,7 +489,7 @@
 						<object class="NSTextField" id="245038794">
 							<reference key="NSNextResponder" ref="513105352"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{62, 71}, {96, 22}}</string>
+							<string key="NSFrame">{{84, 71}, {96, 22}}</string>
 							<reference key="NSSuperview" ref="513105352"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="BGHUDTextFieldCell" key="NSCell" id="734162370">
@@ -505,7 +505,7 @@
 						<object class="NSTextField" id="876787362">
 							<reference key="NSNextResponder" ref="513105352"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{62, 39}, {96, 22}}</string>
+							<string key="NSFrame">{{84, 39}, {96, 22}}</string>
 							<reference key="NSSuperview" ref="513105352"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="BGHUDSecureTextFieldCell" key="NSCell" id="989421720">
@@ -526,13 +526,13 @@
 						<object class="BGHUDLabel" id="911264855">
 							<reference key="NSNextResponder" ref="513105352"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{10, 73}, {40, 17}}</string>
+							<string key="NSFrame">{{10, 73}, {43, 17}}</string>
 							<reference key="NSSuperview" ref="513105352"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="303837679">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">User</string>
+								<string type="base64-UTF8" key="NSContents">6KGo56S65ZCNA</string>
 								<reference key="NSSupport" ref="235798356"/>
 								<reference key="NSControlView" ref="911264855"/>
 								<reference key="NSBackgroundColor" ref="619844663"/>
@@ -543,13 +543,13 @@
 						<object class="BGHUDLabel" id="619020308">
 							<reference key="NSNextResponder" ref="513105352"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{10, 41}, {40, 17}}</string>
+							<string key="NSFrame">{{10, 41}, {69, 17}}</string>
 							<reference key="NSSuperview" ref="513105352"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="714220229">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Pass</string>
+								<string type="base64-UTF8" key="NSContents">44OR44K544Ov44O844OJA</string>
 								<reference key="NSSupport" ref="235798356"/>
 								<reference key="NSControlView" ref="619020308"/>
 								<reference key="NSBackgroundColor" ref="619844663"/>
@@ -560,13 +560,13 @@
 						<object class="NSButton" id="3305741">
 							<reference key="NSNextResponder" ref="513105352"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{120, 7}, {38, 19}}</string>
+							<string key="NSFrame">{{133, 7}, {47, 19}}</string>
 							<reference key="NSSuperview" ref="513105352"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="BGHUDButtonCell" key="NSCell" id="497474591">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Go</string>
+								<string type="base64-UTF8" key="NSContents">5o6l57aaA</string>
 								<reference key="NSSupport" ref="705297761"/>
 								<reference key="NSControlView" ref="3305741"/>
 								<int key="NSButtonFlags">-2033434369</int>
@@ -600,7 +600,7 @@
 							</object>
 						</object>
 					</object>
-					<string key="NSFrameSize">{169, 100}</string>
+					<string key="NSFrameSize">{190, 100}</string>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -1046,7 +1046,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="581796694"/>
 							<reference ref="472850197"/>
-							<reference ref="890924169"/>
+							<reference ref="206818402"/>
 						</object>
 						<reference key="parent" ref="544050234"/>
 					</object>
@@ -1102,12 +1102,12 @@
 						<reference key="object" ref="513105352"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="245038794"/>
-							<reference ref="876787362"/>
 							<reference ref="911264855"/>
 							<reference ref="619020308"/>
-							<reference ref="3305741"/>
 							<reference ref="635243088"/>
+							<reference ref="245038794"/>
+							<reference ref="876787362"/>
+							<reference ref="3305741"/>
 						</object>
 						<reference key="parent" ref="805044393"/>
 					</object>
@@ -1271,13 +1271,13 @@
 						<reference key="parent" ref="528384573"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">429</int>
+						<int key="objectID">431</int>
 						<reference key="object" ref="472850197"/>
 						<reference key="parent" ref="308043032"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">430</int>
-						<reference key="object" ref="890924169"/>
+						<int key="objectID">432</int>
+						<reference key="object" ref="206818402"/>
 						<reference key="parent" ref="308043032"/>
 					</object>
 				</object>
@@ -1339,8 +1339,8 @@
 					<string>419.IBPluginDependency</string>
 					<string>424.IBPluginDependency</string>
 					<string>425.IBPluginDependency</string>
-					<string>429.IBShouldRemoveOnLegacySave</string>
-					<string>430.IBShouldRemoveOnLegacySave</string>
+					<string>431.IBShouldRemoveOnLegacySave</string>
+					<string>432.IBShouldRemoveOnLegacySave</string>
 					<string>47.IBPluginDependency</string>
 					<string>49.IBPluginDependency</string>
 				</object>
@@ -1372,9 +1372,9 @@
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{639, 569}, {169, 100}}</string>
+					<string>{{639, 569}, {190, 100}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{639, 569}, {169, 100}}</string>
+					<string>{{639, 569}, {190, 100}}</string>
 					<reference ref="9"/>
 					<string>{3.40282e+38, 3.40282e+38}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1427,7 +1427,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">430</int>
+			<int key="maxID">432</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1510,7 +1510,7 @@
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.LastKnownRelativeProjectPath">Tototl.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">../Tototl.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 	</data>
 </archive>

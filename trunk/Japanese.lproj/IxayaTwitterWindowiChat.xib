@@ -246,7 +246,7 @@
 											<object class="NSButtonCell" key="NSCell" id="959621069">
 												<int key="NSCellFlags">-2080244224</int>
 												<int key="NSCellFlags2">134217728</int>
-												<string key="NSContents">Post</string>
+												<string type="base64-UTF8" key="NSContents">6L+U5L+hA</string>
 												<object class="NSFont" key="NSSupport" id="705297761">
 													<string key="NSName">LucidaGrande</string>
 													<double key="NSSize">1.200000e+01</double>
@@ -604,7 +604,7 @@ AABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 							<object class="NSTextFieldCell" key="NSCell" id="41409327">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Username</string>
+								<string type="base64-UTF8" key="NSContents">6KGo56S65ZCNA</string>
 								<reference key="NSSupport" ref="235798356"/>
 								<reference key="NSControlView" ref="756683667"/>
 								<reference key="NSBackgroundColor" ref="619844663"/>
@@ -614,13 +614,13 @@ AABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 						<object class="NSTextField" id="212868802">
 							<reference key="NSNextResponder" ref="112350802"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 48}, {64, 17}}</string>
+							<string key="NSFrame">{{17, 47}, {69, 17}}</string>
 							<reference key="NSSuperview" ref="112350802"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="178871560">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Password</string>
+								<string type="base64-UTF8" key="NSContents">44OR44K544Ov44O844OJA</string>
 								<reference key="NSSupport" ref="235798356"/>
 								<reference key="NSControlView" ref="212868802"/>
 								<reference key="NSBackgroundColor" ref="619844663"/>
@@ -674,7 +674,7 @@ AABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 							<object class="NSButtonCell" key="NSCell" id="89976912">
 								<int key="NSCellFlags">-2080244224</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Connect</string>
+								<string type="base64-UTF8" key="NSContents">5o6l57aaA</string>
 								<reference key="NSSupport" ref="705297761"/>
 								<reference key="NSControlView" ref="348888805"/>
 								<int key="NSButtonFlags">-2038152961</int>
@@ -692,9 +692,9 @@ AABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 							<reference key="NSSuperview" ref="112350802"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="170071897">
-								<int key="NSCellFlags">-2080244224</int>
+								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Close</string>
+								<string type="base64-UTF8" key="NSContents">6ZaJ44GY44KLA</string>
 								<reference key="NSSupport" ref="705297761"/>
 								<reference key="NSControlView" ref="545924773"/>
 								<int key="NSButtonFlags">-2038152961</int>
@@ -984,6 +984,7 @@ AABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 								</object>
 								<string key="NSFrameSize">{169, 34}</string>
 								<reference key="NSSuperview" ref="104601983"/>
+								<reference key="NSNextKeyView" ref="766312051"/>
 								<reference key="NSDocView" ref="766312051"/>
 								<reference key="NSBGColor" ref="1007862823"/>
 								<object class="NSCursor" key="NSCursor">
@@ -1016,6 +1017,7 @@ AABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 						</object>
 						<string key="NSFrame">{{53, 17}, {169, 34}}</string>
 						<reference key="NSSuperview" ref="163719670"/>
+						<reference key="NSNextKeyView" ref="331679732"/>
 						<int key="NSsFlags">64</int>
 						<reference key="NSVScroller" ref="369416060"/>
 						<reference key="NSHScroller" ref="746774064"/>
@@ -1483,10 +1485,10 @@ AABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="887969293"/>
 							<reference ref="362259870"/>
-							<reference ref="212868802"/>
 							<reference ref="756683667"/>
 							<reference ref="348888805"/>
 							<reference ref="545924773"/>
+							<reference ref="212868802"/>
 						</object>
 						<reference key="parent" ref="78459153"/>
 					</object>
@@ -2119,7 +2121,7 @@ AABDb3B5cmlnaHQgQXBwbGUsIEluYy4sIDIwMDgAA</bytes>
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.LastKnownRelativeProjectPath">Tototl.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">../Tototl.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 	</data>
 </archive>
