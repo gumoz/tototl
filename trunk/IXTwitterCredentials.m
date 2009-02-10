@@ -34,7 +34,7 @@
 		//	NSString *username = [keychainItem username];
 		NSString *aPassword = [keychainItem password];
 
-		NSLog(@"aPassword %@", aPassword);
+//		NSLog(@"aPassword %@", aPassword);
 		if(aPassword != nil)
 		{
 			NSLog(@"a password is not nil");

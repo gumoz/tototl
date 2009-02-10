@@ -12,14 +12,18 @@
 #import "TototlStatusItemViewController.h"
 #import <Growl/Growl.h>
 #import <Sparkle/Sparkle.h>
+#import "TototlStatusItemView.h"
+#import "CTBadge.h"
 
 @class MAAttachedWindow;
 @interface AppController : NSObject  {
 
+	CTBadge *badge;
 	MAAttachedWindow *newTwitterPostWindow;
 	MGTwitterEngine *twitterEngine;
 	IxayaTwitterWindowController *ixayaTwitterController;
 //	TototlStatusItemViewController *statusItemController;
+	TototlStatusItemView *statusItemView;
 	
 	GrowlController *growlController;
 	IBOutlet SUUpdater *sparkleUpdater;
@@ -45,4 +49,7 @@
 -(IBAction)checkForUpdates:(id)sender;
 - (void)toggleNewTwitterPost:(NSPoint)point;
 - (void)dettachTwitterPost;
+- (void)gotMessages:(int)amount;
+- (void)gotDirectMessages:(int)amount;
+- (void)setBadgeWithAmount:(int)amount;
 @end

@@ -921,7 +921,7 @@
     }
     cornerRadius = MAX(cornerRadius, 0.0);
     
-    // Adjust arrowBaseWidth appropriately.
+    // Adjust arrowBaseWTototlについてidth appropriately.
     [self setArrowBaseWidth:arrowBaseWidth];
 }
 

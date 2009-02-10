@@ -22,7 +22,7 @@
 //		Boolean authenticationWillBeRequired = FALSE;
 //		if (UnsanitySCR_CanInstall(&authenticationWillBeRequired))
 //			UnsanitySCR_Install(authenticationWillBeRequired ? kUnsanitySCR_GlobalInstall : 0);
-		
+		badge = [[CTBadge alloc] init];
 //		self release
 		shown = NO;
 		// Create a TwitterEngine
@@ -69,8 +69,8 @@
     float height = [[NSStatusBar systemStatusBar] thickness];
     NSRect viewFrame = NSMakeRect(0, 0, width, height);
     statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:width] retain];
-    [statusItem setView:[[[TototlStatusItemView alloc] initWithFrame:viewFrame controller:self] autorelease]];
-	
+	statusItemView = [[[TototlStatusItemView alloc] initWithFrame:viewFrame controller:self] autorelease];
+	[statusItem setView:statusItemView];
 	
 //	statusItemController = [[TototlStatusItemViewController  alloc] init];
 //	[statusItemController setController:self];
@@ -107,12 +107,16 @@
 
 	BOOL show = [defaults boolForKey:@"SingleClickOpenWindow"];
 	// not executed if menu
-	NSLog(@"single click %d", show);
 	if (show)
 	{
 		[self showOrHide:self];
+		[self setBadgeWithAmount:-1];
 	} else {
-		[self newPost:self];	
+		// do single click stuff
+		NSRect frame = [[statusItemView window] frame];
+		NSPoint point = NSMakePoint(NSMidX(frame), NSMinY(frame));
+		[self toggleNewTwitterPost:point];
+		[self newPost:self];
 	}
 }
 -(void)doubleClick{
@@ -211,18 +215,29 @@
 		[newTwitterPostWindow orderOut:self];
 		[newTwitterPostWindow release];
 		newTwitterPostWindow = nil;
-	}    
-
+	}  
 }
 - (void)applicationDidChangeScreenParameters:(NSNotification *)aNotification{
-	NSLog(@"aa");
 	[self show:self];
 }
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag{
-	NSLog(@"bb");
-	[self show:self];
+	[self singleClick];
 	return NO;
 }
 
-
+- (void)gotMessages:(int)amount{
+	[statusItemView gotMessages:amount];
+	[self setBadgeWithAmount:amount];
+}
+- (void)gotDirectMessages:(int)amount{
+	[statusItemView gotDirectMessages:amount];
+	[self setBadgeWithAmount:amount];
+}
+- (void)setBadgeWithAmount:(int)amount{
+//	NSImage *image = [badge smallBadgeForValue:amountOfOrders];
+	//[drivethruSalesImage setImage:image];
+	NSLog(@"badge for dock");
+	[badge badgeApplicationDockIconWithValue:amount insetX:3 y:3];	
+	
+}
 @end

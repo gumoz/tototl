@@ -280,8 +280,9 @@ enum
 			// we check if the software is not fetching messages because is launching, if not then we post notifications to Growl and send a custom sound
 			if(!launching)
 			{
+				// notify to growl, status item, and user using sound
 				[growlController growl:text withTitle:name andIcon:[message picture_data]];
-				
+				[[NSApp delegate] gotMessages:[newTweets count]];
 				BOOL soundEnabled = [defaults boolForKey:@"receivedMessageSound"];
 				if(soundEnabled)
 				{
@@ -337,8 +338,9 @@ enum
 			// we check if the software is not fetching messages because is launching, if not then we post notifications to Growl and send a custom sound
 			if(!launching)
 			{
+				// notify to growl, status item, and user using sound
 				[growlController growl:text withTitle:name andIcon:[message picture_data]];
-				
+				[[NSApp delegate] gotDirectMessages:[newTweets count]];
 				BOOL soundEnabled = [defaults boolForKey:@"receivedMessageSound"];
 				if(soundEnabled)
 				{
