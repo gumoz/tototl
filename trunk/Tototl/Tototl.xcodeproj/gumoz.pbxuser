@@ -1653,6 +1653,16 @@
 		vrLen = 512;
 		vrLoc = 0;
 	};
+	22AF3D5D0F7703D0003C4CF3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2D70F75F6E200CC6738 /* AppDelegate.m */;
+		name = "AppDelegate.m: 25";
+		rLen = 0;
+		rLoc = 509;
+		rType = 0;
+		vrLen = 512;
+		vrLoc = 0;
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 2278F2390F75EECA00CC6738 /* Tototl */;
@@ -1870,6 +1880,7 @@
 			22AF3D590F7702AD003C4CF3 /* PBXTextBookmark */ = 22AF3D590F7702AD003C4CF3 /* PBXTextBookmark */;
 			22AF3D5A0F7702AD003C4CF3 /* PBXTextBookmark */ = 22AF3D5A0F7702AD003C4CF3 /* PBXTextBookmark */;
 			22AF3D5B0F7702AD003C4CF3 /* PBXTextBookmark */ = 22AF3D5B0F7702AD003C4CF3 /* PBXTextBookmark */;
+			22AF3D5D0F7703D0003C4CF3 /* PBXTextBookmark */ = 22AF3D5D0F7703D0003C4CF3 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2278F2480F75EEDD00CC6738 /* Source Control */;
 		userBuildSettings = {
