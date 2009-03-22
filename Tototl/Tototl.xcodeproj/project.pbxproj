@@ -51,6 +51,22 @@
 		22AF3D280F77022F003C4CF3 /* MGTwitterSearchYAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D110F77022F003C4CF3 /* MGTwitterSearchYAJLParser.m */; };
 		22AF3D290F77022F003C4CF3 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D140F77022F003C4CF3 /* NSString+UUID.m */; };
 		22AF3D2A0F77022F003C4CF3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D160F77022F003C4CF3 /* NSData+Base64.m */; };
+		22AF3D7E0F7703D5003C4CF3 /* NSData-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D5F0F7703D5003C4CF3 /* NSData-SQLitePersistence.m */; };
+		22AF3D7F0F7703D5003C4CF3 /* NSDate-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D610F7703D5003C4CF3 /* NSDate-SQLitePersistence.m */; };
+		22AF3D800F7703D5003C4CF3 /* NSMutableArray-MultipleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D630F7703D5003C4CF3 /* NSMutableArray-MultipleSort.m */; };
+		22AF3D810F7703D5003C4CF3 /* NSMutableData-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D650F7703D5003C4CF3 /* NSMutableData-SQLitePersistence.m */; };
+		22AF3D820F7703D5003C4CF3 /* NSNumber-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D670F7703D5003C4CF3 /* NSNumber-SQLitePersistence.m */; };
+		22AF3D830F7703D5003C4CF3 /* NSObject-ClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D690F7703D5003C4CF3 /* NSObject-ClassName.m */; };
+		22AF3D840F7703D5003C4CF3 /* NSObject-MissingKV.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D6B0F7703D5003C4CF3 /* NSObject-MissingKV.m */; };
+		22AF3D850F7703D5003C4CF3 /* NSObject-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D6D0F7703D5003C4CF3 /* NSObject-SQLitePersistence.m */; };
+		22AF3D860F7703D5003C4CF3 /* NSString-NumberStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D6F0F7703D5003C4CF3 /* NSString-NumberStuff.m */; };
+		22AF3D870F7703D5003C4CF3 /* NSString-SQLiteColumnName.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D710F7703D5003C4CF3 /* NSString-SQLiteColumnName.m */; };
+		22AF3D880F7703D5003C4CF3 /* NSString-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D730F7703D5003C4CF3 /* NSString-SQLitePersistence.m */; };
+		22AF3D890F7703D5003C4CF3 /* NSString-UppercaseFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D750F7703D5003C4CF3 /* NSString-UppercaseFirst.m */; };
+		22AF3D8A0F7703D5003C4CF3 /* SQLiteInstanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D770F7703D5003C4CF3 /* SQLiteInstanceManager.m */; };
+		22AF3D8B0F7703D5003C4CF3 /* SQLitePersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D790F7703D5003C4CF3 /* SQLitePersistentObject.m */; };
+		22AF3D8C0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D7B0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.m */; };
+		22AF3D8D0F7703D5003C4CF3 /* UIImage-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D7D0F7703D5003C4CF3 /* UIImage-SQLitePersistence.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -133,6 +149,38 @@
 		22AF3D140F77022F003C4CF3 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		22AF3D150F77022F003C4CF3 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		22AF3D160F77022F003C4CF3 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		22AF3D5E0F7703D5003C4CF3 /* NSData-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-SQLitePersistence.h"; sourceTree = "<group>"; };
+		22AF3D5F0F7703D5003C4CF3 /* NSData-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-SQLitePersistence.m"; sourceTree = "<group>"; };
+		22AF3D600F7703D5003C4CF3 /* NSDate-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-SQLitePersistence.h"; sourceTree = "<group>"; };
+		22AF3D610F7703D5003C4CF3 /* NSDate-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-SQLitePersistence.m"; sourceTree = "<group>"; };
+		22AF3D620F7703D5003C4CF3 /* NSMutableArray-MultipleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray-MultipleSort.h"; sourceTree = "<group>"; };
+		22AF3D630F7703D5003C4CF3 /* NSMutableArray-MultipleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray-MultipleSort.m"; sourceTree = "<group>"; };
+		22AF3D640F7703D5003C4CF3 /* NSMutableData-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData-SQLitePersistence.h"; sourceTree = "<group>"; };
+		22AF3D650F7703D5003C4CF3 /* NSMutableData-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData-SQLitePersistence.m"; sourceTree = "<group>"; };
+		22AF3D660F7703D5003C4CF3 /* NSNumber-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber-SQLitePersistence.h"; sourceTree = "<group>"; };
+		22AF3D670F7703D5003C4CF3 /* NSNumber-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber-SQLitePersistence.m"; sourceTree = "<group>"; };
+		22AF3D680F7703D5003C4CF3 /* NSObject-ClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-ClassName.h"; sourceTree = "<group>"; };
+		22AF3D690F7703D5003C4CF3 /* NSObject-ClassName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-ClassName.m"; sourceTree = "<group>"; };
+		22AF3D6A0F7703D5003C4CF3 /* NSObject-MissingKV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-MissingKV.h"; sourceTree = "<group>"; };
+		22AF3D6B0F7703D5003C4CF3 /* NSObject-MissingKV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-MissingKV.m"; sourceTree = "<group>"; };
+		22AF3D6C0F7703D5003C4CF3 /* NSObject-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-SQLitePersistence.h"; sourceTree = "<group>"; };
+		22AF3D6D0F7703D5003C4CF3 /* NSObject-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-SQLitePersistence.m"; sourceTree = "<group>"; };
+		22AF3D6E0F7703D5003C4CF3 /* NSString-NumberStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-NumberStuff.h"; sourceTree = "<group>"; };
+		22AF3D6F0F7703D5003C4CF3 /* NSString-NumberStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-NumberStuff.m"; sourceTree = "<group>"; };
+		22AF3D700F7703D5003C4CF3 /* NSString-SQLiteColumnName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-SQLiteColumnName.h"; sourceTree = "<group>"; };
+		22AF3D710F7703D5003C4CF3 /* NSString-SQLiteColumnName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-SQLiteColumnName.m"; sourceTree = "<group>"; };
+		22AF3D720F7703D5003C4CF3 /* NSString-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-SQLitePersistence.h"; sourceTree = "<group>"; };
+		22AF3D730F7703D5003C4CF3 /* NSString-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-SQLitePersistence.m"; sourceTree = "<group>"; };
+		22AF3D740F7703D5003C4CF3 /* NSString-UppercaseFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-UppercaseFirst.h"; sourceTree = "<group>"; };
+		22AF3D750F7703D5003C4CF3 /* NSString-UppercaseFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-UppercaseFirst.m"; sourceTree = "<group>"; };
+		22AF3D760F7703D5003C4CF3 /* SQLiteInstanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteInstanceManager.h; sourceTree = "<group>"; };
+		22AF3D770F7703D5003C4CF3 /* SQLiteInstanceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteInstanceManager.m; sourceTree = "<group>"; };
+		22AF3D780F7703D5003C4CF3 /* SQLitePersistentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLitePersistentObject.h; sourceTree = "<group>"; };
+		22AF3D790F7703D5003C4CF3 /* SQLitePersistentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLitePersistentObject.m; sourceTree = "<group>"; };
+		22AF3D7A0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-SQLitePersistentObject.h"; sourceTree = "<group>"; };
+		22AF3D7B0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-SQLitePersistentObject.m"; sourceTree = "<group>"; };
+		22AF3D7C0F7703D5003C4CF3 /* UIImage-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-SQLitePersistence.h"; sourceTree = "<group>"; };
+		22AF3D7D0F7703D5003C4CF3 /* UIImage-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-SQLitePersistence.m"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -159,6 +207,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				22AF3D5C0F7703C7003C4CF3 /* SQLite Persistent Objects */,
 				2278F2F40F75F82500CC6738 /* Preferences */,
 				2278F2A30F75F68D00CC6738 /* Twitter */,
 				2278F24C0F75EF5800CC6738 /* Security */,
@@ -363,6 +412,45 @@
 			name = Tototl;
 			sourceTree = "<group>";
 		};
+		22AF3D5C0F7703C7003C4CF3 /* SQLite Persistent Objects */ = {
+			isa = PBXGroup;
+			children = (
+				22AF3D5E0F7703D5003C4CF3 /* NSData-SQLitePersistence.h */,
+				22AF3D5F0F7703D5003C4CF3 /* NSData-SQLitePersistence.m */,
+				22AF3D600F7703D5003C4CF3 /* NSDate-SQLitePersistence.h */,
+				22AF3D610F7703D5003C4CF3 /* NSDate-SQLitePersistence.m */,
+				22AF3D620F7703D5003C4CF3 /* NSMutableArray-MultipleSort.h */,
+				22AF3D630F7703D5003C4CF3 /* NSMutableArray-MultipleSort.m */,
+				22AF3D640F7703D5003C4CF3 /* NSMutableData-SQLitePersistence.h */,
+				22AF3D650F7703D5003C4CF3 /* NSMutableData-SQLitePersistence.m */,
+				22AF3D660F7703D5003C4CF3 /* NSNumber-SQLitePersistence.h */,
+				22AF3D670F7703D5003C4CF3 /* NSNumber-SQLitePersistence.m */,
+				22AF3D680F7703D5003C4CF3 /* NSObject-ClassName.h */,
+				22AF3D690F7703D5003C4CF3 /* NSObject-ClassName.m */,
+				22AF3D6A0F7703D5003C4CF3 /* NSObject-MissingKV.h */,
+				22AF3D6B0F7703D5003C4CF3 /* NSObject-MissingKV.m */,
+				22AF3D6C0F7703D5003C4CF3 /* NSObject-SQLitePersistence.h */,
+				22AF3D6D0F7703D5003C4CF3 /* NSObject-SQLitePersistence.m */,
+				22AF3D6E0F7703D5003C4CF3 /* NSString-NumberStuff.h */,
+				22AF3D6F0F7703D5003C4CF3 /* NSString-NumberStuff.m */,
+				22AF3D700F7703D5003C4CF3 /* NSString-SQLiteColumnName.h */,
+				22AF3D710F7703D5003C4CF3 /* NSString-SQLiteColumnName.m */,
+				22AF3D720F7703D5003C4CF3 /* NSString-SQLitePersistence.h */,
+				22AF3D730F7703D5003C4CF3 /* NSString-SQLitePersistence.m */,
+				22AF3D740F7703D5003C4CF3 /* NSString-UppercaseFirst.h */,
+				22AF3D750F7703D5003C4CF3 /* NSString-UppercaseFirst.m */,
+				22AF3D760F7703D5003C4CF3 /* SQLiteInstanceManager.h */,
+				22AF3D770F7703D5003C4CF3 /* SQLiteInstanceManager.m */,
+				22AF3D780F7703D5003C4CF3 /* SQLitePersistentObject.h */,
+				22AF3D790F7703D5003C4CF3 /* SQLitePersistentObject.m */,
+				22AF3D7A0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.h */,
+				22AF3D7B0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.m */,
+				22AF3D7C0F7703D5003C4CF3 /* UIImage-SQLitePersistence.h */,
+				22AF3D7D0F7703D5003C4CF3 /* UIImage-SQLitePersistence.m */,
+			);
+			name = "SQLite Persistent Objects";
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* Tototl */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +597,22 @@
 				22AF3D280F77022F003C4CF3 /* MGTwitterSearchYAJLParser.m in Sources */,
 				22AF3D290F77022F003C4CF3 /* NSString+UUID.m in Sources */,
 				22AF3D2A0F77022F003C4CF3 /* NSData+Base64.m in Sources */,
+				22AF3D7E0F7703D5003C4CF3 /* NSData-SQLitePersistence.m in Sources */,
+				22AF3D7F0F7703D5003C4CF3 /* NSDate-SQLitePersistence.m in Sources */,
+				22AF3D800F7703D5003C4CF3 /* NSMutableArray-MultipleSort.m in Sources */,
+				22AF3D810F7703D5003C4CF3 /* NSMutableData-SQLitePersistence.m in Sources */,
+				22AF3D820F7703D5003C4CF3 /* NSNumber-SQLitePersistence.m in Sources */,
+				22AF3D830F7703D5003C4CF3 /* NSObject-ClassName.m in Sources */,
+				22AF3D840F7703D5003C4CF3 /* NSObject-MissingKV.m in Sources */,
+				22AF3D850F7703D5003C4CF3 /* NSObject-SQLitePersistence.m in Sources */,
+				22AF3D860F7703D5003C4CF3 /* NSString-NumberStuff.m in Sources */,
+				22AF3D870F7703D5003C4CF3 /* NSString-SQLiteColumnName.m in Sources */,
+				22AF3D880F7703D5003C4CF3 /* NSString-SQLitePersistence.m in Sources */,
+				22AF3D890F7703D5003C4CF3 /* NSString-UppercaseFirst.m in Sources */,
+				22AF3D8A0F7703D5003C4CF3 /* SQLiteInstanceManager.m in Sources */,
+				22AF3D8B0F7703D5003C4CF3 /* SQLitePersistentObject.m in Sources */,
+				22AF3D8C0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.m in Sources */,
+				22AF3D8D0F7703D5003C4CF3 /* UIImage-SQLitePersistence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
