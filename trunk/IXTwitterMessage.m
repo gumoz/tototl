@@ -39,7 +39,7 @@ enum
 		
 		NSAttributedString *newText = [hlscan linkifiedString];
 		AHMarkedHyperlink *hyperlink = [hlscan nextURI];
-		NSURL *url = [hyperlink URL];
+//		NSURL *url = [hyperlink URL];
 		
 //		IXWebService *getLocation = [[IXWebService alloc] init];
 //		[getLocation setURI:url];

@@ -10,6 +10,8 @@
 #import "MGTwitterEngine.h"
 
 @interface PreferencesWindowController : NSWindowController {
+
+	IBOutlet NSToolbar *windowToolbar;
 	IBOutlet NSUserDefaultsController *preferences;
 	IBOutlet id profileView;
 	IBOutlet id twitterView;

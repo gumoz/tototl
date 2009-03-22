@@ -47,7 +47,8 @@
 		
 		BOOL soundEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:@"sentMessageSound"];
 		if(soundEnabled)
-		{
+		{	
+
 			NSSound *sound = [NSSound soundNamed:@"SentMessage"];
 			[sound play];
 		}

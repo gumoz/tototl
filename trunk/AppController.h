@@ -16,6 +16,20 @@
 #import "CTBadge.h"
 
 @class MAAttachedWindow;
+
+enum {
+	InterfaceOld = 1,
+	InterfaceTiny = 2,
+	InterfaceMilky = 3,
+	InterfaceiChat = 4,
+};
+
+enum 
+{
+	twitterMessage = 0,
+	twitterDirectMessage = 1
+};
+
 @interface AppController : NSObject  {
 
 	CTBadge *badge;

@@ -84,7 +84,7 @@
 		nil];
 
 	NSDictionary *regDict = [NSDictionary dictionaryWithObjectsAndKeys:
-		@"QuickPOS", GROWL_APP_NAME,
+		@"Tototl", GROWL_APP_NAME,
 		notifications, GROWL_NOTIFICATIONS_ALL,
 		notifications, GROWL_NOTIFICATIONS_DEFAULT,
 		nil];
@@ -148,6 +148,7 @@
 							   clickContext:title];
 	
 }
+
 - (void)growl:(NSString *)message withTitle:(NSString *)aTitle andIcon:(NSData *)aIcon
 {
 	[GrowlApplicationBridge notifyWithTitle:title

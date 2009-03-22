@@ -23,6 +23,8 @@
 	IBOutlet NSObjectController *credentials;
 	IBOutlet NSArrayController *twittsArrayController;
 	NSArray *twitts;
+	NSArray *directMessagesArray;
+	NSArray *messagesArray;
 	NSUserDefaults *defaults;
 	MGTwitterEngine *twitterEngine;
 	NSNumber *connected;
@@ -35,13 +37,17 @@
 	BOOL launching;
 	NSStatusItem *statusItem;
 	NSColor *standardFontColor;
+	NSString *since;
 }
 @property (copy, readwrite) NSString *newTweetMessage;
 @property (retain, readwrite) GrowlController *growlController;
 @property (retain, readwrite) MGTwitterEngine *twitterEngine;
 @property (copy, readwrite) NSArray *twitts;
-@property (copy, readwrite) 	NSNumber *connected;
-@property (retain, readwrite) 	NSStatusItem *statusItem;
+@property (copy, readwrite) NSArray *directMessagesArray;
+@property (copy, readwrite) NSArray *messagesArray;
+@property (copy, readwrite) NSNumber *connected;
+@property (retain, readwrite) NSStatusItem *statusItem;
+@property (copy, readwrite) NSString *since;
 -(IBAction)configuration:(id)sender;
 -(IBAction)connect:(id)sender;
 -(IBAction)postTweet:(id)sender;

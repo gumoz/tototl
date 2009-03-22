@@ -117,4 +117,12 @@
 //	[defaults setObject:[NSNumber numberWithInt:12] forKey:@"fontSize"];
 	[defaults synchronize];
 }
+
+- (NSArray *)toolbarSelectableItemIdentifiers: (NSToolbar *)toolbar;
+{
+	NSLog(@"items: %@", [toolbar items]);
+    // Optional delegate method: Returns the identifiers of the subset of
+    // toolbar items that are selectable. In our case, all of them
+    return [toolbar items];
+}
 @end
