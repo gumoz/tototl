@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	2278F2390F75EECA00CC6738 /* Tototl */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Tototl;
+		sourceDirectories = (
+		);
+	};
+	2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 594}}";
+			sepNavSelRange = "{238, 0}";
+			sepNavVisRange = "{0, 659}";
+			sepNavWindowFrame = "{{15, 62}, {1222, 811}}";
+		};
+	};
+	2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1046, 1152}}";
+			sepNavSelRange = "{727, 0}";
+			sepNavVisRange = "{0, 1003}";
+		};
+	};
+	2278F2480F75EEDD00CC6738 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	2278F2490F75EEDD00CC6738 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	2278F2820F75F5A300CC6738 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/gumoz/Ixaya/Tototl/src/Tototl/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2278F2830F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */;
+		name = "IXTototlAccount.m: 32";
+		rLen = 0;
+		rLoc = 727;
+		rType = 0;
+		vrLen = 1003;
+		vrLoc = 0;
+	};
+	2278F2840F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 29";
+		rLen = 0;
+		rLoc = 653;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 0;
+	};
+	2278F2850F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 14";
+		rLen = 68;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 430;
+		vrLoc = 0;
+	};
+	2278F2860F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */;
+		name = "IXTototlAccount.m: 15";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 275;
+		vrLoc = 0;
+	};
+	2278F2870F75F5A300CC6738 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/gumoz/Ixaya/Tototl/src/Tototl/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2278F2880F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 14";
+		rLen = 68;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 430;
+		vrLoc = 0;
+	};
+	2278F2890F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */;
+		name = "IXTototlAccount.m: 15";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 275;
+		vrLoc = 0;
+	};
+	2278F28A0F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 17";
+		rLen = 0;
+		rLoc = 354;
+		rType = 0;
+		vrLen = 495;
+		vrLoc = 0;
+	};
+	2278F28B0F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */;
+		name = "IXTototlAccount.m: 17";
+		rLen = 0;
+		rLoc = 851;
+		rType = 0;
+		vrLen = 320;
+		vrLoc = 0;
+	};
+	2278F28C0F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 17";
+		rLen = 0;
+		rLoc = 354;
+		rType = 0;
+		vrLen = 495;
+		vrLoc = 0;
+	};
+	2278F28D0F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */;
+		name = "IXTototlAccount.m: 19";
+		rLen = 47;
+		rLoc = 376;
+		rType = 0;
+		vrLen = 775;
+		vrLoc = 0;
+	};
+	2278F28E0F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 23";
+		rLen = 0;
+		rLoc = 653;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 0;
+	};
+	2278F28F0F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */;
+		name = "IXTototlAccount.m: 25";
+		rLen = 36;
+		rLoc = 852;
+		rType = 0;
+		vrLen = 775;
+		vrLoc = 0;
+	};
+	2278F2900F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 24";
+		rLen = 0;
+		rLoc = 653;
+		rType = 0;
+		vrLen = 582;
+		vrLoc = 0;
+	};
+	2278F2910F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */;
+		name = "IXTototlAccount.m: 48";
+		rLen = 0;
+		rLoc = 1658;
+		rType = 0;
+		vrLen = 1265;
+		vrLoc = 273;
+	};
+	2278F2920F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 14";
+		rLen = 0;
+		rLoc = 246;
+		rType = 0;
+		vrLen = 645;
+		vrLoc = 0;
+	};
+	2278F2930F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */;
+		name = "IXTototlAccount.m: 40";
+		rLen = 12;
+		rLoc = 1005;
+		rType = 0;
+		vrLen = 1134;
+		vrLoc = 243;
+	};
+	2278F2940F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 29";
+		rLen = 0;
+		rLoc = 653;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 0;
+	};
+	2278F2950F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */;
+		name = "IXTototlAccount.m: 32";
+		rLen = 0;
+		rLoc = 727;
+		rType = 0;
+		vrLen = 1003;
+		vrLoc = 0;
+	};
+	2278F2960F75F5A300CC6738 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */;
+		name = "IXTototlAccount.h: 14";
+		rLen = 0;
+		rLoc = 238;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 0;
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 2278F2390F75EECA00CC6738 /* Tototl */;
+		activeTarget = 8D1107260486CEB800E47090 /* Tototl */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* Tototl */,
+		);
+		codeSenseManager = 2278F2490F75EEDD00CC6738 /* Code sense */;
+		executables = (
+			2278F2390F75EECA00CC6738 /* Tototl */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					829,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 259387082;
+			PBXWorkspaceStateSaveDate = 259387082;
+		};
+		perUserProjectItems = {
+			2278F2820F75F5A300CC6738 /* PlistBookmark */ = 2278F2820F75F5A300CC6738 /* PlistBookmark */;
+			2278F2830F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2830F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2840F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2840F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2850F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2850F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2860F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2860F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2870F75F5A300CC6738 /* PlistBookmark */ = 2278F2870F75F5A300CC6738 /* PlistBookmark */;
+			2278F2880F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2880F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2890F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2890F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F28A0F75F5A300CC6738 /* PBXTextBookmark */ = 2278F28A0F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F28B0F75F5A300CC6738 /* PBXTextBookmark */ = 2278F28B0F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F28C0F75F5A300CC6738 /* PBXTextBookmark */ = 2278F28C0F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F28D0F75F5A300CC6738 /* PBXTextBookmark */ = 2278F28D0F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F28E0F75F5A300CC6738 /* PBXTextBookmark */ = 2278F28E0F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F28F0F75F5A300CC6738 /* PBXTextBookmark */ = 2278F28F0F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2900F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2900F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2910F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2910F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2920F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2920F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2930F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2930F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2940F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2940F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2950F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2950F75F5A300CC6738 /* PBXTextBookmark */;
+			2278F2960F75F5A300CC6738 /* PBXTextBookmark */ = 2278F2960F75F5A300CC6738 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 2278F2480F75EEDD00CC6738 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* Tototl */ = {
+		activeExec = 0;
+		executables = (
+			2278F2390F75EECA00CC6738 /* Tototl */,
+		);
+	};
+}
