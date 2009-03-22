@@ -1,0 +1,12 @@
+﻿/* Title shown when the user is not connected */
+"No connection" = "Sín conexión";
+
+/* Title shown when an error ocurred while trying to post on twitter */
+"Post Error" = "Error de envío";
+
+/* Message shown when the user is not connected */
+"try connecting before posting" = "Trata de conectarte antes de enviar";
+
+/* Message shown when an error ocurred while trying to post on twitter */
+"Unable to post to twitter, message is longer than 140 Chars" = "No enviado a twitter, mensaje es mayor a 140 letras";
+
