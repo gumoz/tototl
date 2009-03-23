@@ -11,14 +11,28 @@
 
 @implementation IXTototlAccount
 
+@synthesize kind;
+@synthesize enabled;
 @synthesize username;
 @synthesize password;
 @synthesize saveInKeychain;
+
+@synthesize isConnected;
+@synthesize kindPicture;
+@synthesize statusPicture;
+@synthesize status;
+
 - (id) init
 {
 	self = [super init];
 	if (self != nil) {
+//		[self setUsername:@""];
+		[self setEnabled:[NSNumber numberWithBool:NO]];
 		[self setKind:@"twitter"];
+		[self setSaveInKeychain:[NSNumber numberWithBool:NO]];
+		[self setKindPicture:[NSImage imageNamed:@"twitter_logo_32"]];
+		[self setStatusPicture:[NSImage imageNamed:@"away"]];
+		[self setStatus:@"Disconected"];
 	}
 	return self;
 }
@@ -29,44 +43,67 @@
 	if([saveInKeychain boolValue])
 	{
 		EMGenericKeychainItem *keychainItem = [[EMKeychainProxy sharedProxy] genericKeychainItemForService:@"Tototl" withUsername:username];
-		if(keychainItem == nil)
-			[[EMKeychainProxy sharedProxy] addGenericKeychainItemForService:@"Tototl" withUsername:username password:password];
+		return keychainItem;
 	}
+	return nil;
 }
 - (void)retrievePasswordFromKeychain{
 	EMGenericKeychainItem *keychainItem = [self retrieveKeychainItem];
-	[self setPassword:[keychainItem password]];
+	if(keychainItem != nil)
+	{	
+		[self setPassword:[keychainItem password]];
+	}
+
+}
+-(void)savePasswordInKeychain{
+	
+	// if save in keychain, save it.
+	if([saveInKeychain boolValue] && password != nil && [password class] != [NSNull class])
+	{
+		EMGenericKeychainItem *keychainItem = [self retrieveKeychainItem];
+		if(keychainItem == nil)
+		{	
+			[[EMKeychainProxy sharedProxy] addGenericKeychainItemForService:@"Tototl" withUsername:username password:password];
+		} else {
+			[keychainItem setPassword:password];
+		}
+
+	}	
 }
 - (void)save{
 	
-	// search accounts in preferences
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	NSArray *accounts = [defaults arrayForKey:@"accounts"];
-	
-	BOOL found = NO;
-	for(NSDictionary *account in accounts)
+	if(username != nil && [username class] != [NSNull class])
 	{
-		NSString *accountUsername = [account valueForKey:@"username"];
-		if([accountUsername isEqualToString:account])
-			found = YES;
-	}
-	
-	// if no accounts in preferences, add it.
-	if(found == NO)
-	{
-		NSMutableArray *mutableAccounts = [NSMutableArray arrayWithArray:accounts];
+		// search accounts in preferences
+		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+		NSArray *accounts = [defaults arrayForKey:@"accounts"];
 
-		NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:username, @"username", saveInKeychain, @"saveInKeychain", kind, @"kind"];
-		[mutableAccounts addObject:dict];
-		[defaults setObject:[NSArray arrayWithArray:mutableAccounts] forKey:@"accounts"];
-	}
-	
-	// if save in keychain, save it.
-	if([saveInKeychain boolValue])
-	{
-		EMGenericKeychainItem *keychainItem = [self retrieveKeychainItem];
-		[keychainItem setPassword:password];
+		BOOL found = NO;
+		for(NSDictionary *account in accounts)
+		{
+			NSString *accountUsername = [account valueForKey:@"username"];
+			if([accountUsername isEqualToString:username])
+				found = YES;
+		}
+
+		// if no accounts in preferences, add it.
+		if(found == NO)
+		{
+			NSLog(@"create account");
+			NSMutableArray *mutableAccounts = [NSMutableArray arrayWithArray:accounts];
+
+			NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:username, @"username", saveInKeychain, @"saveInKeychain", kind, @"kind", enabled, @"enabled", nil];
+			NSLog(@"dict %@", dict);
+				
+			NSLog(@"username: %@, saveInKeychain: %@, kind: %@", username, saveInKeychain, kind);
+			[mutableAccounts addObject:dict];
+			[defaults setObject:[NSArray arrayWithArray:mutableAccounts] forKey:@"accounts"];
+			[defaults synchronize];
+		}
+		[self savePasswordInKeychain];
 	}
 }
-
+-(void)connect{
+	
+}
 @end
