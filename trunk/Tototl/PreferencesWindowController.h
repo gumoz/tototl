@@ -10,5 +10,8 @@
 
 @interface PreferencesWindowController : NSWindowController {
 
+	NSMutableArray *accounts;
 }
+@property (retain, readwrite) NSMutableArray *accounts;
+-(void)saveAccounts;
 @end

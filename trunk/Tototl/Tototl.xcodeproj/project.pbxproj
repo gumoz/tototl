@@ -28,6 +28,9 @@
 		2278F3250F75FCF700CC6738 /* available.png in Resources */ = {isa = PBXBuildFile; fileRef = 2278F3230F75FCF700CC6738 /* available.png */; };
 		2278F3260F75FCF700CC6738 /* away.png in Resources */ = {isa = PBXBuildFile; fileRef = 2278F3240F75FCF700CC6738 /* away.png */; };
 		2278F32A0F75FDB500CC6738 /* iusethis12.png in Resources */ = {isa = PBXBuildFile; fileRef = 2278F3290F75FDB500CC6738 /* iusethis12.png */; };
+		22847DAA0F77077D0070071E /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 22847DA90F77077D0070071E /* README.rtf */; };
+		22847DAC0F7707900070071E /* BUILDING.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 22847DAB0F7707900070071E /* BUILDING.rtf */; };
+		22847DE80F770B890070071E /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22847DE70F770B890070071E /* Growl-WithInstaller.framework */; };
 		22AF3BEE0F76F096003C4CF3 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3BED0F76F096003C4CF3 /* PreferencesWindowController.m */; };
 		22AF3C270F76F1DC003C4CF3 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AF3C260F76F1DC003C4CF3 /* libxml2.2.dylib */; };
 		22AF3C9F0F76F24B003C4CF3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AF3C9E0F76F24B003C4CF3 /* Security.framework */; };
@@ -67,6 +70,10 @@
 		22AF3D8B0F7703D5003C4CF3 /* SQLitePersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D790F7703D5003C4CF3 /* SQLitePersistentObject.m */; };
 		22AF3D8C0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D7B0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.m */; };
 		22AF3D8D0F7703D5003C4CF3 /* UIImage-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3D7D0F7703D5003C4CF3 /* UIImage-SQLitePersistence.m */; };
+		22FFCEBD0F77175200937D04 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FFCEBC0F77175200937D04 /* libsqlite3.0.dylib */; };
+		22FFCEEF0F775EF500937D04 /* libyajl_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22847EBB0F770E630070071E /* libyajl_s.a */; };
+		22FFCF470F7763A200937D04 /* IXTwitterAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFCF460F7763A200937D04 /* IXTwitterAccount.m */; };
+		22FFD0560F77689B00937D04 /* twitter_logo_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FFD0540F77689B00937D04 /* twitter_logo_32.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -101,6 +108,11 @@
 		2278F3230F75FCF700CC6738 /* available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = available.png; sourceTree = "<group>"; };
 		2278F3240F75FCF700CC6738 /* away.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = away.png; sourceTree = "<group>"; };
 		2278F3290F75FDB500CC6738 /* iusethis12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iusethis12.png; sourceTree = "<group>"; };
+		22847DA90F77077D0070071E /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		22847DAB0F7707900070071E /* BUILDING.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = BUILDING.rtf; sourceTree = "<group>"; };
+		22847DE70F770B890070071E /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Growl-WithInstaller.framework"; path = "/Library/Frameworks/Growl-WithInstaller.framework"; sourceTree = "<absolute>"; };
+		22847EBB0F770E630070071E /* libyajl_s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyajl_s.a; path = /usr/local/lib/libyajl_s.a; sourceTree = "<absolute>"; };
+		22847F9A0F770FB10070071E /* libyajl.0.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libyajl.0.4.1.dylib; path = /usr/local/lib/libyajl.0.4.1.dylib; sourceTree = "<absolute>"; };
 		22AF3BEC0F76F096003C4CF3 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
 		22AF3BED0F76F096003C4CF3 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
 		22AF3C260F76F1DC003C4CF3 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = /usr/lib/libxml2.2.dylib; sourceTree = "<absolute>"; };
@@ -181,6 +193,13 @@
 		22AF3D7B0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-SQLitePersistentObject.m"; sourceTree = "<group>"; };
 		22AF3D7C0F7703D5003C4CF3 /* UIImage-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-SQLitePersistence.h"; sourceTree = "<group>"; };
 		22AF3D7D0F7703D5003C4CF3 /* UIImage-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-SQLitePersistence.m"; sourceTree = "<group>"; };
+		22FFCEBC0F77175200937D04 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = /usr/lib/libsqlite3.0.dylib; sourceTree = "<absolute>"; };
+		22FFCF450F7763A200937D04 /* IXTwitterAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTwitterAccount.h; sourceTree = "<group>"; };
+		22FFCF460F7763A200937D04 /* IXTwitterAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTwitterAccount.m; sourceTree = "<group>"; };
+		22FFD01D0F77673300937D04 /* Twitter_bird.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Twitter_bird.icns; sourceTree = "<group>"; };
+		22FFD01E0F77673300937D04 /* Twitter.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Twitter.icns; sourceTree = "<group>"; };
+		22FFD0530F77689B00937D04 /* twitter_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo.png; sourceTree = "<group>"; };
+		22FFD0540F77689B00937D04 /* twitter_logo_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo_32.png; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -198,6 +217,9 @@
 				2278F2560F75F58D00CC6738 /* BWToolkitFramework.framework in Frameworks */,
 				22AF3C270F76F1DC003C4CF3 /* libxml2.2.dylib in Frameworks */,
 				22AF3C9F0F76F24B003C4CF3 /* Security.framework in Frameworks */,
+				22847DE80F770B890070071E /* Growl-WithInstaller.framework in Frameworks */,
+				22FFCEBD0F77175200937D04 /* libsqlite3.0.dylib in Frameworks */,
+				22FFCEEF0F775EF500937D04 /* libyajl_s.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +249,11 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22AF3C9E0F76F24B003C4CF3 /* Security.framework */,
-				22AF3C260F76F1DC003C4CF3 /* libxml2.2.dylib */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				22AF3C9E0F76F24B003C4CF3 /* Security.framework */,
+				22AF3C260F76F1DC003C4CF3 /* libxml2.2.dylib */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -258,6 +280,9 @@
 		2278F2810F75F59600CC6738 /* External Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22FFCEBC0F77175200937D04 /* libsqlite3.0.dylib */,
+				22847F9A0F770FB10070071E /* libyajl.0.4.1.dylib */,
+				22847DE70F770B890070071E /* Growl-WithInstaller.framework */,
 				2278F2550F75F58D00CC6738 /* BWToolkitFramework.framework */,
 			);
 			name = "External Frameworks";
@@ -316,6 +341,23 @@
 				2278F3240F75FCF700CC6738 /* away.png */,
 			);
 			name = Status;
+			sourceTree = "<group>";
+		};
+		22847DA80F77076E0070071E /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				22847DA90F77077D0070071E /* README.rtf */,
+				22847DAB0F7707900070071E /* BUILDING.rtf */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		22847F8E0F770F1A0070071E /* Static Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				22847EBB0F770E630070071E /* libyajl_s.a */,
+			);
+			name = "Static Libraries";
 			sourceTree = "<group>";
 		};
 		22AF3CE60F77022F003C4CF3 /* MATwitterEngine */ = {
@@ -406,6 +448,8 @@
 			children = (
 				2278F2450F75EEDD00CC6738 /* IXTototlAccount.h */,
 				2278F2460F75EEDD00CC6738 /* IXTototlAccount.m */,
+				22FFCF450F7763A200937D04 /* IXTwitterAccount.h */,
+				22FFCF460F7763A200937D04 /* IXTwitterAccount.m */,
 				2278F2D60F75F6E200CC6738 /* AppDelegate.h */,
 				2278F2D70F75F6E200CC6738 /* AppDelegate.m */,
 			);
@@ -451,9 +495,32 @@
 			name = "SQLite Persistent Objects";
 			sourceTree = "<group>";
 		};
+		22FFD0210F77673600937D04 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				22FFD0530F77689B00937D04 /* twitter_logo.png */,
+				22FFD0540F77689B00937D04 /* twitter_logo_32.png */,
+				22FFD01D0F77673300937D04 /* Twitter_bird.icns */,
+				22FFD01E0F77673300937D04 /* Twitter.icns */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
+		22FFD0220F77674600937D04 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2278F30A0F75FC5C00CC6738 /* Tototl.icns */,
+				2278F31C0F75FCDD00CC6738 /* IxayaStamp.png */,
+				2278F31E0F75FCE300CC6738 /* SoftwareUpdate.icns */,
+				2278F3290F75FDB500CC6738 /* iusethis12.png */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* Tototl */ = {
 			isa = PBXGroup;
 			children = (
+				22847DA80F77076E0070071E /* Documentation */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -475,12 +542,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2278F3220F75FCF000CC6738 /* Status */,
 				2278F3200F75FCEA00CC6738 /* dsa_pub.pem */,
-				2278F30A0F75FC5C00CC6738 /* Tototl.icns */,
-				2278F31C0F75FCDD00CC6738 /* IxayaStamp.png */,
-				2278F31E0F75FCE300CC6738 /* SoftwareUpdate.icns */,
-				2278F3290F75FDB500CC6738 /* iusethis12.png */,
+				22FFD0220F77674600937D04 /* Misc */,
+				22FFD0210F77673600937D04 /* Twitter */,
+				2278F3220F75FCF000CC6738 /* Status */,
 				2278F3010F75FC4D00CC6738 /* Toolbar */,
 				2278F2FA0F75FC2D00CC6738 /* Sounds */,
 				2278F2F90F75FB8C00CC6738 /* Menubar */,
@@ -494,9 +559,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2278F2810F75F59600CC6738 /* External Frameworks */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				2278F2810F75F59600CC6738 /* External Frameworks */,
+				22847F8E0F770F1A0070071E /* Static Libraries */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -561,6 +627,9 @@
 				2278F3250F75FCF700CC6738 /* available.png in Resources */,
 				2278F3260F75FCF700CC6738 /* away.png in Resources */,
 				2278F32A0F75FDB500CC6738 /* iusethis12.png in Resources */,
+				22847DAA0F77077D0070071E /* README.rtf in Resources */,
+				22847DAC0F7707900070071E /* BUILDING.rtf in Resources */,
+				22FFD0560F77689B00937D04 /* twitter_logo_32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +682,7 @@
 				22AF3D8B0F7703D5003C4CF3 /* SQLitePersistentObject.m in Sources */,
 				22AF3D8C0F7703D5003C4CF3 /* UIColor-SQLitePersistentObject.m in Sources */,
 				22AF3D8D0F7703D5003C4CF3 /* UIImage-SQLitePersistence.m in Sources */,
+				22FFCF470F7763A200937D04 /* IXTwitterAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +713,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -651,6 +725,10 @@
 				GCC_PREFIX_HEADER = Tototl_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib/sqlite3,
+				);
 				PRODUCT_NAME = Tototl;
 			};
 			name = Debug;
@@ -660,11 +738,19 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Tototl_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/lib/sqlite3,
+				);
 				PRODUCT_NAME = Tototl;
 			};
 			name = Release;
@@ -677,7 +763,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					/usr/local/include/,
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
@@ -691,7 +780,10 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					/usr/local/include/,
+				);
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
 			};
