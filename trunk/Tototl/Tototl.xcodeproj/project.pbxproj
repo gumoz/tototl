@@ -13,8 +13,6 @@
 		221F620E100BB7D600916122 /* IXTwitterAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F620C100BB7D600916122 /* IXTwitterAccount.m */; };
 		221F6214100BB7DD00916122 /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6211100BB7DD00916122 /* EMKeychainProxy.m */; };
 		221F6215100BB7DD00916122 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6213100BB7DD00916122 /* EMKeychainItem.m */; };
-		221F621A100BB7E600916122 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221F6217100BB7E600916122 /* Preferences.xib */; };
-		221F621B100BB7E600916122 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6219100BB7E600916122 /* PreferencesWindowController.m */; };
 		221F621F100BB7EB00916122 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 221F621D100BB7EB00916122 /* README.rtf */; };
 		221F6220100BB7EB00916122 /* BUILDING.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 221F621E100BB7EB00916122 /* BUILDING.rtf */; };
 		221F6229100BB80900916122 /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221F6228100BB80900916122 /* Growl-WithInstaller.framework */; };
@@ -58,10 +56,36 @@
 		221F6383100BB9D000916122 /* MGTwitterSearchYAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F636C100BB9D000916122 /* MGTwitterSearchYAJLParser.m */; };
 		221F6384100BB9D000916122 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F636F100BB9D000916122 /* NSString+UUID.m */; };
 		221F6385100BB9D000916122 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6371100BB9D000916122 /* NSData+Base64.m */; };
+		221F63CD100BBFBC00916122 /* Growl-WithInstaller.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 221F6228100BB80900916122 /* Growl-WithInstaller.framework */; };
+		221F63F5100BC09700916122 /* libyajl.1.0.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 221F63F4100BC09700916122 /* libyajl.1.0.6.dylib */; };
+		221F64CB100BCA7B00916122 /* IXTototlEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F64CA100BCA7B00916122 /* IXTototlEnvironment.m */; };
+		221F6548100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6547100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m */; };
+		221F654B100BD20900916122 /* MBPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F654A100BD20900916122 /* MBPreferencesController.m */; };
+		221F654E100BD2AA00916122 /* IXPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F654D100BD2AA00916122 /* IXPreferencesController.m */; };
+		221F6550100BD2FF00916122 /* IXTototlAccountsPreferenceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221F654F100BD2FF00916122 /* IXTototlAccountsPreferenceView.xib */; };
+		221F67BE100BF50400916122 /* MIT-License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 221F67BD100BF50400916122 /* MIT-License.rtf */; };
+		221F67C1100BF50900916122 /* RSVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F67C0100BF50900916122 /* RSVerticallyCenteredTextFieldCell.m */; };
+		221F6830100BFC1000916122 /* IXTototlEditAccountWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F682F100BFC1000916122 /* IXTototlEditAccountWindowController.m */; };
+		221F6833100BFC5700916122 /* IXTototlEditTwitterAccountWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6832100BFC5700916122 /* IXTototlEditTwitterAccountWindowController.m */; };
+		221F6835100BFC9200916122 /* IXTototlEditTwitterAccountWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221F6834100BFC9200916122 /* IXTototlEditTwitterAccountWindow.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		221F63EB100BBFC700916122 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				221F63CD100BBFBC00916122 /* Growl-WithInstaller.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -79,8 +103,6 @@
 		221F6212100BB7DD00916122 /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainItem.h; sourceTree = "<group>"; };
 		221F6213100BB7DD00916122 /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
 		221F6217100BB7E600916122 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
-		221F6218100BB7E600916122 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
-		221F6219100BB7E600916122 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
 		221F621D100BB7EB00916122 /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 		221F621E100BB7EB00916122 /* BUILDING.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = BUILDING.rtf; sourceTree = "<group>"; };
 		221F6228100BB80900916122 /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Growl-WithInstaller.framework"; path = "/Library/Frameworks/Growl-WithInstaller.framework"; sourceTree = "<absolute>"; };
@@ -148,6 +170,24 @@
 		221F636F100BB9D000916122 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		221F6370100BB9D000916122 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		221F6371100BB9D000916122 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		221F63F4100BC09700916122 /* libyajl.1.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libyajl.1.0.6.dylib; path = /usr/local/lib/libyajl.1.0.6.dylib; sourceTree = "<absolute>"; };
+		221F64C9100BCA7B00916122 /* IXTototlEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTototlEnvironment.h; sourceTree = "<group>"; };
+		221F64CA100BCA7B00916122 /* IXTototlEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlEnvironment.m; sourceTree = "<group>"; };
+		221F6546100BD1B000916122 /* IXTototlAccountsPreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTototlAccountsPreferenceViewController.h; sourceTree = "<group>"; };
+		221F6547100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlAccountsPreferenceViewController.m; sourceTree = "<group>"; };
+		221F6549100BD20900916122 /* MBPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPreferencesController.h; sourceTree = "<group>"; };
+		221F654A100BD20900916122 /* MBPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPreferencesController.m; sourceTree = "<group>"; };
+		221F654C100BD2AA00916122 /* IXPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXPreferencesController.h; sourceTree = "<group>"; };
+		221F654D100BD2AA00916122 /* IXPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXPreferencesController.m; sourceTree = "<group>"; };
+		221F654F100BD2FF00916122 /* IXTototlAccountsPreferenceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IXTototlAccountsPreferenceView.xib; sourceTree = "<group>"; };
+		221F67BD100BF50400916122 /* MIT-License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "MIT-License.rtf"; sourceTree = "<group>"; };
+		221F67BF100BF50900916122 /* RSVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
+		221F67C0100BF50900916122 /* RSVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
+		221F682E100BFC1000916122 /* IXTototlEditAccountWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTototlEditAccountWindowController.h; sourceTree = "<group>"; };
+		221F682F100BFC1000916122 /* IXTototlEditAccountWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlEditAccountWindowController.m; sourceTree = "<group>"; };
+		221F6831100BFC5700916122 /* IXTototlEditTwitterAccountWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTototlEditTwitterAccountWindowController.h; sourceTree = "<group>"; };
+		221F6832100BFC5700916122 /* IXTototlEditTwitterAccountWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlEditTwitterAccountWindowController.m; sourceTree = "<group>"; };
+		221F6834100BFC9200916122 /* IXTototlEditTwitterAccountWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IXTototlEditTwitterAccountWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -165,6 +205,7 @@
 				221F6229100BB80900916122 /* Growl-WithInstaller.framework in Frameworks */,
 				221F622B100BB81200916122 /* libxml2.2.dylib in Frameworks */,
 				221F62E5100BB81F00916122 /* Security.framework in Frameworks */,
+				221F63F5100BC09700916122 /* libyajl.1.0.6.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,12 +215,15 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				221F67C2100BF50D00916122 /* Visuals */,
 				221F6310100BB9AB00916122 /* Twitter */,
 				221F6216100BB7E600916122 /* Preferences */,
 				221F620F100BB7DD00916122 /* Security */,
 				221F61FC100BB76800916122 /* Tototl */,
 				221F61F7100BB76500916122 /* AppDelegate.h */,
 				221F61F8100BB76500916122 /* AppDelegate.m */,
+				221F64C9100BCA7B00916122 /* IXTototlEnvironment.h */,
+				221F64CA100BCA7B00916122 /* IXTototlEnvironment.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -195,6 +239,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				221F63F4100BC09700916122 /* libyajl.1.0.6.dylib */,
 				221F62E4100BB81F00916122 /* Security.framework */,
 				221F622A100BB81200916122 /* libxml2.2.dylib */,
 				221F6228100BB80900916122 /* Growl-WithInstaller.framework */,
@@ -238,20 +283,24 @@
 		221F6216100BB7E600916122 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				221F682C100BFBF200916122 /* IXTototlAccounts */,
+				221F6549100BD20900916122 /* MBPreferencesController.h */,
+				221F654A100BD20900916122 /* MBPreferencesController.m */,
+				221F654C100BD2AA00916122 /* IXPreferencesController.h */,
+				221F654D100BD2AA00916122 /* IXPreferencesController.m */,
 				221F6217100BB7E600916122 /* Preferences.xib */,
-				221F6218100BB7E600916122 /* PreferencesWindowController.h */,
-				221F6219100BB7E600916122 /* PreferencesWindowController.m */,
 			);
 			name = Preferences;
 			sourceTree = "<group>";
 		};
-		221F621C100BB7EB00916122 /* Documentation */ = {
+		221F621C100BB7EB00916122 /* Documentation & License */ = {
 			isa = PBXGroup;
 			children = (
+				221F67BD100BF50400916122 /* MIT-License.rtf */,
 				221F621D100BB7EB00916122 /* README.rtf */,
 				221F621E100BB7EB00916122 /* BUILDING.rtf */,
 			);
-			name = Documentation;
+			name = "Documentation & License";
 			sourceTree = "<group>";
 		};
 		221F62E7100BB83F00916122 /* Misc */ = {
@@ -404,10 +453,42 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		221F67C2100BF50D00916122 /* Visuals */ = {
+			isa = PBXGroup;
+			children = (
+				221F67BF100BF50900916122 /* RSVerticallyCenteredTextFieldCell.h */,
+				221F67C0100BF50900916122 /* RSVerticallyCenteredTextFieldCell.m */,
+			);
+			name = Visuals;
+			sourceTree = "<group>";
+		};
+		221F682C100BFBF200916122 /* IXTototlAccounts */ = {
+			isa = PBXGroup;
+			children = (
+				221F682D100BFC0000916122 /* EditAccounts */,
+				221F654F100BD2FF00916122 /* IXTototlAccountsPreferenceView.xib */,
+				221F6546100BD1B000916122 /* IXTototlAccountsPreferenceViewController.h */,
+				221F6547100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m */,
+			);
+			name = IXTototlAccounts;
+			sourceTree = "<group>";
+		};
+		221F682D100BFC0000916122 /* EditAccounts */ = {
+			isa = PBXGroup;
+			children = (
+				221F682E100BFC1000916122 /* IXTototlEditAccountWindowController.h */,
+				221F682F100BFC1000916122 /* IXTototlEditAccountWindowController.m */,
+				221F6831100BFC5700916122 /* IXTototlEditTwitterAccountWindowController.h */,
+				221F6832100BFC5700916122 /* IXTototlEditTwitterAccountWindowController.m */,
+				221F6834100BFC9200916122 /* IXTototlEditTwitterAccountWindow.xib */,
+			);
+			name = EditAccounts;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* Tototl */ = {
 			isa = PBXGroup;
 			children = (
-				221F621C100BB7EB00916122 /* Documentation */,
+				221F621C100BB7EB00916122 /* Documentation & License */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -462,6 +543,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				221F63EB100BBFC700916122 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -497,7 +579,6 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				221F621A100BB7E600916122 /* Preferences.xib in Resources */,
 				221F621F100BB7EB00916122 /* README.rtf in Resources */,
 				221F6220100BB7EB00916122 /* BUILDING.rtf in Resources */,
 				221F62FE100BB83F00916122 /* dsa_pub.pem in Resources */,
@@ -518,6 +599,9 @@
 				221F630D100BB83F00916122 /* TototlHeadPurple.png in Resources */,
 				221F630E100BB83F00916122 /* TototlHeadBlue.png in Resources */,
 				221F630F100BB83F00916122 /* TototlHeadBlack.png in Resources */,
+				221F6550100BD2FF00916122 /* IXTototlAccountsPreferenceView.xib in Resources */,
+				221F67BE100BF50400916122 /* MIT-License.rtf in Resources */,
+				221F6835100BFC9200916122 /* IXTototlEditTwitterAccountWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +618,6 @@
 				221F620E100BB7D600916122 /* IXTwitterAccount.m in Sources */,
 				221F6214100BB7DD00916122 /* EMKeychainProxy.m in Sources */,
 				221F6215100BB7DD00916122 /* EMKeychainItem.m in Sources */,
-				221F621B100BB7E600916122 /* PreferencesWindowController.m in Sources */,
 				221F6372100BB9D000916122 /* MGTwitterEngine.m in Sources */,
 				221F6373100BB9D000916122 /* MGTwitterHTTPURLConnection.m in Sources */,
 				221F6374100BB9D000916122 /* MGTwitterLibXMLParser.m in Sources */,
@@ -555,6 +638,13 @@
 				221F6383100BB9D000916122 /* MGTwitterSearchYAJLParser.m in Sources */,
 				221F6384100BB9D000916122 /* NSString+UUID.m in Sources */,
 				221F6385100BB9D000916122 /* NSData+Base64.m in Sources */,
+				221F64CB100BCA7B00916122 /* IXTototlEnvironment.m in Sources */,
+				221F6548100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m in Sources */,
+				221F654B100BD20900916122 /* MBPreferencesController.m in Sources */,
+				221F654E100BD2AA00916122 /* IXPreferencesController.m in Sources */,
+				221F67C1100BF50900916122 /* RSVerticallyCenteredTextFieldCell.m in Sources */,
+				221F6830100BFC1000916122 /* IXTototlEditAccountWindowController.m in Sources */,
+				221F6833100BFC5700916122 /* IXTototlEditTwitterAccountWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +675,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../dependencies\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -602,6 +696,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../dependencies\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Tototl_Prefix.pch;
@@ -619,7 +717,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					/usr/include/libxml2,
+				);
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG";
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
 			};
@@ -632,6 +735,10 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					/usr/local/include/,
+				);
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
 			};

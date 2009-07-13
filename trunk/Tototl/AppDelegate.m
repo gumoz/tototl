@@ -8,17 +8,17 @@
 
 #import "AppDelegate.h"
 #import "IXTwitterAccount.h"
-#import "PreferencesWindowController.h"
+#import "IXPreferencesController.h"
 
 @implementation AppDelegate
 
 @synthesize accounts;
+
 - (id) init
 {
 	self = [super init];
 	if (self != nil) {
 		[self readAccountsFromDefaults];
-		[self openPreferences:self];
 	}
 	return self;
 }
@@ -39,31 +39,37 @@
 	return accountClass;
 }
 
-- (IBAction)openPreferences:(id)sender{
-	PreferencesWindowController *preferences = [[PreferencesWindowController alloc] init];
-	[preferences setAccounts:[NSMutableArray arrayWithArray:accounts]];
-	[preferences showWindow:self];
+- (IBAction)openPreferences:(id)sender{	
+	[[IXPreferencesController sharedController] showWindow:sender];
 }
+
 -(void)readAccountsFromDefaults{
 	NSArray *defaultsAccounts = [[NSUserDefaults standardUserDefaults] arrayForKey:@"accounts"];
-	
+	NSLog(@"accounts: %@", defaultsAccounts);
 	NSMutableArray *tmpArray = [NSMutableArray new];
+	
 	for(NSDictionary *accountDictionary in defaultsAccounts)
 	{
-		IXTwitterAccount *account;
-		NSString *kind = [accountDictionary valueForKey:@"kind"];
-		account = [[self accountFromKind:kind] new];
-		account.kind = kind;
-		account.username = [accountDictionary valueForKey:@"username"];
-		account.saveInKeychain = [accountDictionary valueForKey:@"saveInKeychain"];
-		account.enabled = [accountDictionary valueForKey:@"enabled"];
-		[account retrievePasswordFromKeychain];
-		[tmpArray addObject:account];
+		IXTwitterAccount *account = nil;
+		NSString *kind = nil;
+		kind = [accountDictionary valueForKey:@"kind"];
+		if(kind != nil)
+		{
+			account = [[self accountFromKind:kind] new];
+			account.kind = kind;
+			account.username = [accountDictionary valueForKey:@"username"];
+			account.saveInKeychain = [accountDictionary valueForKey:@"saveInKeychain"];
+			account.enabled = [accountDictionary valueForKey:@"enabled"];
+			[account retrievePasswordFromKeychain];
+			[tmpArray addObject:account];			
+		} else {
+			NSLog(@"unknown");
+		}
 	}
+	
 	[self setAccounts:[NSArray arrayWithArray:tmpArray]];
 	NSLog(@"defaultsAccounts: %@", defaultsAccounts);
 	NSLog(@"tmpArray: %@", tmpArray);
 }
-
 
 @end
