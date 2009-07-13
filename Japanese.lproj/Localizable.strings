@@ -1,0 +1,12 @@
+﻿/* Title shown when the user is not connected */
+"No connection" = "No connection";
+
+/* Title shown when an error ocurred while trying to post on twitter */
+"Post Error" = "返信失敗";
+
+/* Message shown when the user is not connected */
+"try connecting before posting" = "返信する前に接続してください";
+
+/* Message shown when an error ocurred while trying to post on twitter */
+"Unable to post to twitter, message is longer than 140 Chars" = "文字数は140個を超えたため、Twitter にメッセージの返信ができません";
+
