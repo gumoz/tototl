@@ -33,6 +33,7 @@ typedef enum _MGTwitterEngineDeliveryOptions {
 // This delegate method is called each time a new result is parsed from the connection and
 // the deliveryOption is configured for MGTwitterEngineDeliveryIndividualResults.
 - (void)receivedObject:(NSDictionary *)dictionary forRequest:(NSString *)connectionIdentifier;
+- (void)parsedObject:(NSDictionary *)dictionary forRequest:(NSString *)connectionIdentifier ofResponseType:(NSString *)responseType];
 #endif
 
 // These delegate methods are called after all results are parsed from the connection. If 

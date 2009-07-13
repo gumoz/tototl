@@ -53,6 +53,4 @@
 - (void)_parsingDidEnd;
 - (void)_parsingErrorOccurred:(NSError *)parseError;
 - (void)_parsedObject:(NSDictionary *)dictionary;
-
-
 @end

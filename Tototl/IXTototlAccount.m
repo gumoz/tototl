@@ -26,13 +26,13 @@
 {
 	self = [super init];
 	if (self != nil) {
-//		[self setUsername:@""];
+		username = nil;
 		[self setEnabled:[NSNumber numberWithBool:NO]];
-		[self setKind:@"twitter"];
-		[self setSaveInKeychain:[NSNumber numberWithBool:NO]];
-		[self setKindPicture:[NSImage imageNamed:@"twitter_logo_32"]];
-		[self setStatusPicture:[NSImage imageNamed:@"away"]];
-		[self setStatus:@"Disconected"];
+		kind = @"twitter";
+		saveInKeychain = [NSNumber numberWithBool:NO];
+		kindPicture = [NSImage imageNamed:@"twitter_logo_32"];
+		statusPicture = [NSImage imageNamed:@"away"];
+		status = @"Disconnected";
 	}
 	return self;
 }
