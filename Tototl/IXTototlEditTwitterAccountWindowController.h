@@ -11,6 +11,8 @@
 
 @interface IXTototlEditTwitterAccountWindowController : IXTototlEditAccountWindowController {
 
+	NSArray *deliveryMethods;
 }
-
+@property (copy, readwrite) NSArray *deliveryMethods;
+-(IBAction)setLocation:(id)sender;
 @end

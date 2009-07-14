@@ -18,7 +18,8 @@
 {
 	self = [super init];
 	if (self != nil) {
-		[self readAccountsFromDefaults];
+		self.accounts = [[AccountsController sharedController] accounts];
+		[self connectAll];
 	}
 	return self;
 }
@@ -31,45 +32,7 @@
 		}
 	}
 }
-- (Class)accountFromKind:(NSString *)kind{
-	
-	Class accountClass;
-	if([kind isEqualToString:@"twitter"])
-		accountClass = [IXTwitterAccount class];
-	return accountClass;
-}
-
 - (IBAction)openPreferences:(id)sender{	
 	[[IXPreferencesController sharedController] showWindow:sender];
 }
-
--(void)readAccountsFromDefaults{
-	NSArray *defaultsAccounts = [[NSUserDefaults standardUserDefaults] arrayForKey:@"accounts"];
-	NSLog(@"accounts: %@", defaultsAccounts);
-	NSMutableArray *tmpArray = [NSMutableArray new];
-	
-	for(NSDictionary *accountDictionary in defaultsAccounts)
-	{
-		IXTwitterAccount *account = nil;
-		NSString *kind = nil;
-		kind = [accountDictionary valueForKey:@"kind"];
-		if(kind != nil)
-		{
-			account = [[self accountFromKind:kind] new];
-			account.kind = kind;
-			account.username = [accountDictionary valueForKey:@"username"];
-			account.saveInKeychain = [accountDictionary valueForKey:@"saveInKeychain"];
-			account.enabled = [accountDictionary valueForKey:@"enabled"];
-			[account retrievePasswordFromKeychain];
-			[tmpArray addObject:account];			
-		} else {
-			NSLog(@"unknown");
-		}
-	}
-	
-	[self setAccounts:[NSArray arrayWithArray:tmpArray]];
-	NSLog(@"defaultsAccounts: %@", defaultsAccounts);
-	NSLog(@"tmpArray: %@", tmpArray);
-}
-
 @end

@@ -9,19 +9,17 @@
 #import <Cocoa/Cocoa.h>
 #import "IXTototlAccount.h"
 #import "MBPreferencesController.h"
+#import "AccountsController.h"
 
 @interface IXTototlAccountsPreferenceViewController : NSViewController <MBPreferencesModule> {
 
+	IBOutlet NSArrayController *accountsArrayController;
 	NSMutableArray *accounts;
-	NSArray *kinds;
 }
-@property (retain, readwrite) NSArray *kinds;
 @property (retain, readwrite) NSMutableArray *accounts;
--(void)saveAccounts;
 
 - (NSString *)identifier;
 - (NSImage *)image;
 
--(void)readAccountsFromDefaults;
-- (Class)accountFromKind:(NSString *)kind;
+-(IBAction)editSelectedAccount:(id)sender;
 @end

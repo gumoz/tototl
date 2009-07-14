@@ -11,13 +11,17 @@
 
 @implementation IXTototlEditTwitterAccountWindowController
 
+@synthesize deliveryMethods;
+
 - (id) init
 {
 	self = [super init];
 	if (self != nil) {
 		[self initWithWindowNibName:@"IXTototlEditTwitterAccountWindow"];
+		deliveryMethods = [NSArray arrayWithObjects:@"im", @"sms", @"none", nil];
 	}
 	return self;
 }
-
+-(IBAction)setLocation:(id)sender{
+}
 @end

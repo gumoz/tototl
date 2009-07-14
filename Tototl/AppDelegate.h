@@ -8,14 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import "IXTototlAccount.h"
+#import "AccountsController.h"
 
 @interface AppDelegate : NSObject {
 	
-	NSArray *accounts;
+	NSMutableArray *accounts;
 }
-@property (retain, readwrite) 	NSArray *accounts;
+@property (retain, readwrite) 	NSMutableArray *accounts;
 - (void)connectAll;
-- (Class)accountFromKind:(NSString *)kind;
--(void)readAccountsFromDefaults;
 - (IBAction)openPreferences:(id)sender;
 @end

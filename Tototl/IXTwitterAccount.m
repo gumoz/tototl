@@ -28,16 +28,18 @@
 	NSLog(@"connectionIdentifier = %@", connectionIdentifier);
 }
 
+#pragma mark MGTwitterEngineDelegate methods
+
 //-(void)connection:(MGTwitterHTTPURLConnection *)connection didFailWithError:(NSError *)error{
 //	isConnected = NO;
 //}
 
-#pragma mark MGTwitterEngineDelegate methods
-
-
 - (void)requestSucceeded:(NSString *)connectionIdentifier
 {
     NSLog(@"Request succeeded for connectionIdentifier = %@", connectionIdentifier);
+	isConnected = YES;
+	statusPicture = [NSImage imageNamed:@"available"];
+	status = @"Connected";
 }
 
 
@@ -47,6 +49,10 @@
           connectionIdentifier, 
           [error localizedDescription], 
           [error userInfo]);
+
+	isConnected = NO;
+	statusPicture = [NSImage imageNamed:@"away"];
+	status = @"Disconnected";
 }
 
 
@@ -95,10 +101,25 @@
 		[NSApp terminate:self];
 	}
 }
-
 - (void)receivedObject:(NSDictionary *)dictionary forRequest:(NSString *)connectionIdentifier
 {
     NSLog(@"Got an object for %@: %@", connectionIdentifier, dictionary);
 }
-
+- (void)readDefaultsFromDictionary:(NSDictionary *)defaultsDictionary{
+	self.location = [defaultsDictionary valueForKey:@"location"];
+	self.updateFrequency = [defaultsDictionary valueForKey:@"updateFrequency"];
+	self.notificationsDeliveryMethod = [defaultsDictionary valueForKey:@"notificationsDeliveryMethod"];	
+	[super readDefaultsFromDictionary:defaultsDictionary];
+}
+- (NSDictionary *)defaultsDictionary{
+	
+	NSMutableDictionary *tmpDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+									self.location, @"location",
+									self.updateFrequency, @"updateFrequency",
+									self.notificationsDeliveryMethod, @"notificationsDeliveryMethod",
+									nil];	
+						  
+	[tmpDict addEntriesFromDictionary:[super defaultsDictionary]];
+	return [NSDictionary dictionaryWithDictionary:tmpDict];
+}
 @end
