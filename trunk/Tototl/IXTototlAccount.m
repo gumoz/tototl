@@ -107,4 +107,20 @@
 -(void)connect{
 	
 }
+- (void)readDefaultsFromDictionary:(NSDictionary *)defaultsDictionary{
+	self.kind = [defaultsDictionary valueForKey:@"kind"];
+	self.username = [defaultsDictionary valueForKey:@"username"];
+	self.saveInKeychain = [defaultsDictionary valueForKey:@"saveInKeychain"];
+	self.enabled = [defaultsDictionary valueForKey:@"enabled"];
+	[self retrievePasswordFromKeychain];
+}
+- (NSDictionary *)defaultsDictionary{
+	NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
+						  self.username, @"username",
+						  self.saveInKeychain, @"saveInKeychain",
+						  self.kind, @"kind",
+						  self.enabled, @"enabled",
+						  nil];	
+	return dict;
+}
 @end

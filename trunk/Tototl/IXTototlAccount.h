@@ -38,4 +38,6 @@
 - (void)savePasswordInKeychain;
 - (void)save;
 - (void)connect;
+- (void)readDefaultsFromDictionary:(NSDictionary *)defaultsDictionary;
+- (NSDictionary *)defaultsDictionary;
 @end

@@ -11,6 +11,7 @@
 
 @interface IXPreferencesController : MBPreferencesController {
 
+	NSArray *accounts;
 }
 
 @end
