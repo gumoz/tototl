@@ -58,7 +58,6 @@
 		221F6385100BB9D000916122 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6371100BB9D000916122 /* NSData+Base64.m */; };
 		221F63CD100BBFBC00916122 /* Growl-WithInstaller.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 221F6228100BB80900916122 /* Growl-WithInstaller.framework */; };
 		221F63F5100BC09700916122 /* libyajl.1.0.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 221F63F4100BC09700916122 /* libyajl.1.0.6.dylib */; };
-		221F64CB100BCA7B00916122 /* IXTototlEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F64CA100BCA7B00916122 /* IXTototlEnvironment.m */; };
 		221F6548100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6547100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m */; };
 		221F654B100BD20900916122 /* MBPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F654A100BD20900916122 /* MBPreferencesController.m */; };
 		221F654E100BD2AA00916122 /* IXPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F654D100BD2AA00916122 /* IXPreferencesController.m */; };
@@ -77,6 +76,13 @@
 		221F694E100C4F3500916122 /* IXTototlFeedbackPreferenceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221F694C100C4F3500916122 /* IXTototlFeedbackPreferenceView.xib */; };
 		221F694F100C4F3500916122 /* IXTototlFeedbackPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F694D100C4F3500916122 /* IXTototlFeedbackPreferenceViewController.m */; };
 		221F6B2A100C6AD900916122 /* AccountsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6B29100C6AD900916122 /* AccountsController.m */; };
+		225850F41012CD310013F51B /* IXTwitterMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 225850F31012CD310013F51B /* IXTwitterMessage.m */; };
+		225850F81012CE200013F51B /* IXTwitterUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 225850F71012CE200013F51B /* IXTwitterUser.m */; };
+		225850FB1012CF0A0013F51B /* IXTwitterMessageWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225850FA1012CF0A0013F51B /* IXTwitterMessageWindowController.m */; };
+		225850FD1012CF670013F51B /* IXTwitterMessageWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225850FC1012CF670013F51B /* IXTwitterMessageWindow.xib */; };
+		225851821012DC240013F51B /* heart_broken.png in Resources */ = {isa = PBXBuildFile; fileRef = 225851811012DC240013F51B /* heart_broken.png */; };
+		225851841012DCB10013F51B /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 225851831012DCB10013F51B /* heart.png */; };
+		225852961012F8310013F51B /* idle.png in Resources */ = {isa = PBXBuildFile; fileRef = 225852951012F8310013F51B /* idle.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -180,8 +186,6 @@
 		221F6370100BB9D000916122 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		221F6371100BB9D000916122 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		221F63F4100BC09700916122 /* libyajl.1.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libyajl.1.0.6.dylib; path = /usr/local/lib/libyajl.1.0.6.dylib; sourceTree = "<absolute>"; };
-		221F64C9100BCA7B00916122 /* IXTototlEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTototlEnvironment.h; sourceTree = "<group>"; };
-		221F64CA100BCA7B00916122 /* IXTototlEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlEnvironment.m; sourceTree = "<group>"; };
 		221F6546100BD1B000916122 /* IXTototlAccountsPreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTototlAccountsPreferenceViewController.h; sourceTree = "<group>"; };
 		221F6547100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlAccountsPreferenceViewController.m; sourceTree = "<group>"; };
 		221F6549100BD20900916122 /* MBPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPreferencesController.h; sourceTree = "<group>"; };
@@ -212,6 +216,16 @@
 		221F694D100C4F3500916122 /* IXTototlFeedbackPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlFeedbackPreferenceViewController.m; sourceTree = "<group>"; };
 		221F6B28100C6AD900916122 /* AccountsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsController.h; sourceTree = "<group>"; };
 		221F6B29100C6AD900916122 /* AccountsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsController.m; sourceTree = "<group>"; };
+		225850F21012CD310013F51B /* IXTwitterMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTwitterMessage.h; sourceTree = "<group>"; };
+		225850F31012CD310013F51B /* IXTwitterMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTwitterMessage.m; sourceTree = "<group>"; };
+		225850F61012CE200013F51B /* IXTwitterUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTwitterUser.h; sourceTree = "<group>"; };
+		225850F71012CE200013F51B /* IXTwitterUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTwitterUser.m; sourceTree = "<group>"; };
+		225850F91012CF0A0013F51B /* IXTwitterMessageWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTwitterMessageWindowController.h; sourceTree = "<group>"; };
+		225850FA1012CF0A0013F51B /* IXTwitterMessageWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTwitterMessageWindowController.m; sourceTree = "<group>"; };
+		225850FC1012CF670013F51B /* IXTwitterMessageWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IXTwitterMessageWindow.xib; sourceTree = "<group>"; };
+		225851811012DC240013F51B /* heart_broken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_broken.png; sourceTree = "<group>"; };
+		225851831012DCB10013F51B /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		225852951012F8310013F51B /* idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idle.png; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -246,8 +260,6 @@
 				221F61FC100BB76800916122 /* Tototl */,
 				221F61F7100BB76500916122 /* AppDelegate.h */,
 				221F61F8100BB76500916122 /* AppDelegate.m */,
-				221F64C9100BCA7B00916122 /* IXTototlEnvironment.h */,
-				221F64CA100BCA7B00916122 /* IXTototlEnvironment.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -287,8 +299,6 @@
 			children = (
 				221F6209100BB7D600916122 /* IXTototlAccount.h */,
 				221F620A100BB7D600916122 /* IXTototlAccount.m */,
-				221F620B100BB7D600916122 /* IXTwitterAccount.h */,
-				221F620C100BB7D600916122 /* IXTwitterAccount.m */,
 			);
 			name = Tototl;
 			sourceTree = "<group>";
@@ -355,6 +365,7 @@
 		221F62F1100BB83F00916122 /* Status */ = {
 			isa = PBXGroup;
 			children = (
+				225852951012F8310013F51B /* idle.png */,
 				221F62F2100BB83F00916122 /* available.png */,
 				221F62F3100BB83F00916122 /* away.png */,
 			);
@@ -393,6 +404,10 @@
 			isa = PBXGroup;
 			children = (
 				221F6341100BB9CF00916122 /* MATwitterEngine */,
+				225850FF1012CF820013F51B /* Messages */,
+				225850FE1012CF710013F51B /* Account */,
+				225850F61012CE200013F51B /* IXTwitterUser.h */,
+				225850F71012CE200013F51B /* IXTwitterUser.m */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -548,6 +563,36 @@
 			name = Feedback;
 			sourceTree = "<group>";
 		};
+		225850FE1012CF710013F51B /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				221F620B100BB7D600916122 /* IXTwitterAccount.h */,
+				221F620C100BB7D600916122 /* IXTwitterAccount.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		225850FF1012CF820013F51B /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				225850F21012CD310013F51B /* IXTwitterMessage.h */,
+				225850F31012CD310013F51B /* IXTwitterMessage.m */,
+				225850F91012CF0A0013F51B /* IXTwitterMessageWindowController.h */,
+				225850FA1012CF0A0013F51B /* IXTwitterMessageWindowController.m */,
+				225850FC1012CF670013F51B /* IXTwitterMessageWindow.xib */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		2258517F1012DC1A0013F51B /* Silk */ = {
+			isa = PBXGroup;
+			children = (
+				225851831012DCB10013F51B /* heart.png */,
+				225851811012DC240013F51B /* heart_broken.png */,
+			);
+			name = Silk;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* Tototl */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +618,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2258517F1012DC1A0013F51B /* Silk */,
 				221F62FA100BB83F00916122 /* Menubar */,
 				221F62F6100BB83F00916122 /* Sounds */,
 				221F62F4100BB83F00916122 /* Toolbar */,
@@ -668,6 +714,10 @@
 				221F68A5100C490A00916122 /* IXTototlConfigurationPreferenceView.xib in Resources */,
 				221F692F100C4D7000916122 /* IXTototlUpdatesPreferenceView.xib in Resources */,
 				221F694E100C4F3500916122 /* IXTototlFeedbackPreferenceView.xib in Resources */,
+				225850FD1012CF670013F51B /* IXTwitterMessageWindow.xib in Resources */,
+				225851821012DC240013F51B /* heart_broken.png in Resources */,
+				225851841012DCB10013F51B /* heart.png in Resources */,
+				225852961012F8310013F51B /* idle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +754,6 @@
 				221F6383100BB9D000916122 /* MGTwitterSearchYAJLParser.m in Sources */,
 				221F6384100BB9D000916122 /* NSString+UUID.m in Sources */,
 				221F6385100BB9D000916122 /* NSData+Base64.m in Sources */,
-				221F64CB100BCA7B00916122 /* IXTototlEnvironment.m in Sources */,
 				221F6548100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m in Sources */,
 				221F654B100BD20900916122 /* MBPreferencesController.m in Sources */,
 				221F654E100BD2AA00916122 /* IXPreferencesController.m in Sources */,
@@ -717,6 +766,9 @@
 				221F692D100C4D2D00916122 /* IXTototlUpdatesPreferenceViewController.m in Sources */,
 				221F694F100C4F3500916122 /* IXTototlFeedbackPreferenceViewController.m in Sources */,
 				221F6B2A100C6AD900916122 /* AccountsController.m in Sources */,
+				225850F41012CD310013F51B /* IXTwitterMessage.m in Sources */,
+				225850F81012CE200013F51B /* IXTwitterUser.m in Sources */,
+				225850FB1012CF0A0013F51B /* IXTwitterMessageWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "IXTwitterAccount.h"
 #import "IXPreferencesController.h"
+#import "IXTwitterMessageWindowController.h"
 
 @implementation AppDelegate
 
@@ -19,9 +20,22 @@
 	self = [super init];
 	if (self != nil) {
 		self.accounts = [[AccountsController sharedController] accounts];
+		[self openTwitterWindows];
 		[self connectAll];
 	}
 	return self;
+}
+- (void)openTwitterWindows{
+
+	for(IXTwitterAccount *account in accounts)
+	{
+		if([[account enabled] boolValue])
+		{
+			IXTwitterMessageWindowController *windowController = [IXTwitterMessageWindowController new];
+			[windowController setAccount:account];
+			[windowController showWindow:self];
+		}
+	}
 }
 - (void)connectAll{
 	for(IXTototlAccount *account in accounts)

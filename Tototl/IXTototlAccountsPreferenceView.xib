@@ -463,22 +463,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: arrangedObjects.statusPicture</string>
-						<reference key="source" ref="1033511351"/>
-						<reference key="destination" ref="177679692"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="1033511351"/>
-							<reference key="NSDestination" ref="177679692"/>
-							<string key="NSLabel">value: arrangedObjects.statusPicture</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">arrangedObjects.statusPicture</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">115</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: arrangedObjects.status</string>
 						<reference key="source" ref="628400746"/>
 						<reference key="destination" ref="177679692"/>
@@ -560,6 +544,22 @@
 						<reference key="destination" ref="177679692"/>
 					</object>
 					<int key="connectionID">284</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: arrangedObjects.statusPicture</string>
+						<reference key="source" ref="1033511351"/>
+						<reference key="destination" ref="177679692"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="1033511351"/>
+							<reference key="NSDestination" ref="177679692"/>
+							<string key="NSLabel">value: arrangedObjects.statusPicture</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">arrangedObjects.statusPicture</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">285</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -804,7 +804,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{237, 231}, {439, 235}}</string>
+					<string>{{372, 231}, {439, 235}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="NO"/>
 					<string>{628, 654}</string>
@@ -854,7 +854,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">284</int>
+			<int key="maxID">285</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
