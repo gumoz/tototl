@@ -11,23 +11,38 @@
 
 @implementation IXTwitterAccount
 
+@synthesize engine;
 @synthesize location;
 @synthesize updateFrequency;
 @synthesize notificationsDeliveryMethod;
+@synthesize identifier;
+
 - (id) init
 {
 	self = [super init];
 	if (self != nil) {
 		engine = [[MGTwitterEngine alloc] initWithDelegate:self];
+		isConnected = NO;
 	}
 	return self;
 }
 -(void)connect{
 	[engine setUsername:username password:password];
-	NSString *connectionIdentifier = [engine checkUserCredentials];
-	NSLog(@"connectionIdentifier = %@", connectionIdentifier);
+	NSString *aIdentifier = nil;
+	aIdentifier = [engine checkUserCredentials];
+	if(aIdentifier != nil)
+		self.identifier = aIdentifier;
+	
+	NSLog(@"connectionIdentifier = %@", aIdentifier);
+	
+	isConnected = NO;
+	self.statusPicture = [NSImage imageNamed:@"idle"];
+	self.status = @"Connecting...";
 }
-
+- (void)disconnect{
+	NSLog(@"disconnect");
+	[engine closeConnection:self.identifier];
+}
 #pragma mark MGTwitterEngineDelegate methods
 
 //-(void)connection:(MGTwitterHTTPURLConnection *)connection didFailWithError:(NSError *)error{
@@ -38,8 +53,8 @@
 {
     NSLog(@"Request succeeded for connectionIdentifier = %@", connectionIdentifier);
 	isConnected = YES;
-	statusPicture = [NSImage imageNamed:@"available"];
-	status = @"Connected";
+	self.statusPicture = [NSImage imageNamed:@"available"];
+	self.status = @"Connected";
 }
 
 
@@ -51,8 +66,8 @@
           [error userInfo]);
 
 	isConnected = NO;
-	statusPicture = [NSImage imageNamed:@"away"];
-	status = @"Disconnected";
+	self.statusPicture = [NSImage imageNamed:@"away"];
+	self.status = @"Disconnected";
 }
 
 
@@ -96,10 +111,12 @@
 
 - (void)connectionFinished
 {
-	if ([engine numberOfConnections] == 0)
-	{
-		[NSApp terminate:self];
-	}
+	NSLog(@"Connection Finished: %@", self.identifier);
+	isConnected = NO;
+//	if ([engine numberOfConnections] == 0)
+//	{
+//		[NSApp terminate:self];
+//	}
 }
 - (void)receivedObject:(NSDictionary *)dictionary forRequest:(NSString *)connectionIdentifier
 {
@@ -121,5 +138,17 @@
 						  
 	[tmpDict addEntriesFromDictionary:[super defaultsDictionary]];
 	return [NSDictionary dictionaryWithDictionary:tmpDict];
+}
+
+// send location to twitter
+- (void) sendLocationToTwitter{
+	[engine setLocation:self.location];
+}
+
+- (void)update{
+
+}
+- (IBAction)block:(id)sender{
+//	[engine block:username];
 }
 @end

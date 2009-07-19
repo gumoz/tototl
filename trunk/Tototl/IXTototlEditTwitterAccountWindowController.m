@@ -23,5 +23,6 @@
 	return self;
 }
 -(IBAction)setLocation:(id)sender{
+	[account performSelector:@selector(sendLocationToTwitter)];
 }
 @end

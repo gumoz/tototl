@@ -22,6 +22,8 @@
 @synthesize statusPicture;
 @synthesize status;
 
+@synthesize picture;
+
 - (id) init
 {
 	self = [super init];
@@ -31,7 +33,7 @@
 		kind = @"twitter";
 		saveInKeychain = [NSNumber numberWithBool:NO];
 		kindPicture = [NSImage imageNamed:@"twitter_logo_32"];
-		statusPicture = [NSImage imageNamed:@"away"];
+		self.statusPicture = [NSImage imageNamed:@"away"];
 		status = @"Disconnected";
 	}
 	return self;
@@ -105,6 +107,9 @@
 	}
 }
 -(void)connect{
+	
+}
+- (void)disconnect{
 	
 }
 - (void)readDefaultsFromDictionary:(NSDictionary *)defaultsDictionary{

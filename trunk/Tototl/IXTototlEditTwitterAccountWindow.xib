@@ -582,14 +582,6 @@
 					<int key="connectionID">153</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">setLocation:</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="13204880"/>
-					</object>
-					<int key="connectionID">155</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">contentValues: deliveryMethods</string>
 						<reference key="source" ref="949662322"/>
@@ -651,6 +643,14 @@
 						</object>
 					</object>
 					<int key="connectionID">166</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">setLocation:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="13204880"/>
+					</object>
+					<int key="connectionID">167</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1057,10 +1057,10 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{429, 556}, {368, 300}}</string>
+					<string>{{456, 226}, {368, 300}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{429, 556}, {368, 300}}</string>
+					<string>{{456, 226}, {368, 300}}</string>
 					<boolean value="NO"/>
 					<string>{196, 240}</string>
 					<string>{{202, 428}, {480, 270}}</string>
@@ -1128,7 +1128,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">166</int>
+			<int key="maxID">167</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

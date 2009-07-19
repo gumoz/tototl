@@ -15,6 +15,8 @@
 	NSMutableArray *accounts;
 }
 @property (retain, readwrite) 	NSMutableArray *accounts;
+- (void)openTwitterWindows;
 - (void)connectAll;
 - (IBAction)openPreferences:(id)sender;
+
 @end

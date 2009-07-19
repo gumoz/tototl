@@ -21,6 +21,7 @@
 	NSImage *kindPicture;
 	NSImage *statusPicture;
 	NSString *status;
+	NSImage *picture;
 }
 @property (copy, readwrite) NSString *kind;
 @property (copy, readwrite) NSNumber *enabled;
@@ -30,14 +31,17 @@
 
 @property (readonly) BOOL isConnected;
 @property (copy, readwrite) NSImage *kindPicture;
-@property (copy, readwrite) NSImage *statusPicture;
+@property (assign, readwrite) NSImage *statusPicture;
 @property (copy, readwrite) NSString *status;
+@property (copy, readwrite) NSImage *picture;
 
 - (EMGenericKeychainItem *)retrieveKeychainItem;
 - (void)retrievePasswordFromKeychain;
 - (void)savePasswordInKeychain;
 - (void)save;
 - (void)connect;
+- (void)disconnect;
 - (void)readDefaultsFromDictionary:(NSDictionary *)defaultsDictionary;
 - (NSDictionary *)defaultsDictionary;
+
 @end

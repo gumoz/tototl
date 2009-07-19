@@ -15,8 +15,13 @@
 	NSString *location;
 	NSNumber *updateFrequency;
 	NSString *notificationsDeliveryMethod;
+	NSString *identifier;
 }
-@property (copy, readwrite) NSString *location;
-@property (copy, readwrite) NSNumber *updateFrequency;
-@property (copy, readwrite) NSString *notificationsDeliveryMethod;
+@property (retain, readonly) MGTwitterEngine *engine;
+@property (retain, readwrite) NSString *identifier;
+@property (retain, readwrite) NSString *location;
+@property (retain, readwrite) NSNumber *updateFrequency;
+@property (retain, readwrite) NSString *notificationsDeliveryMethod;
+
+- (void) sendLocationToTwitter;
 @end
