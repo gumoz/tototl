@@ -25,6 +25,22 @@
 	}
 	return self;
 }
+- (void)awakeFromNib{
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	// check if dock icon
+	if ([defaults boolForKey:@"DockIcon"]) {
+		ProcessSerialNumber psn = { 0, kCurrentProcess };
+		// display dock icon
+		TransformProcessType(&psn, kProcessTransformToForegroundApplication);
+		// enable menu bar
+		SetSystemUIMode(kUIModeNormal, 0);
+		// switch to Dock.app
+		[[NSWorkspace sharedWorkspace] launchAppWithBundleIdentifier:@"com.apple.dock" options:NSWorkspaceLaunchDefault additionalEventParamDescriptor:nil launchIdentifier:nil];
+		// switch back
+		[[NSApplication sharedApplication] activateIgnoringOtherApps:TRUE];
+	}
+	
+}
 - (void)openTwitterWindows{
 
 	for(IXTwitterAccount *account in accounts)
@@ -48,5 +64,14 @@
 }
 - (IBAction)openPreferences:(id)sender{	
 	[[IXPreferencesController sharedController] showWindow:sender];
+}
+
+
+- (void)applicationDidChangeScreenParameters:(NSNotification *)aNotification{
+//	[self show:self];
+}
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag{
+//	[self singleClick];
+	return NO;
 }
 @end

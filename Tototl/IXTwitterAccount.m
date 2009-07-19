@@ -10,17 +10,20 @@
 
 
 @implementation IXTwitterAccount
-
+ 
 @synthesize engine;
 @synthesize location;
 @synthesize updateFrequency;
 @synthesize notificationsDeliveryMethod;
 @synthesize identifier;
+@synthesize receivedMessages;
+@synthesize lastUpdateID;
 
 - (id) init
 {
 	self = [super init];
 	if (self != nil) {
+		receivedMessages = [NSArray new];
 		engine = [[MGTwitterEngine alloc] initWithDelegate:self];
 		isConnected = NO;
 	}
@@ -38,6 +41,12 @@
 	isConnected = NO;
 	self.statusPicture = [NSImage imageNamed:@"idle"];
 	self.status = @"Connecting...";
+		
+	[NSTimer scheduledTimerWithTimeInterval:20
+									 target:self 
+								   selector:@selector(update)
+								   userInfo:nil
+									repeats:YES];
 }
 - (void)disconnect{
 	NSLog(@"disconnect");
@@ -52,9 +61,6 @@
 - (void)requestSucceeded:(NSString *)connectionIdentifier
 {
     NSLog(@"Request succeeded for connectionIdentifier = %@", connectionIdentifier);
-	isConnected = YES;
-	self.statusPicture = [NSImage imageNamed:@"available"];
-	self.status = @"Connected";
 }
 
 
@@ -74,6 +80,14 @@
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)connectionIdentifier
 {
     NSLog(@"Got statuses for %@:\r%@", connectionIdentifier, statuses);
+	id lastObject = [statuses lastObject];
+	id updateID = [lastObject valueForKey:@"id"];
+	NSLog(@"update id: %@", updateID);
+	
+	lastUpdateID = (long)[updateID longLongValue];
+//	[engine getFollowedTimelineSinceID:lastUpdateID startingAtPage:0 count:3];
+	self.receivedMessages = [receivedMessages arrayByAddingObjectsFromArray:statuses];
+	//NSLog(@"receivedMessages: %@", receivedMessages);
 }
 
 
@@ -86,6 +100,9 @@
 - (void)userInfoReceived:(NSArray *)userInfo forRequest:(NSString *)connectionIdentifier
 {
     NSLog(@"Got user info for %@:\r%@", connectionIdentifier, userInfo);
+	isConnected = YES;
+	self.statusPicture = [NSImage imageNamed:@"available"];
+	self.status = @"Connected";
 }
 
 
@@ -146,7 +163,7 @@
 }
 
 - (void)update{
-
+	[engine getFollowedTimelineSinceID:self.lastUpdateID startingAtPage:0 count:0];
 }
 - (IBAction)block:(id)sender{
 //	[engine block:username];

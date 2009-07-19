@@ -55,7 +55,6 @@
 	switch (currentAction) {
 		default: case NoAction:
 			[account.engine sendUpdate:updateMessage];
-			NSLog(@"update sent");
 			break;
 		case ReplyAction:
 			[account.engine sendUpdate:updateMessage inReplyTo:replyingToUpdateID];
