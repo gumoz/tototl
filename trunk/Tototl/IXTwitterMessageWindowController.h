@@ -38,6 +38,7 @@ enum {
 	IBOutlet NSButton *updateMessageButton;
 	IBOutlet NSButton *cancelActionButton;
 }
+
 @property (assign, readwrite) IXTwitterAccount *account;
 @property (readwrite) float charactersLeft;
 @property (readwrite) long replyingToUpdateID;

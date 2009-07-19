@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>Tototl</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.ixaya.${PRODUCT_NAME:identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -19,7 +19,7 @@
 	<key>CFBundleSignature</key>
 	<string>IXAY</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.7</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
