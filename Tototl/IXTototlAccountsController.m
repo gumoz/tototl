@@ -6,10 +6,10 @@
 //  Copyright 2009 Ixaya. All rights reserved.
 //
 
-#import "AccountsController.h"
+#import "IXTototlAccountsController.h"
+#import "IXTwitterAccount.h"
 
-
-@implementation AccountsController
+@implementation IXTototlAccountsController
 
 @synthesize accounts;
 
@@ -19,9 +19,9 @@
 	[super dealloc];
 }
 
-static AccountsController *sharedAccountsController = nil;
+static IXTototlAccountsController *sharedAccountsController = nil;
 
-+ (AccountsController *)sharedController
++ (IXTototlAccountsController *)sharedController
 {
 	@synchronized(self) {
 		if (sharedAccountsController == nil) {
@@ -67,15 +67,19 @@ static AccountsController *sharedAccountsController = nil;
 	return self;
 }
 
--(void)saveAccounts {
+- (void)saveAccounts:(id)newAccounts{
+	self.accounts = newAccounts;
+	[self saveAccounts];
+}
+- (void)saveAccounts {
 	NSMutableArray *mutableAccounts = [NSMutableArray new];
-	
-	for(IXTototlAccount *account in accounts)
+	NSLog(@"accounts: %@", self.accounts);
+	for(IXTototlAccount *account in self.accounts)
 	{
+		NSLog(@"account: %@", account);
 		if(account.username != nil && [account.username class] != [NSNull class])
 		{
 			[mutableAccounts addObject:[account defaultsDictionary]];
-			NSLog(@"dict: %@ ", [account defaultsDictionary]);
 			[account savePasswordInKeychain];
 		}
 	}
@@ -103,8 +107,7 @@ static AccountsController *sharedAccountsController = nil;
 		}
 	}
 	
-	[self setAccounts:[NSArray arrayWithArray:tmpArray]];
-	NSLog(@"defaultsAccounts: %@", defaultsAccounts);
+	[self setAccounts:tmpArray];
 }
 - (Class)accountFromKind:(NSString *)kind {
 	

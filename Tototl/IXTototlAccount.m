@@ -38,7 +38,6 @@
 	}
 	return self;
 }
-
 - (EMGenericKeychainItem *)retrieveKeychainItem{
 
 	// if save in keychain is enabled, then search for a keychain item, if it does not exist then create one
@@ -95,7 +94,9 @@
 			NSLog(@"create account");
 			NSMutableArray *mutableAccounts = [NSMutableArray arrayWithArray:accounts];
 
-			NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:username, @"username", saveInKeychain, @"saveInKeychain", kind, @"kind", enabled, @"enabled", nil];
+			
+			//NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:username, @"username", saveInKeychain, @"saveInKeychain", kind, @"kind", enabled, @"enabled", nil];
+			NSDictionary *dict = [self defaultsDictionary];
 			NSLog(@"dict %@", dict);
 				
 			NSLog(@"username: %@, saveInKeychain: %@, kind: %@", username, saveInKeychain, kind);
@@ -106,7 +107,7 @@
 		[self savePasswordInKeychain];
 	}
 }
--(void)connect{
+- (void)connect{
 	
 }
 - (void)disconnect{

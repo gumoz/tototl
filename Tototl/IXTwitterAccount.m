@@ -16,20 +16,31 @@
 @synthesize updateFrequency;
 @synthesize notificationsDeliveryMethod;
 @synthesize identifier;
-@synthesize receivedMessages;
 @synthesize lastUpdateID;
+
+
+@synthesize friendStatuses;
+@synthesize directMessages;
+@synthesize followers;
+@synthesize friends;
 
 - (id) init
 {
 	self = [super init];
 	if (self != nil) {
-		receivedMessages = [NSArray new];
+		friendStatuses = [NSArray new];
+		directMessages = [NSArray new];
+		followers = [NSArray new];
+		friends = [NSArray new];
 		engine = [[MGTwitterEngine alloc] initWithDelegate:self];
 		isConnected = NO;
+		self.updateFrequency = [NSNumber numberWithInt:120];
+		self.location = @"In Tototl Land";
+		self.notificationsDeliveryMethod = @"none";
 	}
 	return self;
 }
--(void)connect{
+-(void)connect {
 	[engine setUsername:username password:password];
 	NSString *aIdentifier = nil;
 	aIdentifier = [engine checkUserCredentials];
@@ -42,14 +53,19 @@
 	self.statusPicture = [NSImage imageNamed:@"idle"];
 	self.status = @"Connecting...";
 		
-	[NSTimer scheduledTimerWithTimeInterval:20
+	if(self.updateFrequency == nil)
+		self.updateFrequency = [NSNumber numberWithInt:120];
+	
+	[NSTimer scheduledTimerWithTimeInterval:[self.updateFrequency intValue]
 									 target:self 
 								   selector:@selector(update)
 								   userInfo:nil
 									repeats:YES];
+	[engine getFollowedTimelineSinceID:lastUpdateID startingAtPage:0 count:0];	
 }
 - (void)disconnect{
 	NSLog(@"disconnect");
+	[engine endUserSession];
 	[engine closeConnection:self.identifier];
 }
 #pragma mark MGTwitterEngineDelegate methods
@@ -79,6 +95,9 @@
 
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)connectionIdentifier
 {
+	NSString *growlMessage = [NSString stringWithFormat:@"%d New Statuses", [statuses count]];
+	[[IXTototlGrowlController sharedController] growl:growlMessage withTitle:@"New Statuses"];
+	
     NSLog(@"Got statuses for %@:\r%@", connectionIdentifier, statuses);
 	id lastObject = [statuses lastObject];
 	id updateID = [lastObject valueForKey:@"id"];
@@ -86,13 +105,19 @@
 	
 	lastUpdateID = (long)[updateID longLongValue];
 //	[engine getFollowedTimelineSinceID:lastUpdateID startingAtPage:0 count:3];
-	self.receivedMessages = [receivedMessages arrayByAddingObjectsFromArray:statuses];
+	NSArray *statusesToSort = [friendStatuses arrayByAddingObjectsFromArray:statuses];
+	
+	NSSortDescriptor *sortDesc = [[NSSortDescriptor alloc] initWithKey:@"status.created_at" ascending:NO];
+	NSArray *sortedStatuses = [statusesToSort sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDesc]];
+	self.friendStatuses = sortedStatuses;
 	//NSLog(@"receivedMessages: %@", receivedMessages);
 }
 
 
 - (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)connectionIdentifier
 {
+	NSString *growlMessage = [NSString stringWithFormat:@"%d New Direct Messages Received", [messages count]];
+	[[IXTototlGrowlController sharedController] growl:growlMessage withTitle:@"New Direct Messages"];
     NSLog(@"Got direct messages for %@:\r%@", connectionIdentifier, messages);
 }
 
@@ -152,7 +177,6 @@
 									self.updateFrequency, @"updateFrequency",
 									self.notificationsDeliveryMethod, @"notificationsDeliveryMethod",
 									nil];	
-						  
 	[tmpDict addEntriesFromDictionary:[super defaultsDictionary]];
 	return [NSDictionary dictionaryWithDictionary:tmpDict];
 }
@@ -167,5 +191,8 @@
 }
 - (IBAction)block:(id)sender{
 //	[engine block:username];
+}
+- (void) clearsCookies{
+	[engine clearsCookies];
 }
 @end

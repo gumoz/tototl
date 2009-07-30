@@ -37,14 +37,13 @@ enum {
 	NSString *updateMessage;
 	IBOutlet NSButton *updateMessageButton;
 	IBOutlet NSButton *cancelActionButton;
+	
 }
-
 @property (assign, readwrite) IXTwitterAccount *account;
 @property (readwrite) float charactersLeft;
 @property (readwrite) long replyingToUpdateID;
 @property (assign, readwrite) NSString *updateMessage;
 -(void)clean;
--(void)refresh;
 -(void)count;
 
 -(IBAction)toggleConnection:(id)sender;

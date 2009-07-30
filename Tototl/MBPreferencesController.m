@@ -241,7 +241,7 @@ static MBPreferencesController *sharedPreferencesController = nil;
 
 - (void)_changeToModule:(id<MBPreferencesModule>)module
 {
-	if ([(NSObject *)_currentModule respondsToSelector:@selector(willBeDisplayed)]) {
+	if ([(NSObject *)_currentModule respondsToSelector:@selector(willStopDisplaying)]) {
 		[_currentModule willStopDisplaying];
 	}
 	

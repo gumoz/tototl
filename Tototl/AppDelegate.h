@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "IXTototlAccount.h"
-#import "AccountsController.h"
+#import "IXTototlAccountsController.h"
 
 @interface AppDelegate : NSObject {
 	

@@ -19,7 +19,7 @@
 {
 	self = [super init];
 	if (self != nil) {
-		self.accounts = [[AccountsController sharedController] accounts];
+		self.accounts = [[IXTototlAccountsController sharedController] accounts];
 		[self openTwitterWindows];
 		[self connectAll];
 	}
@@ -28,7 +28,7 @@
 - (void)awakeFromNib{
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	// check if dock icon
-	if ([defaults boolForKey:@"DockIcon"]) {
+	if ([defaults boolForKey:@"dockIcon"]) {
 		ProcessSerialNumber psn = { 0, kCurrentProcess };
 		// display dock icon
 		TransformProcessType(&psn, kProcessTransformToForegroundApplication);

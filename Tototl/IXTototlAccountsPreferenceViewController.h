@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "IXTototlAccount.h"
 #import "MBPreferencesController.h"
-#import "AccountsController.h"
+#import "IXTototlAccountsController.h"
 
 @interface IXTototlAccountsPreferenceViewController : NSViewController <MBPreferencesModule> {
 
@@ -21,5 +21,6 @@
 - (NSString *)identifier;
 - (NSImage *)image;
 
--(IBAction)editSelectedAccount:(id)sender;
+- (IBAction)editSelectedAccount:(id)sender;
+- (IBAction)add:(id)sender;
 @end
