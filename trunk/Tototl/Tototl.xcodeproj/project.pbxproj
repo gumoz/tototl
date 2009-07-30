@@ -75,7 +75,7 @@
 		221F692F100C4D7000916122 /* IXTototlUpdatesPreferenceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221F692E100C4D7000916122 /* IXTototlUpdatesPreferenceView.xib */; };
 		221F694E100C4F3500916122 /* IXTototlFeedbackPreferenceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221F694C100C4F3500916122 /* IXTototlFeedbackPreferenceView.xib */; };
 		221F694F100C4F3500916122 /* IXTototlFeedbackPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F694D100C4F3500916122 /* IXTototlFeedbackPreferenceViewController.m */; };
-		221F6B2A100C6AD900916122 /* AccountsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6B29100C6AD900916122 /* AccountsController.m */; };
+		221F6B2A100C6AD900916122 /* IXTototlAccountsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F6B29100C6AD900916122 /* IXTototlAccountsController.m */; };
 		225850F41012CD310013F51B /* IXTwitterMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 225850F31012CD310013F51B /* IXTwitterMessage.m */; };
 		225850F81012CE200013F51B /* IXTwitterUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 225850F71012CE200013F51B /* IXTwitterUser.m */; };
 		225850FB1012CF0A0013F51B /* IXTwitterMessageWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225850FA1012CF0A0013F51B /* IXTwitterMessageWindowController.m */; };
@@ -86,6 +86,10 @@
 		22828E3210131297001B84BD /* Reply.png in Resources */ = {isa = PBXBuildFile; fileRef = 22828E3010131297001B84BD /* Reply.png */; };
 		22828E3310131297001B84BD /* GrayReplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 22828E3110131297001B84BD /* GrayReplay.png */; };
 		22828EFD10131A41001B84BD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22828EFC10131A41001B84BD /* Carbon.framework */; };
+		2282922D1013CBC7001B84BD /* SmartCrashReportsInstall.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282922B1013CBC7001B84BD /* SmartCrashReportsInstall.o */; };
+		2282922E1013CBC7001B84BD /* SmartCrashReportsAPI.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282922C1013CBC7001B84BD /* SmartCrashReportsAPI.o */; };
+		228292391013CC2B001B84BD /* IXTototlGrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228292381013CC2B001B84BD /* IXTototlGrowlController.m */; };
+		2282927A10141BC2001B84BD /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282927910141BC2001B84BD /* libz.1.2.3.dylib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -217,8 +221,8 @@
 		221F694B100C4F3500916122 /* IXTototlFeedbackPreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTototlFeedbackPreferenceViewController.h; sourceTree = "<group>"; };
 		221F694C100C4F3500916122 /* IXTototlFeedbackPreferenceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IXTototlFeedbackPreferenceView.xib; sourceTree = "<group>"; };
 		221F694D100C4F3500916122 /* IXTototlFeedbackPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlFeedbackPreferenceViewController.m; sourceTree = "<group>"; };
-		221F6B28100C6AD900916122 /* AccountsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsController.h; sourceTree = "<group>"; };
-		221F6B29100C6AD900916122 /* AccountsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsController.m; sourceTree = "<group>"; };
+		221F6B28100C6AD900916122 /* IXTototlAccountsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTototlAccountsController.h; sourceTree = "<group>"; };
+		221F6B29100C6AD900916122 /* IXTototlAccountsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlAccountsController.m; sourceTree = "<group>"; };
 		225850F21012CD310013F51B /* IXTwitterMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTwitterMessage.h; sourceTree = "<group>"; };
 		225850F31012CD310013F51B /* IXTwitterMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTwitterMessage.m; sourceTree = "<group>"; };
 		225850F61012CE200013F51B /* IXTwitterUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTwitterUser.h; sourceTree = "<group>"; };
@@ -232,6 +236,11 @@
 		22828E3010131297001B84BD /* Reply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reply.png; sourceTree = "<group>"; };
 		22828E3110131297001B84BD /* GrayReplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrayReplay.png; sourceTree = "<group>"; };
 		22828EFC10131A41001B84BD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		2282922B1013CBC7001B84BD /* SmartCrashReportsInstall.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SmartCrashReportsInstall.o; sourceTree = "<group>"; };
+		2282922C1013CBC7001B84BD /* SmartCrashReportsAPI.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SmartCrashReportsAPI.o; sourceTree = "<group>"; };
+		228292371013CC2B001B84BD /* IXTototlGrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXTototlGrowlController.h; sourceTree = "<group>"; };
+		228292381013CC2B001B84BD /* IXTototlGrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXTototlGrowlController.m; sourceTree = "<group>"; };
+		2282927910141BC2001B84BD /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = /usr/lib/libz.1.2.3.dylib; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -251,6 +260,9 @@
 				221F62E5100BB81F00916122 /* Security.framework in Frameworks */,
 				221F63F5100BC09700916122 /* libyajl.1.0.6.dylib in Frameworks */,
 				22828EFD10131A41001B84BD /* Carbon.framework in Frameworks */,
+				2282922D1013CBC7001B84BD /* SmartCrashReportsInstall.o in Frameworks */,
+				2282922E1013CBC7001B84BD /* SmartCrashReportsAPI.o in Frameworks */,
+				2282927A10141BC2001B84BD /* libz.1.2.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +272,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				228292371013CC2B001B84BD /* IXTototlGrowlController.h */,
+				228292381013CC2B001B84BD /* IXTototlGrowlController.m */,
 				221F67C2100BF50D00916122 /* Visuals */,
 				221F6310100BB9AB00916122 /* Twitter */,
 				221F6216100BB7E600916122 /* Preferences */,
@@ -282,6 +296,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2282927910141BC2001B84BD /* libz.1.2.3.dylib */,
 				22828EFC10131A41001B84BD /* Carbon.framework */,
 				221F63F4100BC09700916122 /* libyajl.1.0.6.dylib */,
 				221F62E4100BB81F00916122 /* Security.framework */,
@@ -523,8 +538,8 @@
 				221F6546100BD1B000916122 /* IXTototlAccountsPreferenceViewController.h */,
 				221F6547100BD1B000916122 /* IXTototlAccountsPreferenceViewController.m */,
 				221F654F100BD2FF00916122 /* IXTototlAccountsPreferenceView.xib */,
-				221F6B28100C6AD900916122 /* AccountsController.h */,
-				221F6B29100C6AD900916122 /* AccountsController.m */,
+				221F6B28100C6AD900916122 /* IXTototlAccountsController.h */,
+				221F6B29100C6AD900916122 /* IXTototlAccountsController.m */,
 			);
 			name = Accounts;
 			sourceTree = "<group>";
@@ -601,6 +616,15 @@
 			name = Silk;
 			sourceTree = "<group>";
 		};
+		228292301013CBCE001B84BD /* Crash Report */ = {
+			isa = PBXGroup;
+			children = (
+				2282922B1013CBC7001B84BD /* SmartCrashReportsInstall.o */,
+				2282922C1013CBC7001B84BD /* SmartCrashReportsAPI.o */,
+			);
+			name = "Crash Report";
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* Tototl */ = {
 			isa = PBXGroup;
 			children = (
@@ -646,6 +670,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				228292301013CBCE001B84BD /* Crash Report */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -777,10 +802,11 @@
 				221F68A9100C495400916122 /* IXTototlConfigurationPreferenceViewController.m in Sources */,
 				221F692D100C4D2D00916122 /* IXTototlUpdatesPreferenceViewController.m in Sources */,
 				221F694F100C4F3500916122 /* IXTototlFeedbackPreferenceViewController.m in Sources */,
-				221F6B2A100C6AD900916122 /* AccountsController.m in Sources */,
+				221F6B2A100C6AD900916122 /* IXTototlAccountsController.m in Sources */,
 				225850F41012CD310013F51B /* IXTwitterMessage.m in Sources */,
 				225850F81012CE200013F51B /* IXTwitterUser.m in Sources */,
 				225850FB1012CF0A0013F51B /* IXTwitterMessageWindowController.m in Sources */,
+				228292391013CC2B001B84BD /* IXTototlGrowlController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,9 +898,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					/usr/include/libxml2,
 					/usr/local/include/,
+					/usr/include/libxml2,
 				);
+				OTHER_CFLAGS = "-DDEBUG";
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
 			};

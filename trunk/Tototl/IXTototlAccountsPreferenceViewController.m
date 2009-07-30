@@ -20,8 +20,10 @@
 	}
 	return self;
 }
--(IBAction)editSelectedAccount:(id)sender{
-	IXTototlAccount *selectedAccount = [accountsArrayController selection];
+- (IBAction)editSelectedAccount:(id)sender{
+	IXTototlAccount *selectedAccount = nil;
+	selectedAccount = [accountsArrayController selection];
+	NSLog(@"selected account: %@", selectedAccount);
 	IXTototlEditTwitterAccountWindowController *controller = [IXTototlEditTwitterAccountWindowController new];
 	[controller setAccount:selectedAccount];
 	[controller beginSheetUsingWindow:[[self view] window]];
@@ -36,16 +38,20 @@
 {
 	return @"AccountsPane";
 }
-
 - (NSImage *)image
 {
 	return [NSImage imageNamed:@"NSUser"];
 }
 -(void)willBeDisplayed{
-	self.accounts = [[AccountsController sharedController] accounts];
+	self.accounts = [[IXTototlAccountsController sharedController] accounts];
 }
 -(void)willStopDisplaying{
 	NSLog(@"willStopDisplaying");
-	[[AccountsController sharedController] saveAccounts];
+	[[IXTototlAccountsController sharedController] saveAccounts:self.accounts];
+}
+- (IBAction)add:(id)sender {
+	IXTototlAccount *account = [NSClassFromString(@"IXTwitterAccount") new];
+	[accounts addObject:account];
+	self.accounts = accounts;
 }
 @end

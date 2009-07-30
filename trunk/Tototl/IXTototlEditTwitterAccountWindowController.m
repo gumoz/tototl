@@ -23,6 +23,13 @@
 	return self;
 }
 -(IBAction)setLocation:(id)sender{
-	[account performSelector:@selector(sendLocationToTwitter)];
+	SEL locationSel = @selector(sendLocationToTwitter);
+	if([account respondsToSelector:locationSel])
+		[account performSelector:locationSel];
+}
+-(IBAction)clearsCookies:(id)sender{
+	SEL clearsCookiesSel = @selector(clearsCookies);
+	if([account respondsToSelector:clearsCookiesSel])
+		[account performSelector:clearsCookiesSel];
 }
 @end

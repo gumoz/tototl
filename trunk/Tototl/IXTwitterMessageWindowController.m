@@ -34,12 +34,9 @@
 -(void)clean{
 	self.charactersLeft = maxCharacters;
 	self.updateMessage = @"";
-	[cancelActionButton setTitle:@"."];
+	[cancelActionButton setTitle:@"cancel"];
 	[cancelActionButton setHidden:YES];
 	[updateMessageButton setTitle:@"Update"];
-}
--(void)refresh{
-
 }
 -(void)count{
 	int lenght = [updateMessage length];
@@ -81,5 +78,8 @@
 		updateMessage = message;
 		[self count];
 	}
+}
+-(void)getFolowers{
+	[account.engine getFollowersIncludingCurrentStatus:YES];
 }
 @end

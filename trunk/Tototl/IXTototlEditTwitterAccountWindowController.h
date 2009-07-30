@@ -15,4 +15,5 @@
 }
 @property (copy, readwrite) NSArray *deliveryMethods;
 -(IBAction)setLocation:(id)sender;
+-(IBAction)clearsCookies:(id)sender;
 @end

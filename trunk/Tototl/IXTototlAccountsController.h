@@ -9,12 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "IXTototlAccount.h"
 
-@interface AccountsController : NSObject {
+@interface IXTototlAccountsController : NSObject {
 	
 	NSMutableArray *accounts;
 }
 @property (retain, readwrite) NSMutableArray *accounts;
+
 -(void)saveAccounts;
+-(void)saveAccounts:(id)newAccounts;
 
 /**
  * @name        Accessing the Shared Instance
@@ -24,6 +26,7 @@
  * @brief       The shared accounts controller 
  *              All interaction with accounts should be done through this controller.
  */
-+ (AccountsController *)sharedController;
++ (IXTototlAccountsController *)sharedController;
 - (Class)accountFromKind:(NSString *)kind;
+
 @end

@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "IXTototlAccount.h"
 #import "MGTwitterEngine.h"
+#import "IXTototlGrowlController.h"
 
 @interface IXTwitterAccount : IXTototlAccount {
 	MGTwitterEngine *engine;
@@ -16,10 +17,17 @@
 	NSNumber *updateFrequency;
 	NSString *notificationsDeliveryMethod;
 	NSString *identifier;
-	NSArray *receivedMessages;
 	long lastUpdateID;
+	
+	NSArray *friendStatuses;
+	NSArray *directMessages;
+	NSArray *followers;
+	NSArray *friends;
 }
-@property (retain, readwrite) NSArray *receivedMessages;
+@property (assign, readwrite) NSArray *friendStatuses;
+@property (assign, readwrite) NSArray *directMessages;
+@property (assign, readwrite) NSArray *followers;
+@property (assign, readwrite) NSArray *friends;
 @property (retain, readonly) MGTwitterEngine *engine;
 @property (retain, readwrite) NSString *identifier;
 @property (retain, readwrite) NSString *location;
@@ -28,5 +36,6 @@
 @property long lastUpdateID;
 
 - (void) sendLocationToTwitter;
-- (void)update;
+- (void) update;
+- (void) clearsCookies;
 @end

@@ -44,4 +44,5 @@
 - (void)readDefaultsFromDictionary:(NSDictionary *)defaultsDictionary;
 - (NSDictionary *)defaultsDictionary;
 
+
 @end
